@@ -139,22 +139,56 @@ with tab1:
             # Initialize selected_direction in session state if not already set
             if 'selected_direction' not in st.session_state:
                 st.session_state.selected_direction = None
+            
+            # Query function to get the count for each direction
+            def query_direction_counts(conn, selected_criteria, selected_method):
+                cursor = conn.cursor()
+                cursor.execute('''
+                    SELECT direction, COUNT(paragraph) as count
+                    FROM energy_data
+                    WHERE criteria = ? AND energy_method = ? AND paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0'
+                    GROUP BY direction
+                ''', (selected_criteria, selected_method))
+                return dict(cursor.fetchall())
 
-            # Display radio buttons without a default selection
+            # Get counts for each direction based on the selected criteria and method
+            direction_counts = query_direction_counts(conn, st.session_state.selected_criteria, st.session_state.selected_method)
+            increase_count = direction_counts.get("Increase", 0)
+            decrease_count = direction_counts.get("Decrease", 0)
+
+            # Reset selected_direction when criteria or method changes
+            new_criteria = selected_criteria_with_count.split(" [")[0] if selected_criteria_with_count != "Select a determinant" else None
+            new_method = selected_method_with_count.split(" [")[0] if selected_method_with_count != "Select an output" else None
+
+            # Reset selected_direction and rerun if criteria or method has changed
+            if new_criteria != st.session_state.get("selected_criteria"):
+                st.session_state.selected_criteria = new_criteria
+                st.session_state.selected_method = None  # Reset method
+                st.session_state.selected_direction = None  # Reset direction
+                st.rerun()
+            elif new_method != st.session_state.get("selected_method"):
+                st.session_state.selected_method = new_method
+                st.session_state.selected_direction = None  # Reset direction
+                st.rerun()
+
+            # Display radio buttons with counts in labels
             selected_direction = st.radio(
-                "Please select a relationship direction",  # Single, clear instruction
-                ["Increase", "Decrease"],
-                index=0 if st.session_state.selected_direction == "Increase" else 1 if st.session_state.selected_direction == "Decrease" else None,
-                key="selected_direction"
+                "Please select a relationship direction",
+                [f"Increase ({increase_count})", f"Decrease ({decrease_count})"],
+                index=None  # No default selection
             )
 
-            # Ensure that 'Increase' or 'Decrease' is chosen before proceeding
-            if selected_direction in ["Increase", "Decrease"]:
+            # Only update session state if a selection is made
+            if selected_direction:
+                st.session_state.selected_direction = selected_direction.split(" ")[0]  # Store just "Increase" or "Decrease"
+
+            # Check if a valid direction has been chosen
+            if st.session_state.get("selected_direction") in ["Increase", "Decrease"]:
                 # Query paragraphs based on the selected filters
-                paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, selected_direction)
+                paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, st.session_state.selected_direction)
                 
                 if paragraphs:
-                    st.markdown(f"<p><b>An increase (or presence) of {st.session_state.selected_criteria} leads to <i>{'higher' if selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                    st.markdown(f"<p><b>An increase (or presence) of {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
                     for para_id, para_text in paragraphs:
                         if st.session_state.logged_in:
                             new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
@@ -183,7 +217,11 @@ with tab1:
                         else:
                             st.write(para_text)
                 else:
-                    st.warning(f"No references have been reported for an increase (or presence) of {st.session_state.selected_criteria} leading to {'higher' if selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+                    if selected_direction and not paragraphs:
+                        st.warning(f"No references have been reported for an increase (or presence) of {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+            else:
+                st.warning("Please select a direction to continue.")  # Additional prompt if no selection
+
 
 
 
