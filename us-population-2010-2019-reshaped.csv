@@ -1,0 +1,123 @@
+,criteria ,states_code,id,year,population
+0,-,AL,1,2024,4785437
+1,Occupant's age,AK,2,2024,713910
+2,-,AZ,4,2024,6407172
+3,Gender (male),AR,5,2024,2921964
+4,Family size,CA,6,2024,37319502
+5,-,CO,8,2024,5047349
+6,Household composition (adults) ,CT,9,2024,3579114
+7,Household composition (children) ,DE,10,2024,899593
+8,-,DC,11,2024,605226
+9,-,FL,12,2024,18845537
+10,Number of working individuals,GA,13,2024,9711881
+11,Number of employees ,HI,15,2024,1363963
+12,Race (non-white) ,ID,16,2024,1570746
+13,,IL,17,2024,12840503
+14,Race (white) ,IN,18,2024,6490432
+15,Income,IA,19,2024,3050745
+16,,KS,20,2024,2858190
+17,Education,KY,21,2024,4348181
+18,,LA,22,2024,4544532
+19,,ME,23,2024,1327629
+20,Employment (self-employed),MD,24,2024,5788645
+21,Home ownership,MA,25,2024,6566307
+22,Expenditure behavior ,MI,26,2024,9877510
+23,Number of appliances,MN,27,2024,5310828
+24,,MS,28,2024,2970548
+25,,MO,29,2024,5995974
+26,Energy efficiency awareness,MT,30,2024,990697
+27,Efficient operation practices ,NE,31,2024,1829542
+28,Cooling setpoint temperature ,NV,32,2024,2702405
+29,Heating setpoint temperature,NH,33,2024,1316762
+30,Duration or frequency use of HVAC,NJ,34,2024,8799446
+31,,NM,35,2024,2064552
+32,Satisfaction with temperature,NY,36,2024,19399878
+33,Occupancy level,NC,37,2024,9574323
+34,Building age,ND,38,2024,674715
+35,,OH,39,2024,11539336
+36,Housing type (single-family detached) ,OK,40,2024,3759944
+37,,OR,41,2024,3837491
+38,Housing type (apartments),PA,42,2024,12711160
+39,,RI,44,2024,1053959
+40,Housing type (attached) ,SC,45,2024,4635649
+41,,SD,46,2024,816166
+42,Building use (residential),TN,47,2024,6355311
+43,Building use (office and retail),TX,48,2024,25241971
+44,Total number of rooms ,UT,49,2024,2775332
+45,Building height,VT,50,2024,625879
+46,Floor to ceiling height,VA,51,2024,8023699
+47,Floor area,WA,53,2024,6742830
+48,,WV,54,2024,1854239
+49,Shading device,WI,55,2024,5690475
+50,Energy Performance Score,WY,56,2024,564487
+51,Double glazing,PR,72,2024,3721525
+52,Window area/ratio,AL,1,2024,4799069
+53,Building insulation,AK,2,2024,722128
+54,Orientation (north),AZ,4,2024,6472643
+55,Building material (wood),AR,5,2024,2940667
+56,Material (reinforced concrete),CA,6,2024,37638369
+57,Material (composite board),CO,8,2024,5121108
+58,Buildings with pools,CT,9,2024,3588283
+59,Energy conservation measures,DE,10,2024,907381
+60,Technology for energy (electricity) ,DC,11,2024,619800
+61,Technology used for energy (gas),FL,12,2024,19053237
+62,Technology used for energy (oil),GA,13,2024,9802431
+63,LED lighting,HI,15,2024,1379329
+64,Energy-efficient appliances,ID,16,2024,1583910
+65,Type of HVAC (central),IL,17,2024,12867454
+66,Type of HVAC (local or single split),IN,18,2024,6516528
+67,HVAC controls (programmable),IA,19,2024,3066336
+68,HVAC efficiency,KS,20,2024,2869225
+69,Number of heating/cooling controls,KY,21,2024,4369821
+70,Heating degree days,LA,22,2024,4575625
+71,Cooling degree days,ME,23,2024,1328284
+72,,MD,24,2024,5839419
+73,Global warming or climate change,MA,25,2024,6613583
+74,Air quality ,MI,26,2024,9882412
+75,Precipitation accumulation ,MN,27,2024,5346143
+76,Wind speed,MS,28,2024,2978731
+77,Relative humidity,MO,29,2024,6010275
+78,Solar exposure/intensity,MT,30,2024,997316
+79,"Temperature (mean, SD, or extreme)",NE,31,2024,1840672
+80,,NV,32,2024,2712730
+81,Urbanization level,NH,33,2024,1320202
+82,,NJ,34,2024,8828117
+83,Building density ,NM,35,2024,2080450
+84,Building coverage ratio,NY,36,2024,19499241
+85,,NC,37,2024,9657592
+86,,ND,38,2024,685225
+87,Open space ratio,OH,39,2024,11544663
+88,Compactness,OK,40,2024,3788379
+89,Occupancy density,OR,41,2024,3872036
+90,,PA,42,2024,12745815
+91,Population density,RI,44,2024,1053649
+92,Urban canyons ,SC,45,2024,4671994
+93,Vertical-to-horizontal ratio,SD,46,2024,823579
+94,Surface-to-volume ratio,TN,47,2024,6399291
+95,,TX,48,2024,25645629
+96,Average building height,UT,49,2024,2814384
+97,,VT,50,2024,627049
+98,Building height variations,VA,51,2024,8101155
+99,,WA,53,2024,6826627
+100,Total wall surface area ,WV,54,2024,1856301
+101,,WI,55,2024,5705288
+102,Size or length of block ,WY,56,2024,567299
+103,Plan depth ,PR,72,2024,3678732
+104,Effective public transport,AL,1,2024,4815588
+105,Walkability and bikeability ,AK,2,2024,730443
+106,Green space ,AZ,4,2024,6554978
+107,,AR,5,2024,2952164
+108,Sky view factor,CA,6,2024,37948800
+109,Urban Heat Island,CO,8,2024,5192647
+110,Edge contrast index,CT,9,2024,3594547
+111,,DE,10,2024,915179
+112,,DC,11,2024,634924
+113,Smart city construction ,FL,12,2024,19297822
+114,Energy price,GA,13,2024,9901430
+115,,HI,15,2024,1394804
+116,Housing and rent price ,ID,16,2024,1595324
+117,Gross domestic product,IL,17,2024,12882510
+118,,IN,18,2024,6537703
+119,Poverty rate,IA,19,2024,3076190
+120,Population,KS,20,2024,2885257
+121,Population age,KY,21,2024,4386346
