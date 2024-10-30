@@ -136,47 +136,56 @@ with tab1:
         if selected_method_with_count != "Select an output":
             st.session_state.selected_method = selected_method_with_count.split(" [")[0]
 
-            # Directly use radio button without session state
+            # Initialize selected_direction in session state if not already set
+            if 'selected_direction' not in st.session_state:
+                st.session_state.selected_direction = None
+
+            # Display radio buttons without a default selection
             selected_direction = st.radio(
-                "Relationship Direction",
+                "Please select a relationship direction",  # Single, clear instruction
                 ["Increase", "Decrease"],
-                index=0 if "Increase" else 1
+                index=0 if st.session_state.selected_direction == "Increase" else 1 if st.session_state.selected_direction == "Decrease" else None,
+                key="selected_direction"
             )
 
-            # Query paragraphs based on the selected filters
-            paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, selected_direction)
-            
-            if paragraphs:
-                st.markdown(f"<p><b>An increase (or presence) of {st.session_state.selected_criteria} leads to <i>{'higher' if selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
-                for para_id, para_text in paragraphs:
-                    if st.session_state.logged_in:
-                        new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
-                        col1, col2 = st.columns([1, 4])
-                        with col1:
-                            if st.button("Save changes", key=f"save_btn_{para_id}"):
-                                admin_actions(conn, para_id, new_text=new_text)
-                                st.rerun()
-                        with col2:
-                            if st.session_state.get(f"confirm_delete_{para_id}", False):
-                                st.warning(f"Are you sure you want to delete record {para_id}?")
-                                col_yes, col_no = st.columns(2)
-                                with col_yes:
-                                    if st.button("Yes", key=f"confirm_yes_{para_id}"):
-                                        admin_actions(conn, para_id, delete=True)
-                                        st.session_state[f"confirm_delete_{para_id}"] = False
-                                        st.rerun()
-                                with col_no:
-                                    if st.button("Cancel", key=f"confirm_no_{para_id}"):
-                                        st.session_state[f"confirm_delete_{para_id}"] = False
-                                        st.rerun()
-                            else:
-                                if st.button("Delete", key=f"delete_btn_{para_id}"):
-                                    st.session_state[f"confirm_delete_{para_id}"] = True
+            # Ensure that 'Increase' or 'Decrease' is chosen before proceeding
+            if selected_direction in ["Increase", "Decrease"]:
+                # Query paragraphs based on the selected filters
+                paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, selected_direction)
+                
+                if paragraphs:
+                    st.markdown(f"<p><b>An increase (or presence) of {st.session_state.selected_criteria} leads to <i>{'higher' if selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                    for para_id, para_text in paragraphs:
+                        if st.session_state.logged_in:
+                            new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
+                            col1, col2 = st.columns([1, 4])
+                            with col1:
+                                if st.button("Save changes", key=f"save_btn_{para_id}"):
+                                    admin_actions(conn, para_id, new_text=new_text)
                                     st.rerun()
-                    else:
-                        st.write(para_text)
-            else:
-                st.warning(f"No references have been reported for an increase (or presence) of {st.session_state.selected_criteria} leading to {'higher' if selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+                            with col2:
+                                if st.session_state.get(f"confirm_delete_{para_id}", False):
+                                    st.warning(f"Are you sure you want to delete record {para_id}?")
+                                    col_yes, col_no = st.columns(2)
+                                    with col_yes:
+                                        if st.button("Yes", key=f"confirm_yes_{para_id}"):
+                                            admin_actions(conn, para_id, delete=True)
+                                            st.session_state[f"confirm_delete_{para_id}"] = False
+                                            st.rerun()
+                                    with col_no:
+                                        if st.button("Cancel", key=f"confirm_no_{para_id}"):
+                                            st.session_state[f"confirm_delete_{para_id}"] = False
+                                            st.rerun()
+                                else:
+                                    if st.button("Delete", key=f"delete_btn_{para_id}"):
+                                        st.session_state[f"confirm_delete_{para_id}"] = True
+                                        st.rerun()
+                        else:
+                            st.write(para_text)
+                else:
+                    st.warning(f"No references have been reported for an increase (or presence) of {st.session_state.selected_criteria} leading to {'higher' if selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+
+
 
             # Add a new record if logged in
             if st.session_state.logged_in and st.button("Add New Record", key="add_new_record"):
