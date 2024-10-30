@@ -110,7 +110,7 @@ with tab1:
     )
     # Criteria Dropdown with Counts and Placeholder
     criteria_counts = query_criteria_counts(conn)
-    criteria_list = ["Select a determinant"] + [f"{row[0]} ({row[1]})" for row in criteria_counts]
+    criteria_list = ["Select a determinant"] + [f"{row[0]} [{row[1]}]" for row in criteria_counts]
 
     selected_criteria_with_count = st.selectbox(
         "Determinant",
@@ -120,7 +120,7 @@ with tab1:
     )
 
     if selected_criteria_with_count != "Select a determinant":
-        new_criteria = selected_criteria_with_count.split(" (")[0]
+        new_criteria = selected_criteria_with_count.split(" [")[0]
         if new_criteria != st.session_state.selected_criteria:
             st.session_state.selected_criteria = new_criteria
             st.session_state.selected_method = None  # Reset method on new criteria selection
@@ -128,7 +128,7 @@ with tab1:
 
         # Energy Method Dropdown with Counts and Placeholder
         energy_method_counts = query_energy_method_counts(conn, st.session_state.selected_criteria)
-        method_list = ["Select an output"] + [f"{row[0]} ({row[1]})" for row in energy_method_counts]
+        method_list = ["Select an output"] + [f"{row[0]} [{row[1]}]" for row in energy_method_counts]
 
         selected_method_with_count = st.selectbox(
             "Energy Output(s)",
@@ -138,7 +138,7 @@ with tab1:
         )
 
         if selected_method_with_count != "Select an output":
-            st.session_state.selected_method = selected_method_with_count.split(" (")[0]
+            st.session_state.selected_method = selected_method_with_count.split(" [")[0]
 
             # Directly use radio button without session state
             selected_direction = st.radio(
@@ -222,3 +222,79 @@ footer_html = """
     </div>
 """
 st.markdown(footer_html, unsafe_allow_html=True)
+
+# Function to reset and re-create the table
+def csv_to_sqlite(csv_file, db_file):
+    try:
+        # Read the CSV file into a DataFrame
+        print(f"Reading CSV file: {csv_file}")
+        df = pd.read_csv(csv_file, encoding='utf-8-sig')
+
+        # Connect to the SQLite database (or create it)
+        print(f"Connecting to database: {db_file}")
+        conn = sqlite3.connect(db_file)
+        cursor = conn.cursor()
+
+        # Drop the old table if it exists
+        print("Dropping the existing 'energy_data' table if it exists")
+        cursor.execute("DROP TABLE IF EXISTS energy_data")
+
+        # Create the new table with group_id, criteria, energy_method, direction, and paragraph fields
+        print("Creating the table 'energy_data' with direction")
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS energy_data (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                group_id INTEGER,
+                criteria TEXT,
+                energy_method TEXT,
+                direction TEXT,  -- Store Increase/Decrease here
+                paragraph TEXT
+            )
+        ''')
+
+        # Insert CSV data into SQLite, splitting paragraphs
+        group_id = 1
+        criteria_col = df.columns[0]  # Assuming the first column is 'criteria'
+        
+        # Group columns based on "Increase" and "Decrease"
+        increase_cols = [col for col in df.columns if col.endswith('Increase')]
+        reduction_cols = [col for col in df.columns if col.endswith('Decrease')]
+        
+        for _, row in df.iterrows():
+            criteria = row[criteria_col]
+            # Insert for each increase column
+            for method in increase_cols:
+                text_content = row[method]
+                paragraphs = split_into_paragraphs(text_content)
+                base_method = method.replace('Increase', '').strip()
+                
+                for paragraph in paragraphs:
+                    cursor.execute('''
+                        INSERT INTO energy_data (group_id, criteria, energy_method, direction, paragraph)
+                        VALUES (?, ?, ?, ?, ?)
+                    ''', (group_id, criteria, base_method, 'Increase', paragraph))
+
+            # Insert for each reduction column
+            for method in reduction_cols:
+                text_content = row[method]
+                paragraphs = split_into_paragraphs(text_content)
+                base_method = method.replace('Decrease', '').strip()
+                
+                for paragraph in paragraphs:
+                    cursor.execute('''
+                        INSERT INTO energy_data (group_id, criteria, energy_method, direction, paragraph)
+                        VALUES (?, ?, ?, ?, ?)
+                    ''', (group_id, criteria, base_method, 'Decrease', paragraph))
+
+            group_id += 1
+
+        # Commit and close the connection
+        conn.commit()
+        print("Data inserted successfully")
+        conn.close()
+
+    except Exception as e:
+        print(f"Error: {e}")
+
+# Run this function once to reset and create the database
+csv_to_sqlite('Tool Development Full References_v006.csv', 'my_database.db')
