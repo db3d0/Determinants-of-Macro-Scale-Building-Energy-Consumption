@@ -73,7 +73,7 @@ def login(username, password):
         st.session_state.login_status = "Logged in successfully!"
         st.rerun()  # Trigger a rerun on successful login
     else:
-        st.session_state.login_status = "Incorrect username or password"
+        st.warning("Incorrect username or password")
 
 def logout():
     for key in list(st.session_state.keys()):
