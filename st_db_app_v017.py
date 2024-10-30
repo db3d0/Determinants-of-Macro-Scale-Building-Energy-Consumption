@@ -1,9 +1,10 @@
+import re
 import sqlite3
 import streamlit as st
 
 # Admin credentials
-admin_username = "admin957316&7k/."
-admin_password = "5tgdcjyu.w4&GF%$"
+admin_username = "admin"
+admin_password = "password"
 
 # Initialize session state variables
 if 'login_status' not in st.session_state:
@@ -64,7 +65,6 @@ def admin_actions(conn, paragraph_id, new_text=None, delete=False):
         conn.commit()
         st.success(f"Record {paragraph_id} updated.")
 
-
 # Login and Logout functions
 def login(username, password):
     if username == admin_username and password == admin_password:
@@ -73,7 +73,7 @@ def login(username, password):
         st.session_state.login_status = "Logged in successfully!"
         st.rerun()  # Trigger a rerun on successful login
     else:
-        st.warning("Incorrect username or password")
+        st.session_state.login_status = "Incorrect username or password"
 
 def logout():
     for key in list(st.session_state.keys()):
@@ -104,10 +104,6 @@ with tab2:
 with tab1:
     st.title("Determinants of Macro Scale Building Energy Consumption")
 
-
-    st.write(
-    """This tool, developed through a systematic literature review, provides insights into how various determinants influence macro-scale building energy consumption, with references covering studies at neighborhood, urban, state, regional, national, and international levels."""
-    )
     # Criteria Dropdown with Counts and Placeholder
     criteria_counts = query_criteria_counts(conn)
     criteria_list = ["Select a determinant"] + [f"{row[0]} [{row[1]}]" for row in criteria_counts]
@@ -115,7 +111,7 @@ with tab1:
     selected_criteria_with_count = st.selectbox(
         "Determinant",
         criteria_list,
-        index=0 if st.session_state.selected_criteria is None else criteria_list.index(f"{st.session_state.selected_criteria} ({[count for crit, count in criteria_counts if crit == st.session_state.selected_criteria][0]})"),
+        index=0 if st.session_state.selected_criteria is None else criteria_list.index(f"{st.session_state.selected_criteria} [{[count for crit, count in criteria_counts if crit == st.session_state.selected_criteria][0]}]"),
         format_func=lambda x: x if x == "Select a determinant" else x
     )
 
@@ -133,7 +129,7 @@ with tab1:
         selected_method_with_count = st.selectbox(
             "Energy Output(s)",
             method_list,
-            index=0 if st.session_state.selected_method is None else method_list.index(f"{st.session_state.selected_method} ({[count for meth, count in energy_method_counts if meth == st.session_state.selected_method][0]})"),
+            index=0 if st.session_state.selected_method is None else method_list.index(f"{st.session_state.selected_method} [{[count for meth, count in energy_method_counts if meth == st.session_state.selected_method][0]}]"),
             format_func=lambda x: x if x == "Select an output" else x
         )
 
@@ -151,7 +147,7 @@ with tab1:
             paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, selected_direction)
             
             if paragraphs:
-                st.markdown(f"<p><b>An increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                st.markdown(f"<p><b>An increase (or presence) of {st.session_state.selected_criteria} leads to <i>{'higher' if selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
                 for para_id, para_text in paragraphs:
                     if st.session_state.logged_in:
                         new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
@@ -180,7 +176,7 @@ with tab1:
                     else:
                         st.write(para_text)
             else:
-                st.warning(f"No references have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+                st.warning(f"No references have been reported for an increase (or presence) of {st.session_state.selected_criteria} leading to {'higher' if selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
 
             # Add a new record if logged in
             if st.session_state.logged_in and st.button("Add New Record", key="add_new_record"):
@@ -202,6 +198,7 @@ with tab1:
                         st.warning("Record cannot be empty.")
 
 conn.close()
+
 
 # Footer with fixed positioning
 footer_html = """
