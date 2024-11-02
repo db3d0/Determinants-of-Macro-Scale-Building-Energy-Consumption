@@ -167,11 +167,16 @@ def logout():
 placeholder = st.empty()
 
 if st.session_state.logged_in:
-    tab1, tab2 = placeholder.tabs(["Search", f"Logged in as {st.session_state.current_user}"])
+    tab0, tab1, tab2 = placeholder.tabs(["Home", "Search", f"Logged in as {st.session_state.current_user}"])
 else:
-    tab1, tab2 = placeholder.tabs(["Search", "Login"])
+    tab0, tab1, tab2 = placeholder.tabs(["Home", "Search", "Login"])
 
 # Login Tab
+with tab0:
+    st.title("Determinants of Macro Scale Building Energy Consumption")
+    st.write("""This tool, developed through a systematic literature review, provides insights into how various determinants influence macro-scale building energy consumption, with references covering studies at neighborhood, urban, state, regional, national, and international levels."""
+             )
+
 with tab2:
     if st.session_state.logged_in:
         if st.button("Logout"):
@@ -186,8 +191,8 @@ with tab2:
 # Search Tab with Criteria Dropdown and Simplified Direction Selection
 with tab1:
     st.title("Determinants of Macro Scale Building Energy Consumption")
-    st.write("""This tool, developed through a systematic literature review, provides insights into how various determinants influence macro-scale building energy consumption, with references covering studies at neighborhood, urban, state, regional, national, and international levels."""
-             )
+    #st.write("""This tool, developed through a systematic literature review, provides insights into how various determinants influence macro-scale building energy consumption, with references covering studies at neighborhood, urban, state, regional, national, and international levels."""
+    #         )
 
     # Criteria Dropdown with Counts and Placeholder
     criteria_counts = query_criteria_counts(conn)
