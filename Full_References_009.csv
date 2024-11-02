@@ -1,0 +1,1003 @@
+Independents,Total Energy Consumption Increase,Total Energy Consumption Decrease,Energy Use Intensity Increase,Energy Use Intensity Decrease,Electricity Consumption Increase,Electricity Consumption Decrease,Heating Consumption Increase,Heating Consumption Decrease,Cooling Consumption Increase,Cooling Consumption Decrease,Gas Consumption Increase,Gas Consumption Decrease,Energy Per Capita Increase,Energy Per Capita Decrease
+Occupant's age,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715. 
+
+H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+A. Froemelt, R. Buffat, and S. Hellweg, “Machine learning based modeling of households: A regionalized bottom-up approach to investigate consumption-induced environmental impacts,” Journal of Industrial Ecology, vol. 24, no. 3, pp. 639–652, Jun. 2020, doi: 10.1111/jiec.12969.
+
+F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.
+
+L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.",0,0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+Kostakis, Ioannis. 2020. “Socio-Demographic Determinants of Household Electricity Consumption: Evidence from Greece Using Quantile Regression Analysis.” Current Research in Environmental Sustainability 1 (January):23–30. https://doi.org/10.1016/j.crsust.2020.04.001.",0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+",0,0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010. 
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.","R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+",0,"L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.",0
+Gender (male),,0,0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.","Kostakis, Ioannis. 2020. “Socio-Demographic Determinants of Household Electricity Consumption: Evidence from Greece Using Quantile Regression Analysis.” Current Research in Environmental Sustainability 1 (January):23–30. https://doi.org/10.1016/j.crsust.2020.04.001.",0,0,0,0,0,0,0,0
+Family size,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+ J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715.
+
+N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+B. Jaffar, T. Oreszczyn, R. Raslan, and A. Summerfield, “Understanding energy demand in Kuwaiti villas: Findings from a quantitative household survey,” Energy and Buildings, vol. 165, pp. 379–389, Apr. 2018, doi: 10.1016/j.enbuild.2018.01.055.
+
+B. Wilson, “Urban form and residential electricity consumption: Evidence from Illinois, USA,” Landscape and Urban Planning, vol. 115, pp. 62–71, 2013, doi: 10.1016/j.landurbplan.2013.03.011.
+
+G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.
+
+Huebner, Gesche M., Ian Hamilton, Zaid Chalabi, David Shipworth, and Tadj Oreszczyn. 2015. “Explaining Domestic Energy Consumption – The Comparative Contribution of Building Factors, Socio-Demographics, Behaviours and Attitudes.” Applied Energy 159 (December):589–600. https://doi.org/10.1016/j.apenergy.2015.09.028.
+
+Antonopoulos, Chrissi, Alec Trusty, and Vivek Shandas. 2019. “The Role of Building Characteristics, Demographics, and Urban Heat Islands in Shaping Residential Energy Use.” City and Environment Interactions 3 (November):100021. https://doi.org/10.1016/j.cacint.2020.100021.
+
+Druckman, A., and T. Jackson. 2008. “Household Energy Consumption in the UK: A Highly Geographically and Socio-Economically Disaggregated Model.” Energy Policy 36 (8): 3177–92. https://doi.org/10.1016/j.enpol.2008.03.021.
+","A. Froemelt, R. Buffat, and S. Hellweg, “Machine learning based modeling of households: A regionalized bottom-up approach to investigate consumption-induced environmental impacts,” Journal of Industrial Ecology, vol. 24, no. 3, pp. 639–652, Jun. 2020, doi: 10.1111/jiec.12969.","X. Liu, H. Tang, Y. Ding, and D. Yan, “Investigating the performance of machine learning models combined with different feature selection methods to estimate the energy consumption of buildings,” Energy and Buildings, vol. 273, Oct. 2022, doi: 10.1016/j.enbuild.2022.112408.
+
+J. Gao et al., “Dilution effect of the building area on energy intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.","R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+J. Gao et al., “Dilution effect of the building area on energy intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.,  
+
+M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+E. L. Navamuel, F. Rubiera Morollón, and B. Moreno Cuartas, “Energy consumption and urban sprawl: Evidence for the Spanish case,” Journal of Cleaner Production, vol. 172, pp. 3479–3486, Jan. 2018, doi: 10.1016/j.jclepro.2017.08.110.
+
+Kostakis, Ioannis. 2020. “Socio-Demographic Determinants of Household Electricity Consumption: Evidence from Greece Using Quantile Regression Analysis.” Current Research in Environmental Sustainability 1 (January):23–30. https://doi.org/10.1016/j.crsust.2020.04.001.
+
+Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+Ye, Yuxiang, Steven F. Koch, and Jiangfeng Zhang. 2018. “Determinants of Household Electricity Consumption in South Africa.” Energy Economics 75 (September):120–33. https://doi.org/10.1016/j.eneco.2018.08.005.
+
+Huebner, Gesche, David Shipworth, Ian Hamilton, Zaid Chalabi, and Tadj Oreszczyn. 2016. “Understanding Electricity Consumption: A Comparative Contribution of Building Factors, Socio-Demographics, Appliances, Behaviours and Attitudes.” Applied Energy 177 (September):692–702. https://doi.org/10.1016/j.apenergy.2016.04.075.
+
+Zaidan, Esmat, Ammar Abulibdeh, Ahmad Alban, and Rateb Jabbar. 2022. “Motivation, Preference, Socioeconomic, and Building Features: New Paradigm of Analyzing Electricity Consumption in Residential Buildings.” Building and Environment 219 (July):109177. https://doi.org/10.1016/j.buildenv.2022.109177.
+
+",0,"S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.","G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.",0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+
+J. Zhang, F. Teng, and S. Zhou, “The structural changes and determinants of household energy choices and energy consumption in urban China: Addressing the role of building type,” Energy Policy, vol. 139, Apr. 2020, doi: 10.1016/j.enpol.2020.111314.",0,"D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047.
+
+Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+Druckman, A., and T. Jackson. 2008. “Household Energy Consumption in the UK: A Highly Geographically and Socio-Economically Disaggregated Model.” Energy Policy 36 (8): 3177–92. https://doi.org/10.1016/j.enpol.2008.03.021.
+
+Dar-Mousa, Rami Nabil, and Zeyad Makhamreh. 2019. “Analysis of the Pattern of Energy Consumptions and Its Impact on Urban Environmental Sustainability in Jordan: Amman City as a Case Study.” Energy, Sustainability and Society 9 (1): 15. https://doi.org/10.1186/s13705-019-0197-0.
+
+
+"
+Household composition (adults) ,0,0,0,0,0,"Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.",0,0,0,0,0,0,0,0
+Household composition (children) ,0,0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of 
+urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy 
+use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.","H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.",0,0,0,0,0,0,0,0
+Number of working individuals,0,0,0,0,"Kostakis, Ioannis. 2020. “Socio-Demographic Determinants of Household Electricity Consumption: Evidence from 
+Greece Using Quantile Regression Analysis.” Current Research in Environmental Sustainability 1 (January):23–30. https://doi.org/10.1016/j.crsust.2020.04.001.",0,0,0,0,0,0,0,0,"L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388."
+Number of employees ,0,0,0,0,"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,”
+Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140. ",0,0,0,0,0,0,"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.",0,0
+Race (non-white) ,0,0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+B. Goldstein, T. G. Reames, and J. P. Newell, “Racial inequity in household energy efficiency and carbon emissions in the United States: An emissions paradox,” Energy Research and Social Science, vol. 84, Feb. 2022, doi: 10.1016/j.erss.2021.102365.","K. Tong et al., “Measuring social equity in urban energy use and interventions using fine-scale data,” Proceedings of the National Academy of Sciences of the United States of America, vol. 118, no. 24, 2021, doi: 10.1073/pnas.2023554118/-/DCSupplemental.",0,0,0,0,0,0,0,0,0,0
+Race (white) ,0,0,0,0,0,0,0,0,0,0,0,0,"B. Goldstein, T. G. Reames, and J. P. Newell, 
+“Racial inequity in household energy efficiency and carbon emissions in the United States: An emissions paradox,” Energy Research and Social Science, vol. 84, Feb. 2022, doi: 10.1016/j.erss.2021.102365.",0
+Income,"J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715. 
+
+H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+A. Froemelt, R. Buffat, and S. Hellweg, “Machine learning based modeling of households: A regionalized bottom-up approach to investigate consumption-induced environmental impacts,” Journal of Industrial Ecology, vol. 24, no. 3, pp. 639–652, Jun. 2020, doi: 10.1111/jiec.12969.
+
+B. Jaffar, T. Oreszczyn, R. Raslan, and A. Summerfield, “Understanding energy demand in Kuwaiti villas: Findings from a quantitative household survey,” Energy and Buildings, vol. 165, pp. 379–389, Apr. 2018, doi: 10.1016/j.enbuild.2018.01.055.
+
+B. Wilson, “Urban form and residential electricity consumption: Evidence from Illinois, USA,” Landscape and Urban Planning, vol. 115, pp. 62–71, 2013, doi: 10.1016/j.landurbplan.2013.03.011.
+
+Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.
+
+Antonopoulos, Chrissi, Alec Trusty, and Vivek Shandas. 2019. “The Role of Building Characteristics, Demographics, and Urban Heat Islands in Shaping Residential Energy Use.” City and Environment Interactions 3 (November):100021. https://doi.org/10.1016/j.cacint.2020.100021.
+
+Dar-Mousa, Rami Nabil, and Zeyad Makhamreh. 2019. “Analysis of the Pattern of Energy Consumptions and Its Impact on Urban Environmental Sustainability in Jordan: Amman City as a Case Study.” Energy, Sustainability and Society 9 (1): 15. https://doi.org/10.1186/s13705-019-0197-0.
+
+Yang, Tianren, and Xiaoling Zhang. 2016. “Benchmarking the Building Energy Consumption and Solar Energy Trade-Offs of Residential Neighborhoods on Chongming Eco-Island, China.” Applied Energy 180 (October):792–99. https://doi.org/10.1016/j.apenergy.2016.08.039.
+
+Mashhoodi, Bardia, Dominic Stead, and Arjan Van Timmeren. 2020. “Local and National Determinants of Household Energy Consumption in the Netherlands.” GeoJournal 85 (2): 393–406. https://doi.org/10.1007/s10708-018-09967-9.
+
+Chen, Shuqin, Jun Guan, Natasa Nord, Nianping Li, and Hiroshi Yoshino. 2019. “A Study of Citywide Urban Residential Energy Information System for the Building Energy Efficiency Management: A Cluster Model of Seven Typical Cities in China.” Energy Efficiency 12 (6): 1509–28. https://doi.org/10.1007/s12053-018-9768-8.
+
+Miao, Lu. 2017. “Examining the Impact Factors of Urban Residential Energy Consumption and CO 2 Emissions in China – Evidence from City-Level Data.” Ecological Indicators 73 (February):29–37. https://doi.org/10.1016/j.ecolind.2016.09.031.
+
+Druckman, A., and T. Jackson. 2008. “Household Energy Consumption in the UK: A Highly Geographically and Socio-Economically Disaggregated Model.” Energy Policy 36 (8): 3177–92. https://doi.org/10.1016/j.enpol.2008.03.021.","M. Mrówczyńska, M. Skiba, A. Bazan-Krzywoszańska, and M. Sztubecka, “Household standards and socio-economic aspects as a factor determining energy consumption in the city,” Applied Energy, vol. 264, Apr. 2020, doi: 10.1016/j.apenergy.2020.114680.",0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+K. Tong et al., “Measuring social equity in urban energy use and interventions using fine-scale data,” Proceedings of the National Academy of Sciences of the United States of America, vol. 118, no. 24, 2021, doi: 10.1073/pnas.2023554118/-/DCSupplemental.
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.
+
+Chen, Chien-fei, Xiaojing Xu, Lazarus Adua, Morgan Briggs, and Hannah Nelson. 2022. “Exploring the Factors That Influence Energy Use Intensity across Low-, Middle-, and High-Income Households in the United States.” Energy Policy 168 (September):113071. https://doi.org/10.1016/j.enpol.2022.113071.
+
+Ma, Jun, and Jack C.P. Cheng. 2016. “Identifying the Influential Features on the Regional Energy Use Intensity of Residential Buildings Based on Random Forests.” Applied Energy 183 (December):193–201. https://doi.org/10.1016/j.apenergy.2016.08.096.","W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,”Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101., J. Gao et al., “Dilution effect of the building area on energy intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.
+
+M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+E. L. Navamuel, F. Rubiera Morollón, and B. Moreno Cuartas, “Energy consumption and urban sprawl: Evidence for the Spanish case,” Journal of Cleaner Production, vol. 172, pp. 3479–3486, Jan. 2018, doi: 10.1016/j.jclepro.2017.08.110.
+
+H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.
+
+J. C. Nsangou, J. Kenfack, U. Nzotcha, P. S. Ngohe Ekam, J. Voufo, and T. T. Tamo, “Explaining household electricity consumption using quantile regression, decision tree and artificial neural network,” Energy, vol. 250, Jul. 2022, doi: 10.1016/j.energy.2022.123856.
+
+Kostakis, Ioannis. 2020. “Socio-Demographic Determinants of Household Electricity Consumption: Evidence from Greece Using Quantile Regression Analysis.” Current Research in Environmental Sustainability 1 (January):23–30. https://doi.org/10.1016/j.crsust.2020.04.001.
+
+Ye, Yuxiang, Steven F. Koch, and Jiangfeng Zhang. 2018. “Determinants of Household Electricity Consumption in South Africa.” Energy Economics 75 (September):120–33. https://doi.org/10.1016/j.eneco.2018.08.005.
+
+Zaidan, Esmat, Ammar Abulibdeh, Ahmad Alban, and Rateb Jabbar. 2022. “Motivation, Preference, Socioeconomic, and Building Features: New Paradigm of Analyzing Electricity Consumption in Residential Buildings.” Building and Environment 219 (July):109177. https://doi.org/10.1016/j.buildenv.2022.109177.
+
+","J. Zhang, F. Teng, and S. Zhou, “The structural changes and determinants of household energy choices and energy consumption in urban China: Addressing the role of building type,” Energy Policy, vol. 139, Apr. 2020, doi: 10.1016/j.enpol.2020.111314.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.
+
+","K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.          ","N. Mostafavi, M. Farzinmoghadam, and S. Hoque,  “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.
+
+A. Andreou, J. Barrett, P. G. Taylor, P. E. Brockway, and Z. Wadud, “Decomposing the drivers of residential space cooling energy consumption in EU-28 countries using a panel data approach,” Energy and Built Environment, vol. 1, no. 4, pp. 432–442, Oct. 2020, doi: 10.1016/j.enbenv.2020.03.005.",0,"M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.
+
+Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+",0,"D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. 
+Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047.
+
+L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388.
+
+W. H. Huang, “Sources of inequality in household electricity consumption: evidence from Taiwan,” Energy Sources, Part B: Economics, Planning and Policy, vol. 17, no. 1, 2022, doi: 10.1080/15567249.2021.1966133.
+
+P. Newton and D. Meyer, “The determinants of urban resource consumption,” Environment and Behavior, vol. 44, no. 1, pp. 107–135, Jan. 2012, doi: 10.1177/0013916510390494.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.",0
+Education,"J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715, H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+Ma, Jun, and Jack C.P. Cheng. 2016. “Identifying the Influential Features on the Regional Energy Use Intensity of Residential Buildings Based on Random Forests.” Applied Energy 183 (December):193–201. https://doi.org/10.1016/j.apenergy.2016.08.096.","S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.
+
+Kostakis, Ioannis. 2020. “Socio-Demographic Determinants of Household Electricity Consumption: Evidence from Greece Using Quantile Regression Analysis.” Current Research in Environmental Sustainability 1 (January):23–30. https://doi.org/10.1016/j.crsust.2020.04.001.
+
+","R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.",0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,"R. Bardazzi and M. G. Pazienza, “When I 
+was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.  ","M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.",0,"L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388."
+Employment (self-employed),0,0,0,0,0,0,0,0,0,0,"M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.",0,0,0
+Home ownership,"F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.
+
+D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.
+
+Kaza, Nikhil. 2010. “Understanding the Spectrum of Residential Energy Consumption: A Quantile Regression Approach.” Energy Policy 38 (11): 6574–85. https://doi.org/10.1016/j.enpol.2010.06.028.","Heidelberger, E., and T. Rakha. 2022. “Inclusive Urban Building Energy Modeling through Socioeconomic Data: A Persona-Based Case Study for an Underrepresented Community.” Building and Environment 222 (August):109374. https://doi.org/10.1016/j.buildenv.2022.109374.0",0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+B. Goldstein, T. G. Reames, and J. P. Newell, “Racial inequity in household energy efficiency and carbon emissions in the United States: An emissions paradox,” Energy Research and Social Science, vol. 84, Feb. 2022, doi: 10.1016/j.erss.2021.102365.","W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile 
+regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+E. L. Navamuel, F. Rubiera Morollón, and B. Moreno Cuartas, “Energy consumption and urban sprawl: Evidence for the Spanish case,” Journal of Cleaner Production, vol. 172, pp. 3479–3486, Jan. 2018, doi: 10.1016/j.jclepro.2017.08.110.",0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, 
+“The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,"Ko, Yekang, and John D Radke. 2014. “The Effect of Urban Form and Residential Cooling Energy Use in Sacramento, California.” Environment and Planning B: Planning and Design 41 (4): 573–93. https://doi.org/10.1068/b12038p.",0,0,"P. Newton and D. Meyer, “The determinants of urban resource consumption,” Environment and Behavior, vol. 44, no. 1, pp. 107–135, Jan. 2012, doi: 10.1177/0013916510390494.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.",0
+Expenditure behavior ,0,0,0,0,0,"J. Zhang, F. Teng, and S. Zhou, “The structural changes and determinants of household energy choices and energy consumption in urban China: Addressing the role of building type,” Energy Policy, vol. 139, Apr. 2020, doi: 10.1016/j.enpol.2020.111314.",0,0,0,0,0,0,0,0
+Number of appliances,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715. 
+
+Verma, Anita, Y. K. Jaiswal, and Khurshreed Ahmad Wani. 2012. “Energy Consumption Behaviour of an Urban Residential Sector in the Northern Province of Madhya Pradesh (India).” Indoor and Built Environment 21 (5): 703–9. https://doi.org/10.1177/1420326X11425964.
+
+Murakami, Shuzo, Mark D. Levine, Hiroshi Yoshino, Takashi Inoue, Toshiharu Ikaga, Yoshiyuki Shimoda, Shuichi Miura, et al. 2009. “Overview of Energy Consumption and GHG Mitigation Technologies in the Building Sector of Japan.” Energy Efficiency 2 (2): 179–94. https://doi.org/10.1007/s12053-008-9040-8.",0,"J. Gao et al., “Dilution effect of the building area on energy
+intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.
+
+Y. Ding, L. Fan, and X. Liu, “Analysis of feature matrix in machine learning algorithms to predict energy consumption of public buildings,” Energy and Buildings, vol. 249, p. 111208, Oct. 2021, doi: 10.1016/j.enbuild.2021.111208.",0,"W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+J. Gao et al., “Dilution effect of the building area on energy intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.
+
+M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.
+
+J. C. Nsangou, J. Kenfack, U. Nzotcha, P. S. Ngohe Ekam, J. Voufo, and T. T. Tamo, “Explaining household electricity consumption using quantile regression, decision tree and artificial neural network,” Energy, vol. 250, Jul. 2022, doi: 10.1016/j.energy.2022.123856.
+
+Ye, Yuxiang, Steven F. Koch, and Jiangfeng Zhang. 2018. “Determinants of Household Electricity Consumption in South Africa.” Energy Economics 75 (September):120–33. https://doi.org/10.1016/j.eneco.2018.08.005.
+
+Huebner, Gesche, David Shipworth, Ian Hamilton, Zaid Chalabi, and Tadj Oreszczyn. 2016. “Understanding Electricity Consumption: A Comparative Contribution of Building Factors, Socio-Demographics, Appliances, Behaviours and Attitudes.” Applied Energy 177 (September):692–702. https://doi.org/10.1016/j.apenergy.2016.04.075.",0,0,0,0,0,0,0,"D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047.",0
+Energy efficiency awareness,0,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+M. Mrówczyńska, M. Skiba, A. Bazan-Krzywoszańska, and M. Sztubecka, “Household standards and socio-economic aspects as a factor determining energy consumption in the city,” Applied Energy, vol. 264, Apr. 2020, doi: 10.1016/j.apenergy.2020.114680.
+
+Huebner, Gesche M., Ian Hamilton, Zaid Chalabi, David Shipworth, and Tadj Oreszczyn. 2015. “Explaining Domestic Energy Consumption – The Comparative Contribution of Building Factors, Socio-Demographics, Behaviours and Attitudes.” Applied Energy 159 (December):589–600. https://doi.org/10.1016/j.apenergy.2015.09.028.",0,0,0,"M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+J. C. Nsangou, J. Kenfack, U. Nzotcha, P. S. Ngohe Ekam, J. Voufo, and T. T. Tamo, “Explaining household electricity consumption using quantile regression, decision tree and artificial neural network,” Energy, vol. 250, Jul. 2022, doi: 10.1016/j.energy.2022.123856.
+
+Huebner, Gesche, David Shipworth, Ian Hamilton, Zaid Chalabi, and Tadj Oreszczyn. 2016. “Understanding Electricity Consumption: A Comparative Contribution of Building Factors, Socio-Demographics, Appliances, Behaviours and Attitudes.” Applied Energy 177 (September):692–702. https://doi.org/10.1016/j.apenergy.2016.04.075.",0,0,0,0,0,0,0,0
+Efficient operation practices ,0,"A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.
+
+Huebner, Gesche M., Ian Hamilton, Zaid Chalabi, David Shipworth, and Tadj Oreszczyn. 2015. “Explaining Domestic Energy Consumption – The Comparative Contribution of Building Factors, Socio-Demographics, Behaviours and Attitudes.” Applied Energy 159 (December):589–600. https://doi.org/10.1016/j.apenergy.2015.09.028.",0,"P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.",0,0,0,"A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.",0,0,0,"M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.",0,0
+Night ventilation,0,0,0,0,0,0,0,0,0,"Mayrhofer, Lukas, Andreas Müller, Marianne Bügelmayer-Blaschek, Aadit Malla, and Lukas Kranzl. 2023. “Modelling the Effect of Passive Cooling Measures on Future Energy Needs for the Austrian Building Stock.” Energy and Buildings 296 (October):113333. https://doi.org/10.1016/j.enbuild.2023.113333.",0,0,0,0
+Cooling setpoint temperature ,0,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+B. Jaffar, T. Oreszczyn, R. Raslan, and A. Summerfield, “Understanding energy demand in Kuwaiti villas: Findings from a quantitative household survey,” Energy and Buildings, vol. 165, pp. 379–389, Apr. 2018, doi: 10.1016/j.enbuild.2018.01.055.
+
+R. Mohammadiziazi, S. Copeland, and M. M. Bilec, “Urban building energy model: Database development, validation, and application for commercial building stock,” Energy and Buildings, vol. 248, Oct. 2021, doi: 10.1016/j.enbuild.2021.111175.",0,0,0,0,0,0,0,"Mayrhofer, Lukas, Andreas Müller, Marianne Bügelmayer-Blaschek, Aadit 
+Malla, and Lukas Kranzl. 2023. “Modelling the Effect of Passive Cooling Measures on Future Energy Needs for the Austrian Building Stock.” Energy and Buildings 296 (October):113333. https://doi.org/10.1016/j.enbuild.2023.113333.",0,0,0,0
+Heating setpoint temperature,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from 
+France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715. 
+
+R. Mohammadiziazi, S. Copeland, and M. M. Bilec, “Urban building energy model: Database development, validation, and application for commercial building stock,” Energy and Buildings, vol. 248, Oct. 2021, doi: 10.1016/j.enbuild.2021.111175.",0,0,0,0,0,"I. Staffell, S. Pfenninger, and N. Johnson, “A global 
+model of hourly space heating and cooling demand at multiple spatial scales,” Nature Energy, 2023, doi: 10.1038/s41560-023-01341-5.    ",0,0,0,0,0,"L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.",0
+Duration or frequency use of HVAC,"
+Kaza, Nikhil. 2010. “Understanding the Spectrum of Residential Energy Consumption: A Quantile Regression Approach.” Energy Policy 38 (11): 6574–85. https://doi.org/10.1016/j.enpol.2010.06.028.",0,0,0,0,0,"S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.",0,"
+G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.
+
+A. Andreou, J. Barrett, P. G. Taylor, P. E. Brockway, and Z. Wadud, “Decomposing the drivers of residential space cooling energy consumption in EU-28 countries using a panel data approach,” Energy and Built Environment, vol. 1, no. 4, pp. 432–442, Oct. 2020, doi: 10.1016/j.enbenv.2020.03.005.
+
+
+",0,0,0,0,0
+Maintenance of HVACs,0,"Balaras, Constantinos A., Athina G. Gaglia, Elena Georgopoulou, Sevastianos Mirasgedis, Yiannis Sarafidis, and Dimitris P. Lalas. 2007. “European Residential Buildings and Empirical Assessment of the
+ Hellenic Building Stock, Energy Consumption, Emissions and Potential Energy Savings.” Building and Environment 42 (3): 1298–1314. https://doi.org/10.1016/j.buildenv.2005.11.001.",0,0,0,0,0,0,0,0,0,0,0,0
+Satisfaction with temperature,0,0,0,0,0,0,"S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.",0,0,0,0,0,0,0
+Occupancy level,"G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment 
+indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.",0,0,0,0,0,0,0,0,0,0,0,0,0
+Building age,"H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+A. Froemelt, R. Buffat, and S. Hellweg, “Machine learning based modeling of households: A regionalized bottom-up approach to investigate consumption-induced environmental impacts,” Journal of Industrial Ecology, vol. 24, no. 3, pp. 639–652, Jun. 2020, doi: 10.1111/jiec.12969.
+
+B. Jaffar, T. Oreszczyn, R. Raslan, and A. Summerfield, “Understanding energy demand in Kuwaiti villas: Findings from a quantitative household survey,” Energy and Buildings, vol. 165, pp. 379–389, Apr. 2018, doi: 10.1016/j.enbuild.2018.01.055.
+
+G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.
+ 
+Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.
+
+E. Prataviera, P. Romano, L. Carnieletto, F. Pirotti, J. Vivian, and A. Zarrella, “EUReCA: An open-source urban building energy modelling tool for the efficient evaluation of cities energy demand,” Renewable Energy, vol. 173, pp. 544–560, Aug. 2021, doi: 10.1016/j.renene.2021.03.144.
+
+ M. H. Kristensen, A. Brun, and S. Petersen, “Predicting Danish residential heating energy use from publicly available building characteristics,” Energy and Buildings, vol. 173, pp. 28–37, Aug. 2018, doi: 10.1016/j.enbuild.2018.05.011.
+
+Mashhoodi, Bardia, Dominic Stead, and Arjan Van Timmeren. 2020. “Local and National Determinants of Household Energy Consumption in the Netherlands.” GeoJournal 85 (2): 393–406. https://doi.org/10.1007/s10708-018-09967-9.
+
+Liu, Xiaochen, and John Sweeney. 2012. “Modelling the Impact of Urban Form on Household Energy Demand and Related CO2 Emissions in the Greater Dublin Region.” Energy Policy 46 (July):359–69. https://doi.org/10.1016/j.enpol.2012.03.070.","C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.","P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.
+
+L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388.
+
+B. Goldstein, T. G. Reames, and J. P. Newell, “Racial inequity in household energy efficiency and carbon emissions in the United States: An emissions paradox,” Energy Research and Social Science, vol. 84, Feb. 2022, doi: 10.1016/j.erss.2021.102365.
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.
+
+A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.
+
+P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.
+
+ Y. Pan and L. Zhang, “Data-driven estimation of building energy consumption with multi-source heterogeneous data,” Applied Energy, vol. 268, Jun. 2020, doi: 10.1016/j.apenergy.2020.114965.
+
+K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.
+
+Neo, Hui Yun Rebecca, Nyuk Hien Wong, Marcel Ignatius, Chao Yuan, Yong Xu, and Kai Cao. 2023. “Spatial Analysis of Public Residential Housing’s Electricity Consumption in Relation to Urban Landscape and Building Characteristics: A Case Study in Singapore.” Energy & Environment 34 (2): 233–54. https://doi.org/10.1177/0958305X211056031.","Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.
+
+R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.","E. L. Navamuel, F. Rubiera Morollón, and B. Moreno Cuartas, “Energy consumption and urban sprawl:
+ Evidence for the Spanish case,” Journal of Cleaner Production, vol. 172, pp. 3479–3486, Jan. 2018, doi: 10.1016/j.jclepro.2017.08.110.
+
+J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916.","Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.
+
+S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.
+
+C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005. 
+
+A. Movahedi and S. Derrible, “Interrelationships between electricity, gas, and water consumption in large-scale buildings,” Journal of Industrial Ecology, vol. 25, no. 4, pp. 932–947, Aug. 2021, doi: 10.1111/jiec.13097.","N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035. 
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.
+
+K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.
+
+F. Vecchi, U. Berardi, and G. Mutani, “Data-driven urban building energy models for the platform of Toronto,” Energy Efficiency, vol. 16, no. 4, Apr. 2023, doi: 10.1007/s12053-023-10106-8.
+
+M. Braulio-Gonzalo, M. D. Bovea, M. J. Ruá, and P. Juan, “A methodology for predicting the energy performance and indoor thermal comfort of residential stocks on the neighbourhood and city scales. A case study in Spain,” Journal of Cleaner Production, vol. 139, pp. 646–665, Dec. 2016, doi: 10.1016/j.jclepro.2016.08.059.",0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+
+M. Braulio-Gonzalo, M. D. Bovea, M. J. Ruá, and P. Juan, “A methodology for predicting the energy performance and indoor thermal comfort of residential stocks on the neighbourhood and city scales. A case study in Spain,” Journal of Cleaner Production, vol. 139, pp. 646–665, Dec. 2016, doi: 10.1016/j.jclepro.2016.08.059.
+
+Ko, Yekang, and John D Radke. 2014. “The Effect of Urban Form and Residential Cooling Energy Use in Sacramento, California.” Environment and Planning B: Planning and Design 41 (4): 573–93. https://doi.org/10.1068/b12038p.","R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.","Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy  Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+",0,0,0
+Housing type (single-family detached) ,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.
+
+Dar-Mousa, Rami Nabil, and Zeyad Makhamreh. 2019. “Analysis of the Pattern of Energy Consumptions and Its Impact on Urban Environmental Sustainability in Jordan: Amman City as a Case Study.” Energy, Sustainability and Society 9 (1): 15. https://doi.org/10.1186/s13705-019-0197-0.",0,"R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling 
+to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.",0,"H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030., 
+
+S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.",0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103., 
+
+K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.",0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential 
+energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.",0,"M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.
+
+Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+",0,"D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047.
+
+P. Newton and D. Meyer, “The determinants of urban resource consumption,” Environment and Behavior, vol. 44, no. 1, pp. 107–135, Jan. 2012, doi: 10.1177/0013916510390494.",0
+Housing type (apartments),0,"J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715
+
+H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+U. Ali, M. H. Shamsi, C. Hoare, E. Mangina, and J. O’Donnell, “A data-driven approach for multi-scale building archetypes development,” Energy and Buildings, vol. 202, Nov. 2019, doi: 10.1016/j.enbuild.2019.109364.
+
+P. Shen and B. Yang, “Projecting Texas energy use for residential sector under future climate and urbanization scenarios: A bottom-up method based on twenty-year regional energy use data,” Energy, vol. 193, Feb. 2020, doi: 10.1016/j.energy.2019.116694.
+
+Liu, Xiaochen, and John Sweeney. 2012. “Modelling the Impact of Urban Form on Household Energy Demand and Related CO2 Emissions in the Greater Dublin Region.” Energy Policy 46 (July):359–69. https://doi.org/10.1016/j.enpol.2012.03.070.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.","R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.",0,"H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.
+
+S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.",0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,"R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.",0,0,0,"D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047."
+Housing type (attached) ,0,0,0,"C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.",0,"H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.
+
+ S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.",,0,0,0,0,"M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.",0,0
+Building use (residential),0,0,0,0,0,"C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.
+
+A. Movahedi and S. Derrible, “Interrelationships between electricity, gas, and water consumption in large-scale buildings,” Journal of Industrial Ecology, vol. 25, no. 4, pp. 932–947, Aug. 2021, doi: 10.1111/jiec.13097.
+
+A. M. R. Nishimwe and S. Reiter, “Estimation, analysis and mapping of electricity consumption of a regional building stock in a temperate climate in Europe,” Energy and Buildings, vol. 253, Dec. 2021, doi: 10.1016/j.enbuild.2021.111535.",0,0,0,0,0,0,0,0
+Building use (office and retail),0,0,0,0,"C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.",0,0,0,0,0,"C. E. Kontokosta and C. Tull, “A data-driven predictive 
+model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.",0,0,0
+Total number of rooms ,"J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715.
+
+ B. Jaffar, T. Oreszczyn, R. Raslan, and A. Summerfield, “Understanding energy demand in Kuwaiti villas: Findings from a quantitative household survey,” Energy and Buildings, vol. 165, pp. 379–389, Apr. 2018, doi: 10.1016/j.enbuild.2018.01.055.
+
+B. Wilson, “Urban form and residential electricity consumption: Evidence from Illinois, USA,” Landscape and Urban Planning, vol. 115, pp. 62–71, 2013, doi: 10.1016/j.landurbplan.2013.03.011.
+
+Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.",0,"X. Liu, H. Tang, Y. Ding, and D. Yan, “Investigating the performance of machine learning models combined with different feature selection methods to estimate the energy consumption of buildings,” Energy and Buildings, vol. 273, Oct. 2022, doi: 10.1016/j.enbuild.2022.112408.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.","Ye, Yuxiang, Steven F. Koch, and Jiangfeng Zhang. 2018. “Determinants of Household Electricity Consumption in South Africa.” Energy Economics 75 (September):120–33.
+ https://doi.org/10.1016/j.eneco.2018.08.005.",0,"K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.",0,"K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.",0,"M. Namazkhan, C. Albers, and L. Steg, “A decision tree method 
+for explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.",0,"L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.",0
+Building height,"Y. Zhang, B. K. Teoh, M. Wu, J. Chen, and L. Zhang, “Data-driven estimation of building energy consumption and GHG emissions using explainable artificial intelligence,” Energy, vol. 262, Jan. 2023, doi: 10.1016/j.energy.2022.125468.
+
+Lee, Gunwon, and Yunnam Jeong. 2017. “Impact of Urban and Building Form and Microclimate on the Energy Consumption of Buildings - Based on Statistical Analysis-.” Journal of Asian Architecture and Building Engineering 16 (3): 565–72. https://doi.org/10.3130/jaabe.16.565.","Mangan, Suzi Dilara, Gul Koclar Oral, Idil Erdemir Kocagil, and Irem Sozen. 2021. “The Impact of Urban Form on Building Energy and Cost Efficiency in Temperate-Humid Zones.” Journal of Building Engineering 33 (January):101626. https://doi.org/10.1016/j.jobe.2020.101626.","C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.
+
+Zhang, Yan, Bak Koon Teoh, Limao Zhang, and Jiayu Chen. 2022. “Spatio-Temporal Heterogeneity Analysis of Energy Use in Residential Buildings.” Journal of Cleaner Production 352 (June):131422. https://doi.org/10.1016/j.jclepro.2022.131422.
+
+","P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.","W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.,
+
+S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.","P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.","S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on 
+winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.
+
+Q. Jiang et al., “Predicting building energy consumption in urban neighborhoods using machine learning algorithms,” Frontiers of Urban and Rural Planning, vol. 2, no. 1, Feb. 2024, doi: 10.1007/s44243-024-00032-3.
+
+S. Zhu et al., “The impact of urban vegetation morphology on urban building energy consumption during summer and winter seasons in Nanjing, China,” Landscape and Urban Planning, vol. 228, Dec. 2022, doi: 10.1016/j.landurbplan.2022.104576.","Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.","Mangan, Suzi Dilara, Gul Koclar Oral, Idil Erdemir Kocagil, and Irem Sozen. 2021. “The Impact of Urban Form on Building Energy and Cost Efficiency in Temperate-Humid Zones.” Journal of Building Engineering 33 (January):101626. https://doi.org/10.1016/j.jobe.2020.101626.","S. Zhu et al., “The impact of urban vegetation morphology on urban building energy consumption during summer and winter seasons in Nanjing, China,” Landscape and Urban Planning, vol. 228, Dec. 2022, doi: 10.1016/j.landurbplan.2022.104576.","P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built 
+form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.",0,0,0
+Floor to ceiling height,"F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.",0,0,0,0,0,0,0,0,0,0,0,0,0
+Floor area,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel 
+modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+ J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715.
+
+H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.
+
+M. H. Kristensen, A. Brun, and S. Petersen, “Predicting Danish residential heating energy use from publicly available building characteristics,” Energy and Buildings, vol. 173, pp. 28–37, Aug. 2018, doi: 10.1016/j.enbuild.2018.05.011.
+
+Y. Zhang, B. K. Teoh, M. Wu, J. Chen, and L. Zhang, “Data-driven estimation of building energy consumption and GHG emissions using explainable artificial intelligence,” Energy, vol. 262, Jan. 2023, doi: 10.1016/j.energy.2022.125468.
+
+Huebner, Gesche M., Ian Hamilton, Zaid Chalabi, David Shipworth, and Tadj Oreszczyn. 2015. “Explaining Domestic Energy Consumption – The Comparative Contribution of Building Factors, Socio-Demographics, Behaviours and Attitudes.” Applied Energy 159 (December):589–600. https://doi.org/10.1016/j.apenergy.2015.09.028.
+
+Antonopoulos, Chrissi, Alec Trusty, and Vivek Shandas. 2019. “The Role of Building Characteristics, Demographics, and Urban Heat Islands in Shaping Residential Energy Use.” City and Environment Interactions 3 (November):100021. https://doi.org/10.1016/j.cacint.2020.100021.
+
+Liu, Xiaochen, and John Sweeney. 2012. “Modelling the Impact of Urban Form on Household Energy Demand and Related CO2 Emissions in the Greater Dublin Region.” Energy Policy 46 (July):359–69. https://doi.org/10.1016/j.enpol.2012.03.070.
+
+Zhang, Ming, Yan Song, Peng Li, and Huanan Li. 2016. “Study on Affecting Factors of Residential Energy Consumption in Urban and Rural Jiangsu.” Renewable and Sustainable Energy Reviews 53 (January):330–37. https://doi.org/10.1016/j.rser.2015.08.043.
+
+",0,"B. Goldstein, T. G. Reames, and J. P. Newell, “Racial inequity in household energy efficiency and carbon 
+emissions in the United States: An emissions paradox,” Energy Research and Social Science, vol. 84, Feb. 2022, doi: 10.1016/j.erss.2021.102365.
+
+Y. Pan and L. Zhang, “Data-driven estimation of building energy consumption with multi-source heterogeneous data,” Applied Energy, vol. 268, Jun. 2020, doi: 10.1016/j.apenergy.2020.114965., 
+
+Z. Ye, K. Cheng, S. C. Hsu, H. H. Wei, and C. M. Cheung, “Identifying critical building-oriented features in city-block-level building energy consumption: A data-driven machine learning approach,” Applied Energy, vol. 301, Nov. 2021, doi: 10.1016/j.apenergy.2021.117453.
+
+Cui, Peng, Jiaqi Lu, Yutong Wu, Jingnan Tang, and Jinjian Jiang. 2024. “Effect of Urban Morphology on Microclimate and Building Cluster Energy Consumption in Cold Regions of China.” Sustainable Cities and Society 115 (November):105838. https://doi.org/10.1016/j.scs.2024.105838.","X. Liu, H. Tang, Y. Ding, and D. Yan, “Investigating the performance of machine learning models combined with different feature selection methods to estimate the energy consumption of buildings,” Energy and Buildings, vol. 273, Oct. 2022, doi: 10.1016/j.enbuild.2022.112408.
+
+J. Gao et al., “Dilution effect of the building area on energy intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.
+
+Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.
+
+Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.
+
+C. E. Kontokosta and C. Tull, “A data-driven predictive model of city-scale energy use in buildings,” Applied Energy, vol. 197, pp. 303–317, 2017, doi: 10.1016/j.apenergy.2017.04.005.
+
+Zhang, Yan, Bak Koon Teoh, Limao Zhang, and Jiayu Chen. 2022. “Spatio-Temporal Heterogeneity Analysis of Energy Use in Residential Buildings.” Journal of Cleaner Production 352 (June):131422. https://doi.org/10.1016/j.jclepro.2022.131422.","W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile
+ regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.
+
+S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.
+
+A. A. Ahmed Gassar, G. Y. Yun, and S. Kim, “Data-driven approach to prediction of residential energy consumption at urban scales in London,” Energy, vol. 187, Nov. 2019, doi: 10.1016/j.energy.2019.115973.
+
+Huebner, Gesche, David Shipworth, Ian Hamilton, Zaid Chalabi, and Tadj Oreszczyn. 2016. “Understanding Electricity Consumption: A Comparative Contribution of Building Factors, Socio-Demographics, Appliances, Behaviours and Attitudes.” Applied Energy 177 (September):692–702. https://doi.org/10.1016/j.apenergy.2016.04.075.",0,"K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.
+
+S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.",0,"N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential 
+energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.
+
+Ko, Yekang, and John D Radke. 2014. “The Effect of Urban Form and Residential Cooling Energy Use in Sacramento, California.” Environment and Planning B: Planning and Design 41 (4): 573–93. https://doi.org/10.1068/b12038p.","A. Andreou, J. Barrett, P. G. Taylor, P. E. Brockway, and Z. Wadud, “Decomposing the drivers of residential space cooling energy consumption in EU-28 countries using a panel data approach,” Energy and Built Environment, vol. 1, no. 4, pp. 432–442, Oct. 2020, doi: 10.1016/j.enbenv.2020.03.005.","M. Namazkhan, C. Albers, and L. Steg, “A decision tree method for 
+explaining household gas consumption: The role of building characteristics, socio-demographic variables, psychological factors and household behaviour,” Renewable and Sustainable Energy Reviews, vol. 119, Mar. 2020, doi: 10.1016/j.rser.2019.109542.
+
+Brounen, Dirk, Nils Kok, and John M. Quigley. 2012. “Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+",0,"L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.
+
+D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047.
+
+L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388.
+
+B. Goldstein, T. G. Reames, and J. P. Newell, “Racial inequity in household energy efficiency and carbon emissions in the United States: An emissions paradox,” Energy Research and Social Science, vol. 84, Feb. 2022, doi: 10.1016/j.erss.2021.102365.",0
+Energy Performance Score,0,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+Y. Zhang, B. K. Teoh, M. Wu, J. Chen, and L. Zhang, “Data-driven estimation of building energy consumption and GHG emissions using explainable artificial intelligence,” Energy, vol. 262, Jan. 2023, doi: 10.1016/j.energy.2022.125468.
+
+Huebner, Gesche M., Ian Hamilton, Zaid Chalabi, David Shipworth, and Tadj Oreszczyn. 2015. “Explaining Domestic Energy Consumption – The Comparative Contribution of Building Factors, Socio-Demographics, Behaviours and Attitudes.” Applied Energy 159 (December):589–600. https://doi.org/10.1016/j.apenergy.2015.09.028.",0,"Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.
+
+Zhang, Yan, Bak Koon Teoh, Limao Zhang, and Jiayu Chen. 2022. “Spatio-Temporal Heterogeneity Analysis of Energy Use in Residential Buildings.” Journal of Cleaner Production 352 (June):131422. https://doi.org/10.1016/j.jclepro.2022.131422.",0,0,0,0,0,0,0,0,0,0
+Double glazing,0,"F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.
+
+Balaras, Constantinos A., Athina G. Gaglia, Elena Georgopoulou, Sevastianos Mirasgedis, Yiannis Sarafidis, and Dimitris P. Lalas. 2007. “European Residential Buildings and Empirical Assessment of the Hellenic Building Stock, Energy Consumption, Emissions and Potential Energy Savings.” Building and Environment 42 (3): 1298–1314. https://doi.org/10.1016/j.buildenv.2005.11.001.
+
+Juaidi, Adel, Fadi AlFaris, Faris Saeed, Esther Salmeron-Manzano, and Francisco Manzano-Agugliaro. 2019. “Urban Design to Achieving the Sustainable Energy of Residential Neighbourhoods in Arid Climate.” Journal of Cleaner Production 228 (August):135–52. https://doi.org/10.1016/j.jclepro.2019.04.269.",0,0,0,0,0,0,0,0,0,0,0,0
+Window area or WWR,"Lee, Gunwon, and Yunnam Jeong. 2017. “Impact of Urban and Building Form and Microclimate on the Energy Consumption of Buildings - Based on Statistical Analysis-.” Journal of Asian Architecture and Building Engineering 16 (3): 565–72.
+https://doi.org/10.3130/jaabe.16.565.
+
+",0,"Troup, Luke, Robert Phillips, Matthew J. Eckelman, and David Fannon. 2019. “Effect of Window-to-Wall Ratio on Measured Energy Consumption in US Office Buildings.” Energy and Buildings 203 (November): 109434. https://doi.org/10.1016/j.enbuild.2019.109434.",0,0,0,"K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of 
+occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.","Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.","Troup, Luke, Robert Phillips, Matthew J. Eckelman, and David Fannon. 2019. “Effect of Window-to-Wall Ratio on Measured Energy Consumption in US Office Buildings.” Energy and Buildings 203 (November):109434. https://doi.org/10.1016/j.enbuild.2019.109434.
+
+Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.",0,0,0,"L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.",0
+Shading,0,0,0,0,0,0,0,0,0,"Mayrhofer, Lukas, Andreas Müller, Marianne Bügelmayer-Blaschek, Aadit Malla, and Lukas Kranzl. 2023. “Modelling the Effect of Passive Cooling Measures on Future Energy Needs for the Austrian Building Stock.” Energy and Buildings 296 (October):113333. https://doi.org/10.1016/j.enbuild.2023.113333.",0,0,0,0
+Insulation,0,"
+A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.
+
+A. Salvati, M. Palme, G. Chiesa, and M. Kolokotroni, “Built form, urban climate and building energy modelling: case-studies in Rome and Antofagasta,” Journal of Building Performance Simulation, vol. 13, no. 2, pp. 209–225, Mar. 2020, doi: 10.1080/19401493.2019.1707876.
+
+Balaras, Constantinos A., Athina G. Gaglia, Elena Georgopoulou, Sevastianos Mirasgedis, Yiannis Sarafidis, and Dimitris P. Lalas. 2007. “European Residential Buildings and Empirical Assessment of the Hellenic Building Stock, Energy Consumption, Emissions and Potential Energy Savings.” Building and Environment 42 (3): 1298–1314. https://doi.org/10.1016/j.buildenv.2005.11.001.
+
+Urquizo, Javier, Carlos Calderón, and Philip James. 2018. “Modelling Household Spatial Energy Intensity Consumption Patterns for Building Envelopes, Heating Systems and Temperature Controls in Cities.” Applied Energy 226 (September):670–81. https://doi.org/10.1016/j.apenergy.2018.05.125.
+
+Juaidi, Adel, Fadi AlFaris, Faris Saeed, Esther Salmeron-Manzano, and Francisco Manzano-Agugliaro. 2019. “Urban Design to Achieving the Sustainable Energy of Residential Neighbourhoods in Arid Climate.” Journal of Cleaner Production 228 (August):135–52. https://doi.org/10.1016/j.jclepro.2019.04.269.
+
+
+",0,0,0,"J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916.",0,"A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.
+
+K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.
+
+Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.
+
+Hao, Ziyang, Xiaojing Zhang, Jingchao Xie, Kaili Yin, and Jiaping Liu. 2022. “Balance Point Temperature and Heating Degree-Days in Different Climate Conditions for Building Energy Efficiency Applications.” Building and Environment 216 (May):109013. https://doi.org/10.1016/j.buildenv.2022.109013.",0,0,0,"Brounen, Dirk, Nils Kok, and John M. Quigley. 2012.
+“Residential Energy Use and Conservation: Economics and Demographics.” European Economic Review 56 (5): 931–45. https://doi.org/10.1016/j.euroecorev.2012.02.007.
+
+","L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.",0
+Orientation (north-south),0,"Juaidi, Adel, Fadi AlFaris, Faris Saeed, Esther Salmeron-Manzano, and Francisco Manzano-Agugliaro. 2019. “Urban Design to Achieving the Sustainable Energy of Residential Neighbourhoods in Arid Climate.” Journal of Cleaner Production 228 (August):135–52. https://doi.org/10.1016/j.jclepro.2019.04.269.",0,0,0,0,0,0,0,"M. Braulio-Gonzalo, M. D. Bovea, M. J. Ruá, and P. Juan, “A methodology for predicting the energy performance and indoor thermal comfort of residential stocks on the neighbourhood and city scales. A case study in Spain,” Journal of Cleaner Production, vol. 139, pp. 646–665, Dec. 2016, doi: 10.1016/j.jclepro.2016.08.059.
+
+Shareef, Sundus. 2021. “The Impact of Urban Morphology and Building’s Height Diversity on Energy Consumption at Urban Scale. The Case Study of Dubai.” Building and Environment 194 (May). https://doi.org/10.1016/j.buildenv.2021.107675.
+",0,0,0,0
+Material (wood),0,0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy 
+use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.
+
+P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.",0,0,0,0,0,0,0,0,0,0,0
+Material (reinforced concrete),0,0,0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.,
+
+P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.",0,0,0,0,0,0,0,0,0,0
+Material (composite board),0,0,0,"P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.",0,0,0,0,0,0,0,0,0,0
+Material (albedo) ,,"Douthat, Thomas, John D. Morgan, Haris Alibašić, and Aneurin Grant. 2020. “Passive Building Characteristics, and Summertime Residential Energy Use: A Spatial Analysis of Energy Efficiency in Gainesville, FL.” 
+Building and Environment 169 (February):106542. https://doi.org/10.1016/j.buildenv.2019.106542.
+
+Adilkhanova, Indira, Mat Santamouris, and Geun Young Yun. 2023. “Coupling Urban Climate Modeling and City-Scale Building Energy Simulations with the Statistical Analysis: Climate and Energy Implications of High Albedo Materials in Seoul.” Energy and Buildings 290 (July):113092. https://doi.org/10.1016/j.enbuild.2023.113092.",0,0,0,0,0,0,0,"Haddad, Shamila, Wanni Zhang, Riccardo Paolini, Kai Gao, Muzahim Altheeb, Abdulrahman Al Mogirah, Abdullatif Bin Moammar, et al. 2024. “Quantifying the Energy Impact of Heat Mitigation Technologies at the Urban Scale.” Nature Cities 1 (1): 62–72. https://doi.org/10.1038/s44284-023-00005-5.",0,0,0,0
+Pools,0,0,0,0,"H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand 
+In the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.",0,0,0,0,0,0,0,0,0
+Energy conservation measures,0,"A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.
+
+R. Mohammadiziazi, S. Copeland, and M. M. Bilec, “Urban building energy model: Database development, validation, and application for commercial building stock,” Energy and Buildings, vol. 248, Oct. 2021, doi: 10.1016/j.enbuild.2021.111175.
+
+Yu, Sha, Qing Tan, Meredydd Evans, Page Kyle, Linh Vu, and Pralit L. Patel. 2017. “Improving Building Energy Efficiency in India: State-Level Analysis of Building Energy Efficiency Policies.” Energy Policy 110 (November):331–41. https://doi.org/10.1016/j.enpol.2017.07.013.",0,0,0,0,0,"K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.
+
+B. Güneralp et al., “Global scenarios of urban density and its impacts on building energy use through 2050,” Proceedings of the National Academy of Sciences of the United States of America, vol. 114, no. 34, pp. 8945–8950, Aug. 2017, doi: 10.1073/pnas.1606035114.",0,"R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.
+
+B. Güneralp et al., “Global scenarios of urban density and its impacts on building energy use through 2050,” Proceedings of the National Academy of Sciences of the United States of America, vol. 114, no. 34, pp. 8945–8950, Aug. 2017, doi: 10.1073/pnas.1606035114.",0,0,0,0
+Renewable Energy Systems,0,"Chen, Shuqin, Jun Guan, Natasa Nord, Nianping Li, and Hiroshi Yoshino. 2019. “A Study of Citywide Urban Residential Energy Information System for the Building Energy Efficiency Management: A Cluster Model of Seven Typical Cities in China.” Energy Efficiency 12 (6): 1509–28. https://doi.org/10.1007/s12053-018-9768-8.
+
+Balaras, Constantinos A., Athina G. Gaglia, Elena Georgopoulou, Sevastianos Mirasgedis, Yiannis Sarafidis, and Dimitris P. Lalas. 2007. “European Residential Buildings and Empirical Assessment of the Hellenic Building Stock, Energy Consumption, Emissions and Potential Energy Savings.” Building and Environment 42 (3): 1298–1314. https://doi.org/10.1016/j.buildenv.2005.11.001.
+
+Juaidi, Adel, Fadi AlFaris, Faris Saeed, Esther Salmeron-Manzano, and Francisco Manzano-Agugliaro. 2019. “Urban Design to Achieving the Sustainable Energy of Residential Neighbourhoods in Arid Climate.” Journal of Cleaner Production 228 (August):135–52. https://doi.org/10.1016/j.jclepro.2019.04.269.",0,0,0,0,0,0,0,0,0,0,0,0
+Technology for energy (electricity) ,0,0,"Zhang, Yan, Bak Koon Teoh, Limao Zhang, and Jiayu Chen. 2022. “Spatio-Temporal Heterogeneity Analysis of Energy Use in Residential Buildings.” Journal of Cleaner Production 352 (June):131422.
+ https://doi.org/10.1016/j.jclepro.2022.131422.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,0,0,0,0
+Technology used for energy (gas),"X. Jin, C. Zhang, F. Xiao, A. Li, and C. Miller, “A review and reflection on open datasets of city-level building energy use and their applications,” Energy and Buildings, vol. 285, Apr. 2023, doi: 10.1016/j.enbuild.2023.112911.
+
+B. Hojjati and S. H. Wade, “U.S. household energy consumption and intensity trends: A decomposition approach,” Energy Policy, vol. 48, pp. 304–314, Sep. 2012, doi: 10.1016/j.enpol.2012.05.024.",0,"Zhang, Yan, Bak Koon Teoh, Limao Zhang, and Jiayu Chen. 2022. “Spatio-Temporal Heterogeneity Analysis of Energy Use in Residential Buildings.” Journal of Cleaner Production 352 (June):131422.
+ https://doi.org/10.1016/j.jclepro.2022.131422.",0,0,"E. L. Navamuel, F. Rubiera Morollón, and B. Moreno Cuartas, “Energy consumption and urban sprawl: Evidence for the Spanish case,” Journal of Cleaner Production, vol. 172, pp. 3479–3486, Jan. 2018, doi: 10.1016/j.jclepro.2017.08.110.
+
+H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.","F. Vecchi, U. Berardi, and G. Mutani, “Data-driven urban building energy models for the platform of Toronto,” Energy Efficiency, vol. 16, no. 4, Apr. 2023, doi: 10.1007/s12053-023-10106-8.",0,0,0,0,0,0,0
+Technology used for energy (oil),"G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential 
+energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.",0,"Ma, Jun, and Jack C.P. Cheng. 2016. “Identifying the Influential Features on the Regional Energy Use Intensity of Residential Buildings Based on Random Forests.” Applied Energy 183 (December):193–201. https://doi.org/10.1016/j.apenergy.2016.08.096.","D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.
+
+",0,0,0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,0,0,0,0
+LED lighting,0,"R. Mohammadiziazi, S. Copeland, and M. M. Bilec, “Urban building energy model: Database development, validation, and application for commercial building stock,” Energy and Buildings, vol. 248, Oct. 2021, doi: 10.1016/j.enbuild.2021.111175.",0,0,0,"J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916.",0,0,0,0,0,0,0,0
+Energy-efficient appliances,0,"R. Mohammadiziazi, S. Copeland, and M. M. Bilec, “Urban building energy model: Database development, validation, and application for commercial building stock,” Energy and Buildings, vol. 248, Oct. 2021, doi: 10.1016/j.enbuild.2021.111175.",0,0,0,"M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916.",0,0,0,0,0,0,0,0
+Type of HVAC (central),"G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.",0,"X. Liu, H. Tang, Y. Ding, and D. Yan, “Investigating the performance of machine learning models combined
+ with different feature selection methods to estimate the energy consumption of buildings,” Energy and Buildings, vol. 273, Oct. 2022, doi: 10.1016/j.enbuild.2022.112408.",0,"H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.",0,0,0,"G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+S. Hu, D. Yan, and M. Qian, “Using bottom-up model to analyze cooling energy consumption in China’s urban residential building,” Energy and Buildings, vol. 202, Nov. 2019, doi: 10.1016/j.enbuild.2019.109352.",0,0,0,0,0
+Type of HVAC (local or single split),0,0,0,0,0,0,0,"S. Chen, N. Li, H. Yoshino, J. Guan, and M. D. Levine, “Statistical analyses on winter energy consumption characteristics of residential buildings in some cities of China,” Energy and Buildings, vol. 43, no. 5, pp. 1063–1070, May 2011, doi: 10.1016/j.enbuild.2010.09.022.",0,"G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+S. Hu, D. Yan, and M. Qian, “Using bottom-up model to analyze cooling energy consumption in China’s urban residential building,” Energy and Buildings, vol. 202, Nov. 2019, doi: 10.1016/j.enbuild.2019.109352.",0,0,0,0
+Type of HVAC (district heating),0,"Urquizo, Javier, Carlos Calderón, and Philip James. 2018. “Modelling Household Spatial Energy Intensity Consumption Patterns for Building Envelopes, Heating Systems and Temperature Controls in Cities.” Applied 
+Energy 226 (September):670–81. https://doi.org/10.1016/j.apenergy.2018.05.125.",0,0,0,0,0,0,0,0,0,0,0,0
+HVAC controls (programmable),0,"G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.",0,0,0,0,0,0,0,0,0,0,0,0
+HVAC efficiency,0,0,0,0,0,"J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916.",0,0,0,0,0,0,0,0
+Number of heating/cooling controls,"Murakami, Shuzo, Mark D. Levine, Hiroshi Yoshino, Takashi Inoue, Toshiharu Ikaga, Yoshiyuki Shimoda, Shuichi Miura, et al. 2009. “Overview of Energy Consumption and GHG Mitigation Technologies in the Building Sector of Japan.” Energy Efficiency 2 (2): 179–94. https://doi.org/10.1007/s12053-008-9040-8.
+",0,0,0,"W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile
+ regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+J. Gao et al., “Dilution effect of the building area on energy intensity in urban residential buildings,” Nature Communications, vol. 10, no. 1, Dec. 2019, doi: 10.1038/s41467-019-12852-9.
+
+M. Sakah, S. de la Rue du Can, F. A. Diawuo, M. D. Sedzro, and C. Kuhn, “A study of appliance ownership and electricity consumption determinants in urban Ghanaian households,” Sustainable Cities and Society, vol. 44, pp. 559–581, Jan. 2019, doi: 10.1016/j.scs.2018.10.019.
+
+H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.",0,0,0,0,0,0,0,"P. Newton and D. Meyer, “The determinants of urban resource
+ consumption,” Environment and Behavior, vol. 44, no. 1, pp. 107–135, Jan. 2012, doi: 10.1177/0013916510390494.",0
+Heating degree days,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715. 
+
+H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303.
+
+G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.
+
+P. Shen and B. Yang, “Projecting Texas energy use for residential sector under future climate and urbanization scenarios: A bottom-up method based on twenty-year regional energy use data,” Energy, vol. 193, Feb. 2020, doi: 10.1016/j.energy.2019.116694.
+
+F. Creutzig, G. Baiocchi, R. Bierkandt, P. P. Pichler, and K. C. Seto, “Global typology of urban energy use and potentials for an urbanization mitigation wedge,” Proceedings of the National Academy of Sciences of the United States of America, vol. 112, no. 20, pp. 6283–6288, May 2015, doi: 10.1073/pnas.1315545112.
+
+Fan, Jing-Li, Bin Zeng, Jia-Wei Hu, Xian Zhang, and Hang Wang. 2020. “The Impact of Climate Change on Residential Energy Consumption in Urban and Rural Divided Southern and Northern China.” Environmental Geochemistry and Health 42 (3): 969–85. https://doi.org/10.1007/s10653-019-00430-3.",0,0,0,"H. Fan, I. F. MacGill, and A. B. Sproul, “Statistical analysis of driving factors of residential energy demand in the greater Sydney region, Australia,” Energy and Buildings, vol. 105, pp. 9–25, Aug. 2015, doi: 10.1016/j.enbuild.2015.07.030.
+
+P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.
+
+Park, Jongmun, and Sun-Jin Yun. 2022. “Social Determinants of Residential Electricity Consumption in Korea: Findings from a Spatial Panel Model.” Energy 239 (January):122272. https://doi.org/10.1016/j.energy.2021.122272.",0,0,0,"K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.",0,0,0,0,"D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, “Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047."
+Cooling degree days,"H. Estiri and E. Zagheni, “Age matters: Ageing and household energy demand in the United States,” Energy Research and Social Science, vol. 55, pp. 62–70, Sep. 2019, doi: 10.1016/j.erss.2019.05.006.
+
+Fan, Jing-Li, Bin Zeng, Jia-Wei Hu, Xian Zhang, and Hang Wang. 2020. “The Impact of Climate Change on Residential Energy Consumption in Urban and Rural Divided Southern and Northern China.” Environmental Geochemistry and Health 42 (3): 969–85. https://doi.org/10.1007/s10653-019-00430-3.","L. Wang, E. W. M. Lee, S. A. Hussian, A. C. Y. Yuen, and W. Feng, “Quantitative impact analysis of driving factors on annual residential building energy end-use combining machine learning and stochastic methods,” Applied Energy, vol. 299, Oct. 2021, doi: 10.1016/j.apenergy.2021.117303., 
+
+F. Creutzig, G. Baiocchi, R. Bierkandt, P. P. Pichler, and K. C. Seto, “Global typology of urban energy use and potentials for an urbanization mitigation wedge,” Proceedings of the National Academy of Sciences of the United States of America, vol. 112, no. 20, pp. 6283–6288, May 2015, doi: 10.1073/pnas.1315545112.",0,0,"P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.
+
+Park, Jongmun, and Sun-Jin Yun. 2022. “Social Determinants of Residential Electricity Consumption in Korea: Findings from a Spatial Panel Model.” Energy 239 (January):122272. https://doi.org/10.1016/j.energy.2021.122272.",0,0,0,"G. Y. Yun and K. Steemers, “Behavioural, physical and socio-economic factors in household cooling energy consumption,” Applied Energy, vol. 88, no. 6, pp. 2191–2200, 2011, doi: 10.1016/j.apenergy.2011.01.010.
+
+K. Steemers and G. Y. Yun, “Household energy consumption: A study of the role of occupants,” Building Research and Information, vol. 37, no. 5–6, pp. 625–637, 2009, doi: 10.1080/09613210903186661.",0,0,0,0,0
+Global warming or climate change,"Nie, Hong-guang, René Kemp, Jin-hua Xu, Véronique Vasseur, and Ying Fan. 2018. “Drivers of Urban and Rural Residential Energy Consumption in China from the Perspectives of Climate and Economic Effects.” Journal of Cleaner Production 172 (January):2954–63. https://doi.org/10.1016/j.jclepro.2017.11.117.",0,0,0,"E. Prataviera, P. Romano, L. Carnieletto, F. Pirotti, J. Vivian, and A. Zarrella, “EUReCA: An open-source urban building energy modelling tool for the efficient evaluation of cities energy demand,” Renewable Energy, vol. 173, pp. 544–560, Aug. 2021, doi: 10.1016/j.renene.2021.03.144.",0,0,"A. Deroubaix et al., “Large uncertainties in trends of energy demand for heating and cooling under climate change,” Nature Communications, vol. 12, no. 1, Dec. 2021, doi: 10.1038/s41467-021-25504-8.
+
+Zheng, Yuanfan, and Qihao Weng. 2019. “Modeling the Effect of Climate Change on Building Energy Demand in Los Angeles County by Using a GIS-Based High Spatial- and Temporal-Resolution Approach.” Energy 176 (June):641–55. https://doi.org/10.1016/j.energy.2019.04.052.
+
+Christenson, M., H. Manz, and D. Gyalistras. 2006. “Climate Warming Impact on Degree-Days and Building Energy Demand in Switzerland.” Energy Conversion and Management 47 (6): 671–86. https://doi.org/10.1016/j.enconman.2005.06.009.
+
+Ukey, Rahul, and Aakash C. Rai. 2021. “Impact of Global Warming on Heating and Cooling Degree Days in Major Indian Cities.” Energy and Buildings 244 (August):111050. https://doi.org/10.1016/j.enbuild.2021.111050.
+
+Meng, Fanchao, Mingcai Li, Jingfu Cao, Ji Li, Mingming Xiong, Xiaomei Feng, and Guoyu Ren. 2018. “The Effects of Climate Change on Heating Energy Consumption of Office Buildings in Different Climate Zones in China.” Theoretical and Applied Climatology 133 (1–2): 521–30. https://doi.org/10.1007/s00704-017-2206-6.
+
+Verichev, Konstantin, Montserrat Zamorano, and Manuel Carpio. 2020. “Effects of Climate Change on Variations in Climatic Zones and Heating Energy Consumption of Residential Buildings in the Southern Chile.” Energy and Buildings 215 (May):109874. https://doi.org/10.1016/j.enbuild.2020.109874.
+
+","I. Staffell, S. Pfenninger, and N. Johnson, “A global model of hourly space heating and cooling demand at multiple spatial scales,” Nature Energy, 2023, doi: 10.1038/s41560-023-01341-5.
+
+A. Deroubaix et al., “Large uncertainties in trends of energy demand for heating and cooling under climate change,” Nature Communications, vol. 12, no. 1, Dec. 2021, doi: 10.1038/s41467-021-25504-8.
+
+Zheng, Yuanfan, and Qihao Weng. 2019. “Modeling the Effect of Climate Change on Building Energy Demand in Los Angeles County by Using a GIS-Based High Spatial- and Temporal-Resolution Approach.” Energy 176 (June):641–55. https://doi.org/10.1016/j.energy.2019.04.052.
+
+Christenson, M., H. Manz, and D. Gyalistras. 2006. “Climate Warming Impact on Degree-Days and Building Energy Demand in Switzerland.” Energy Conversion and Management 47 (6): 671–86. https://doi.org/10.1016/j.enconman.2005.06.009.
+
+Ukey, Rahul, and Aakash C. Rai. 2021. “Impact of Global Warming on Heating and Cooling Degree Days in Major Indian Cities.” Energy and Buildings 244 (August):111050. https://doi.org/10.1016/j.enbuild.2021.111050.
+
+Angeles, Moises E., Jorge E. González, and Nazario Ramírez. 2018. “Impacts of Climate Change on Building Energy Demands in the Intra-Americas Region.” Theoretical and Applied Climatology 133 (1–2): 59–72. https://doi.org/10.1007/s00704-017-2175-9.
+
+Mayrhofer, Lukas, Andreas Müller, Marianne Bügelmayer-Blaschek, Aadit Malla, and Lukas Kranzl. 2023. “Modelling the Effect of Passive Cooling Measures on Future Energy Needs for the Austrian Building Stock.” Energy and Buildings 296 (October):113333. https://doi.org/10.1016/j.enbuild.2023.113333.
+
+
+",0,0,0,0,0
+Air pollution ,0,0,0,0,"P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate
+ air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.",0,0,0,0,0,0,0,0,0
+"Precipitation accumulation (rainfall or
+snow)","Shourav, Mohammad Sabbir Ahmed, Shamsuddin Shahid, Bachan Singh, Morteza Mohsenipour, Eun-Sung Chung, and Xiao-Jun Wang. 2018. “Potential Impact of Climate Change on Residential Energy Consumption in Dhaka City.” Environmental Modeling & Assessment 23 (2): 131–40. https://doi.org/10.1007/s10666-017-9571-5.",0,0,0,0,"P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.",0,0,0,0,0,0,0,0
+Wind speed,0,"Lee, Gunwon, and Yunnam Jeong. 2017. “Impact of Urban and Building Form and Microclimate on the Energy Consumption of Buildings - Based on Statistical Analysis-.” Journal of Asian Architecture and Building Engineering 16 (3): 565–72. https://doi.org/10.3130/jaabe.16.565.",0,0,0,"P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.",0,0,0,0,0,0,0,0
+Relative humidity,"F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.
+
+Lee, Gunwon, and Yunnam Jeong. 2017. “Impact of Urban and Building Form and Microclimate on the Energy Consumption of Buildings - Based on Statistical Analysis-.” Journal of Asian Architecture and Building Engineering 16 (3): 565–72. https://doi.org/10.3130/jaabe.16.565.",0,0,0,"P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.
+
+Ihara, T., Y. Genchi, T. Sato, K. Yamaguchi, and Y. Endo. 2008. “City-Block-Scale Sensitivity of Electricity Consumption to Air Temperature and Air Humidity in Business Districts of Tokyo, Japan.” Energy 33 (11): 1634–45. https://doi.org/10.1016/j.energy.2008.06.005.",0,0,0,0,0,0,0,0,0
+Solar exposure/intensity,0,0,"
+Cui, Peng, Jiaqi Lu, Yutong Wu, Jingnan Tang, and Jinjian Jiang. 2024. “Effect of Urban Morphology on Microclimate and Building Cluster Energy Consumption in Cold Regions of China.” Sustainable Cities and Society 115 (November):105838. https://doi.org/10.1016/j.scs.2024.105838.",0,0,"S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.",0,"Hashimoto, Yuki, Yukitaka Ohashi, Minako Nabeshima, Yoshinori Shigeta, Yukihiro Kikegawa, and Tomohiko Ihara. 2019. 
+“Sensitivity of Electricity Consumption to Air Temperature, Air Humidity and Solar Radiation at the City-Block Scale in Osaka, Japan.” Sustainable Cities and Society 45 (February):38–47. https://doi.org/10.1016/j.scs.2018.10.004.","F. Vecchi, U. Berardi, and G. Mutani, “Data-driven urban building energy models for the platform of Toronto,” Energy Efficiency, vol. 16, no. 4, Apr. 2023, doi: 10.1007/s12053-023-10106-8.
+
+Hashimoto, Yuki, Yukitaka Ohashi, Minako Nabeshima, Yoshinori Shigeta, Yukihiro Kikegawa, and Tomohiko Ihara. 2019. “Sensitivity of Electricity Consumption to Air Temperature, Air Humidity and Solar Radiation at the City-Block Scale in Osaka, Japan.” Sustainable Cities and Society 45 (February):38–47. https://doi.org/10.1016/j.scs.2018.10.004.",0,0,0,0,0
+"Temperature (mean, SD, or extreme)","P. Shen and B. Yang, “Projecting Texas energy use for residential sector under future climate and urbanization scenarios: A bottom-up method based on twenty-year regional energy use data,” Energy, vol. 193, Feb. 2020, doi: 10.1016/j.energy.2019.116694.
+
+Shourav, Mohammad Sabbir Ahmed, Shamsuddin Shahid, Bachan Singh, Morteza Mohsenipour, Eun-Sung Chung, and Xiao-Jun Wang. 2018. “Potential Impact of Climate Change on Residential Energy Consumption in Dhaka City.” Environmental Modeling & Assessment 23 (2): 131–40. https://doi.org/10.1007/s10666-017-9571-5.
+
+Duan, Haiyan, Siyan Chen, and Junnian Song. 2022. “Characterizing Regional Building Energy Consumption under Joint Climatic and Socioeconomic Impacts.” Energy 245 (April):123290. https://doi.org/10.1016/j.energy.2022.123290.
+
+","Antonopoulos, Chrissi, Alec Trusty, and Vivek Shandas. 2019. “The Role of Building Characteristics, Demographics, and Urban Heat Islands in Shaping Residential Energy Use.” City and Environment Interactions 3 (November):100021. https://doi.org/10.1016/j.cacint.2020.100021.0.
+
+Duan, Haiyan, Siyan Chen, and Junnian Song. 2022. “Characterizing Regional Building Energy Consumption under Joint Climatic and Socioeconomic Impacts.” Energy 245 (April):123290. https://doi.org/10.1016/j.energy.2022.123290.","
+Cui, Peng, Jiaqi Lu, Yutong Wu, Jingnan Tang, and Jinjian Jiang. 2024. “Effect of Urban Morphology on Microclimate and Building Cluster Energy Consumption in Cold Regions of China.” Sustainable Cities and Society 115 (November):105838. https://doi.org/10.1016/j.scs.2024.105838.",0,"J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under 
+climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916., 
+
+J. McFarland et al., “Impacts of rising air temperatures and emissions mitigation on electricity demand and supply in the United States: a multi-model comparison,” Climatic Change, vol. 131, no. 1, pp. 111–125, Jul. 2015, doi: 10.1007/s10584-015-1380-8.
+
+I. Mahmood, Quair-tul-ain, H. A. Nasir, F. Javed, and J. A. Aguado, “A hierarchical multi-resolution agent-based modeling and simulation framework for household electricity demand profile,” Simulation, vol. 96, no. 8, pp. 655–678, Aug. 2020, doi: 10.1177/0037549720923401.",0,0,"X. Yang, L. Yao, and L. L. H. Peng, “Impacts of urban air temperature and humidity on building cooling and heating energy demand in 15 cities of eastern China,” Energy, vol. 288, Feb. 2024, doi: 10.1016/j.energy.2023.129887.
+
+Meng, Fanchao, Mingcai Li, Jingfu Cao, Ji Li, Mingming Xiong, Xiaomei Feng, and Guoyu Ren. 2018. “The Effects of Climate Change on Heating Energy Consumption of Office Buildings in Different Climate Zones in China.” Theoretical and Applied Climatology 133 (1–2): 521–30. https://doi.org/10.1007/s00704-017-2206-6.
+
+Berger, Tania, Christof Amann, Herbert Formayer, Azra Korjenic, Bernhard Pospichal, Christoph Neururer, and Roman Smutny. 2014. “Impacts of Urban Location and Climate Change upon Energy Demand of Office Buildings in Vienna, Austria.” Building and Environment 81 (November):258–69. https://doi.org/10.1016/j.buildenv.2014.07.007.
+
+Zhao, Yiman, Xiaotian Ding, Ziyu Wu, Shi Yin, Yifan Fan, and Jian Ge. 2024. “Impact of Urban Form on Building Energy Consumption in Different Climate Zones of China.” Energy and Buildings 320 (October):114579. https://doi.org/10.1016/j.enbuild.2024.114579.","A. Andreou, J. Barrett, P. G. Taylor, P. E. Brockway, and Z. Wadud, “Decomposing the drivers of residential space cooling energy consumption in EU-28 countries using a panel data approach,” Energy and Built Environment, vol. 1, no. 4, pp. 432–442, Oct. 2020, doi: 10.1016/j.enbenv.2020.03.005.
+
+X. Yang, L. Yao, and L. L. H. Peng, “Impacts of urban air temperature and humidity on building cooling and heating energy demand in 15 cities of eastern China,” Energy, vol. 288, Feb. 2024, doi: 10.1016/j.energy.2023.129887.
+
+Berger, Tania, Christof Amann, Herbert Formayer, Azra Korjenic, Bernhard Pospichal, Christoph Neururer, and Roman Smutny. 2014. “Impacts of Urban Location and Climate Change upon Energy Demand of Office Buildings in Vienna, Austria.” Building and Environment 81 (November):258–69. https://doi.org/10.1016/j.buildenv.2014.07.007.
+
+Zhao, Yiman, Xiaotian Ding, Ziyu Wu, Shi Yin, Yifan Fan, and Jian Ge. 2024. “Impact of Urban Form on Building Energy Consumption in Different Climate Zones of China.” Energy and Buildings 320 (October):114579. https://doi.org/10.1016/j.enbuild.2024.114579.
+
+Spandagos, Constantinos, and Tze Ling Ng. 2017. “Equivalent Full-Load Hours for Assessing Climate Change Impact on Building Cooling and Heating Energy Consumption in Large Asian Cities.” Applied Energy 189 (March):352–68. https://doi.org/10.1016/j.apenergy.2016.12.039.",0,0,0,0,0
+Urbanization level (urban vs rural),"G. K. F. Tso and J. Guan, “A multilevel regression approach to understand effects of environment indicators and household features on residential energy consumption,” Energy, vol. 66, pp. 722–731, Mar. 2014, doi: 10.1016/j.energy.2014.01.056.
+
+P. Shen and B. Yang, “Projecting Texas energy use for residential sector under future climate and urbanization scenarios: A bottom-up method based on twenty-year regional energy use data,” Energy, vol. 193, Feb. 2020, doi: 10.1016/j.energy.2019.116694.
+
+X. Zhou, Z. Huang, B. Scheuer, H. Wang, G. Zhou, and Y. Liu, “High-resolution estimation of building energy consumption at the city level,” Energy, vol. 275, Jul. 2023, doi: 10.1016/j.energy.2023.127476.
+
+Druckman, A., and T. Jackson. 2008. “Household Energy Consumption in the UK: A Highly Geographically and Socio-Economically Disaggregated Model.” Energy Policy 36 (8): 3177–92. https://doi.org/10.1016/j.enpol.2008.03.021.
+
+Heinonen, Jukka, and Seppo Junnila. 2014. “Residential Energy Consumption Patterns and the Overall Housing Energy Requirements of Urban and Rural Households in Finland.” Energy and Buildings 76 (June):295–303. https://doi.org/10.1016/j.enbuild.2014.02.079.
+
+Madlener, Reinhard, and Yasin Sunak. 2011. “Impacts of Urbanization on Urban Structures and Energy Demand: What Can We Learn for Urban Energy Planning and Urbanization Management?” Sustainable Cities and Society 1 (1): 45–53. https://doi.org/10.1016/j.scs.2010.08.006.
+
+Wang, Qiang. 2014. “Effects of Urbanisation on Energy Consumption in China.” Energy Policy 65 (February):332–39. https://doi.org/10.1016/j.enpol.2013.10.005.
+
+Elliott, Robert J.R., Puyang Sun, and Tong Zhu. 2017. “The Direct and Indirect Effect of Urbanization on Energy Intensity: A Province-Level Study for China.” Energy 123 (March):677–92. https://doi.org/10.1016/j.energy.2017.01.143.
+
+Zhang, Ming, and Peng Li. 2015. “Analyzing the Impact of Urbanization on Energy Consumption in Jiangsu Province.” Natural Hazards 76 (1): 177–90. https://doi.org/10.1007/s11069-014-1479-7.
+
+Zhou, Xiao, Zhou Huang, Bronte Scheuer, Han Wang, Guoqing Zhou, and Yu Liu. 2023. “High-Resolution Estimation of Building Energy Consumption at the City Level.” Energy 275 (July). https://doi.org/10.1016/j.energy.2023.127476.
+
+Zhou, Yang, Yansui Liu, Wenxiang Wu, and Yurui Li. 2015. “Effects of Rural–Urban Development Transformation on Energy Consumption and CO 2 Emissions: A Regional Analysis in China.” Renewable and Sustainable Energy Reviews 52 (December):863–75. https://doi.org/10.1016/j.rser.2015.07.158.","F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.
+
+N. Mostafavi, M. Farzinmoghadam, and S. Hoque, “Urban residential energy consumption modeling in the Integrated Urban Metabolism Analysis Tool (IUMAT),” Building and Environment, vol. 114, pp. 429–444, Mar. 2017, doi: 10.1016/j.buildenv.2016.12.035.
+
+Q. Wang, J. Lin, K. Zhou, J. Fan, and M. P. Kwan, “Does urbanization lead to less residential energy consumption? A comparative study of 136 countries,” Energy, vol. 202, Jul. 2020, doi: 10.1016/j.energy.2020.117765.
+
+Duan, Haiyan, Siyan Chen, and Junnian Song. 2022. “Characterizing Regional Building Energy Consumption under Joint Climatic and Socioeconomic Impacts.” Energy 245 (April):123290. https://doi.org/10.1016/j.energy.2022.123290.
+
+Nie, Yan, Guoxing Zhang, Luhao Zhong, Bin Su, and Xi Xi. 2024. “Urban‒rural Disparities in Household Energy and Electricity Consumption under the Influence of Electricity Price Reform Policies.” Energy Policy 184 (January):113868. https://doi.org/10.1016/j.enpol.2023.113868.
+
+Liu, Yu, Hongwei Xiao, Yingkang Lv, and Ning Zhang. 2017. “The Effect of New-Type Urbanization on Energy Consumption in China: A Spatial Econometric Analysis.” Journal of Cleaner Production 163 (October):S299–305. https://doi.org/10.1016/j.jclepro.2015.10.044.","X. Wang, Y. Tan, G. Zhou, G. Jing, and E. John Francis, “A framework for analyzing energy consumption in urban built-up areas based on single photonic radar and spatial big data,” Energy, vol. 290, Mar. 2024, doi: 10.1016/j.energy.2023.130202.",0,"W. H. Huang, “The determinants of household electricity consumption in Taiwan: Evidence from quantile regression,” Energy, vol. 87, pp. 120–133, Jul. 2015, doi: 10.1016/j.energy.2015.04.101.
+
+J. C. Nsangou, J. Kenfack, U. Nzotcha, P. S. Ngohe Ekam, J. Voufo, and T. T. Tamo, “Explaining household electricity consumption using quantile regression, decision tree and artificial neural network,” Energy, vol. 250, Jul. 2022, doi: 10.1016/j.energy.2022.123856.
+
+S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.
+
+A. M. R. Nishimwe and S. Reiter, “Estimation, analysis and mapping of electricity consumption of a regional building stock in a temperate climate in Europe,” Energy and Buildings, vol. 253, Dec. 2021, doi: 10.1016/j.enbuild.2021.111535.","E. L. Navamuel, F. Rubiera Morollón, and B. Moreno Cuartas, “Energy consumption and urban sprawl: Evidence for the Spanish case,” Journal of Cleaner Production, vol. 172, pp. 3479–3486, Jan. 2018, doi: 10.1016/j.jclepro.2017.08.110.",0,"K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.
+
+X. Yang, L. Yao, and L. L. H. Peng, “Impacts of urban air temperature and humidity on building cooling and heating energy demand in 15 cities of eastern China,” Energy, vol. 288, Feb. 2024, doi: 10.1016/j.energy.2023.129887.","X. Yang, L. Yao, and L. L. H. Peng, “Impacts of urban air temperature and humidity on building cooling and heating energy demand in 15 cities of eastern China,” Energy, vol. 288, Feb. 2024, doi: 10.1016/j.energy.2023.129887.",0,0,"W. Tian, C. Zhu, Y. Sun, Z. Li, and B. Yin, “Energy characteristics of urban buildings: Assessment by machine learning,” Building Simulation, vol. 14, no. 1, pp. 179–193, Feb. 2021, doi: 10.1007/s12273-020-0608-3.","D. Wiesmann, I. Lima Azevedo, P. Ferrão, and J. E. Fernández, 
+“Residential electricity consumption in Portugal: Findings from top-down and bottom-up models,” Energy Policy, vol. 39, no. 5, pp. 2772–2779, May 2011, doi: 10.1016/j.enpol.2011.02.047.       ","L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388.
+
+Wang, Qiang. 2014. “Effects of Urbanisation on Energy Consumption in China.” Energy Policy 65 (February):332–39. https://doi.org/10.1016/j.enpol.2013.10.005."
+Building density ,"M. Mrówczyńska, M. Skiba, A. Bazan-Krzywoszańska, and M. Sztubecka, “Household standards and socio-economic aspects as a factor 
+determining energy consumption in the city,” Applied Energy, vol. 264, Apr. 2020, doi: 10.1016/j.apenergy.2020.114680.
+
+R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini, “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.
+
+Y. Zhang, B. K. Teoh, M. Wu, J. Chen, and L. Zhang, “Data-driven estimation of building energy consumption and GHG emissions using explainable artificial intelligence,” Energy, vol. 262, Jan. 2023, doi: 10.1016/j.energy.2022.125468.
+
+X. Zhou, Z. Huang, B. Scheuer, H. Wang, G. Zhou, and Y. Liu, “High-resolution estimation of building energy consumption at the city level,” Energy, vol. 275, Jul. 2023, doi: 10.1016/j.energy.2023.127476.
+
+K. Liu, X. Xu, R. Zhang, L. Kong, W. Wang, and W. Deng, “Impact of urban form on building energy consumption and solar energy potential: A case study of residential blocks in Jianhu, China,” Energy and Buildings, vol. 280, Feb. 2023, doi: 10.1016/j.enbuild.2022.112727.
+
+Strømann-Andersen, J., and P.A. Sattrup. 2011. “The Urban Canyon and Building Energy Use: Urban Density versus Daylight and Passive Solar Gains.” Energy and Buildings 43 (8): 2011–20. https://doi.org/10.1016/j.enbuild.2011.04.007.
+
+Trepci, Esra, Praveen Maghelal, and Elie Azar. 2020. “Effect of Densification and Compactness on Urban Building Energy Consumption: Case of a Transit-Oriented Development in Dallas, TX.” Sustainable Cities and Society 56 (May). https://doi.org/10.1016/j.scs.2019.101987.","B. Wilson, “Urban form and residential electricity consumption: Evidence from Illinois, USA,” Landscape and Urban Planning, vol. 115, pp. 62–71, 2013, doi: 10.1016/j.landurbplan.2013.03.011.
+
+S. Zhu et al., “The impact of urban vegetation morphology on urban building energy consumption during summer and winter seasons in Nanjing, China,” Landscape and Urban Planning, vol. 228, Dec. 2022, doi: 10.1016/j.landurbplan.2022.104576.
+
+F. Creutzig, G. Baiocchi, R. Bierkandt, P. P. Pichler, and K. C. Seto, “Global typology of urban energy use and potentials for an urbanization mitigation wedge,” Proceedings of the National Academy of Sciences of the United States of America, vol. 112, no. 20, pp. 6283–6288, May 2015, doi: 10.1073/pnas.1315545112.
+
+Antonopoulos, Chrissi, Alec Trusty, and Vivek Shandas. 2019. “The Role of Building Characteristics, Demographics, and Urban Heat Islands in Shaping Residential Energy Use.” City and Environment Interactions 3 (November):100021. https://doi.org/10.1016/j.cacint.2020.100021.
+
+Rostami, Ehsan, Nazanin Nasrollahi, and Jamal Khodakarami. 2024. “A Comprehensive Study of How Urban Morphological Parameters Impact the Solar Potential, Energy Consumption and Daylight Autonomy in Canyons and Buildings.” Energy and Buildings 305 (February):113904. https://doi.org/10.1016/j.enbuild.2024.113904.
+
+Resch, Eirik, Rolf André Bohne, Trond Kvamsdal, and Jardar Lohne. 2016. “Impact of Urban Density and Building Height on Energy Use in Cities.” Energy Procedia 96 (September):800–814. https://doi.org/10.1016/j.egypro.2016.09.142.
+
+Calderón, Carlos, Philip James, Javier Urquizo, and Adrian McLoughlin. 2015. “A GIS Domestic Building Framework to Estimate Energy End-Use Demand in UK Sub-City Areas.” Energy and Buildings 96 (June):236–50. https://doi.org/10.1016/j.enbuild.2015.03.029.
+","X. Wang, Y. Tan, G. Zhou, G. Jing, and E. John Francis, “A framework for analyzing energy consumption in urban built-up areas based on single photonic radar and spatial big data,” Energy, vol. 290, Mar. 2024, doi: 10.1016/j.energy.2023.130202.","Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.
+
+K. Liu, X. Xu, R. Zhang, L. Kong, W. Wang, and W. Deng, “Impact of urban form on building energy consumption and solar energy potential: A case study of residential blocks in Jianhu, China,” Energy and Buildings, vol. 280, Feb. 2023, doi: 10.1016/j.enbuild.2022.112727. 
+
+H. Leng, X. Chen, Y. Ma, N. H. Wong, and T. Ming, “Urban morphology and building heating energy consumption: Evidence from Harbin, a severe cold region city,” Energy and Buildings, vol. 224, Oct. 2020, doi: 10.1016/j.enbuild.2020.110143.
+
+M. Xie et al., “The impact of urban morphology on the building energy consumption and solar energy generation potential of university dormitory blocks,” Sustainable Cities and Society, vol. 96, Sep. 2023, doi: 10.1016/j.scs.2023.104644.
+
+Trepci, Esra, Praveen Maghelal, and Elie Azar. 2020. “Effect of Densification and Compactness on Urban Building Energy Consumption: Case of a Transit-Oriented Development in Dallas, TX.” Sustainable Cities and Society 56 (May). https://doi.org/10.1016/j.scs.2019.101987.
+
+Xu, Shen, Mengcheng Sang, Mengju Xie, Feng Xiong, Thushini Mendis, and Xingwei Xiang. 2023. “Influence of Urban Morphological Factors on Building Energy Consumption Combined with Photovoltaic Potential: A Case Study of Residential Blocks in Central China.” Building Simulation 16 (9): 1777–92. https://doi.org/10.1007/s12273-023-1014-4.","P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.
+
+A. A. Ahmed Gassar, G. Y. Yun, and S. Kim, “Data-driven approach to prediction of residential energy consumption at urban scales in London,” Energy, vol. 187, Nov. 2019, doi: 10.1016/j.energy.2019.115973.
+","S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.",0,"Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.
+
+B. Güneralp et al., “Global scenarios of urban density and its impacts on building energy use through 2050,” Proceedings of the National Academy of Sciences of the United States of America, vol. 114, no. 34, pp. 8945–8950, Aug. 2017, doi: 10.1073/pnas.1606035114.
+
+H. Leng, X. Chen, Y. Ma, N. H. Wong, and T. Ming, “Urban morphology and building heating energy consumption: Evidence from Harbin, a severe cold region city,” Energy and Buildings, vol. 224, Oct. 2020, doi: 10.1016/j.enbuild.2020.110143. 
+
+Liu, Xiaochen, and John Sweeney. 2012. “Modelling the Impact of Urban Form on Household Energy Demand and Related CO2 Emissions in the Greater Dublin Region.” Energy Policy 46 (July):359–69. https://doi.org/10.1016/j.enpol.2012.03.070.
+
+Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.
+
+Liu, Jiying, Mohammad Heidarinejad, Stefan Gracik, and Jelena Srebric. 2015. “The Impact of Exterior Surface Convective Heat Transfer Coefficients on the Building Energy Consumption in Urban Neighborhoods with Different Plan Area Densities.” Energy and Buildings 86 (January):449–63. https://doi.org/10.1016/j.enbuild.2014.10.062.","R. Silva, S. Eggimann, L. Fierz, M. Fiorentini, K. Orehounig, and L. Baldini,
+ “Opportunities for passive cooling to mitigate the impact of climate change in Switzerland,” Building and Environment, vol. 208, Jan. 2022, doi: 10.1016/j.buildenv.2021.108574.
+
+A. A. Ahmed Gassar, G. Y. Yun, and S. Kim, “Data-driven approach to prediction of residential energy consumption at urban scales in London,” Energy, vol. 187, Nov. 2019, doi: 10.1016/j.energy.2019.115973.
+
+Liu, Jiying, Mohammad Heidarinejad, Stefan Gracik, and Jelena Srebric. 2015. “The Impact of Exterior Surface Convective Heat Transfer Coefficients on the Building Energy Consumption in Urban Neighborhoods with Different Plan Area Densities.” Energy and Buildings 86 (January):449–63. https://doi.org/10.1016/j.enbuild.2014.10.062.","B. Wilson, “Urban form and residential electricity consumption: Evidence from Illinois, USA,” Landscape and Urban Planning, vol. 115, pp. 62–71, 2013, doi: 10.1016/j.landurbplan.2013.03.011.
+
+S. Zhu et al., “The impact of urban vegetation morphology on urban building energy consumption during summer and winter seasons in Nanjing, China,” Landscape and Urban Planning, vol. 228, Dec. 2022, doi: 10.1016/j.landurbplan.2022.104576.",0,"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.
+
+A. Movahedi and S. Derrible, “Interrelationships between electricity, gas, and water consumption in large-scale buildings,” Journal of Industrial Ecology, vol. 25, no. 4, pp. 932–947, Aug. 2021, doi: 10.1111/jiec.13097.",0,"Parshall, Lily, Kevin Gurney, Stephen A. Hammer, Daniel Mendoza, 
+Yuyu Zhou, and Sarath Geethakumar. 2010. “Modeling Energy Consumption and CO2 Emissions at the Urban Scale: Methodological Challenges and Insights from the United States.” Energy Policy 38 (9): 4765–82. https://doi.org/10.1016/j.enpol.2009.07.006."
+Building coverage ratio,"X. Zhou, Z. Huang, B. Scheuer, H. Wang, G. Zhou, and Y. Liu, “High-resolution estimation of building energy consumption at the city level,” Energy, vol. 275, Jul. 2023, doi: 10.1016/j.energy.2023.127476.",0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use 
+in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.
+
+P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.
+
+Cui, Peng, Jiaqi Lu, Yutong Wu, Jingnan Tang, and Jinjian Jiang. 2024. “Effect of Urban Morphology on Microclimate and Building Cluster Energy Consumption in Cold Regions of China.” Sustainable Cities and Society 115 (November):105838. https://doi.org/10.1016/j.scs.2024.105838.
+
+Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.",0,"Lim, Jaebin, and Myounggu Kang. 2022. “The Relationship between Site Planning and Electricity Consumption: An Empirical Analysis of Multi-Unit Residential Complexes in Seoul, Korea.” Environment and Planning B: Urban Analytics and City Science 
+49 (3): 971–86. https://doi.org/10.1177/23998083211039855.",0,0,0,0,0,0,0,0,0
+Open space ratio,0,0,"K. Liu, X. Xu, R. Zhang, L. Kong, W. Wang, and W. Deng, “Impact of urban form on building energy consumption and 
+solar energy potential: A case study of residential blocks in Jianhu, China,” Energy and Buildings, vol. 280, Feb. 2023, doi: 10.1016/j.enbuild.2022.112727.",0,0,0,0,0,0,0,0,0,0,0
+Compactness,"Miao, Lu. 2017. “Examining the Impact Factors of Urban Residential Energy Consumption and CO 2 Emissions in China – Evidence from City-Level Data.” Ecological Indicators 73 (February):29–37. https://doi.org/10.1016/j.ecolind.2016.09.031.
+
+Trepci, Esra, Praveen Maghelal, and Elie Azar. 2020. “Effect of Densification and Compactness on Urban Building Energy Consumption: Case of a Transit-Oriented Development in Dallas, TX.” Sustainable Cities and Society 56 (May). https://doi.org/10.1016/j.scs.2019.101987.
+
+Ye, Hong, XiaoYan He, Yu Song, Xinhu Li, Guoqin Zhang, Tao Lin, and Lishan Xiao. 2015. “A Sustainable Urban Form: The Challenges of Compactness from the Viewpoint of Energy Consumption and Carbon Emission.” Energy and Buildings 93 (April):90–98. https://doi.org/10.1016/j.enbuild.2015.02.011.
+
+Hadavi, Mohammad, and Hadi Pasdarshahri. 2021. “Investigating Effects of Urban Configuration and Density on Urban Climate and Building Systems Energy Consumption.” Journal of Building Engineering 44 (December):102710. https://doi.org/10.1016/j.jobe.2021.102710.",0,0,"Trepci, Esra, Praveen Maghelal, and Elie Azar. 2020. “Effect of Densification and Compactness on Urban Building Energy Consumption: 
+Case of a Transit-Oriented Development in Dallas, TX.” Sustainable Cities and Society 56 (May). https://doi.org/10.1016/j.scs.2019.101987.",0,"Ki, Jaehong, and D.K. Yoon. 2024. “The Impact of Urban Form on Residential Electricity Consumption: 
+Panel Data Analyses of South Korean Urban Municipalities.” Energy Policy 186 (March):113986. https://doi.org/10.1016/j.enpol.2024.113986.",0,"M. Braulio-Gonzalo, M. D. Bovea, M. J. Ruá, and P. Juan, “A methodology for predicting the energy performance and indoor thermal comfort of residential stocks on the neighbourhood and city scales. A case study in Spain,” Journal of Cleaner Production, vol. 139, pp. 646–665, Dec. 2016, doi: 10.1016/j.jclepro.2016.08.059.
+
+Liu, Xiaochen, and John Sweeney. 2012. “Modelling the Impact of Urban Form on Household Energy Demand and Related CO2 Emissions in the Greater Dublin Region.” Energy Policy 46 (July):359–69. https://doi.org/10.1016/j.enpol.2012.03.070.","M. Braulio-Gonzalo, M. D. Bovea, M. J. Ruá, and P. Juan, “A methodology for
+ predicting the energy performance and indoor thermal comfort of residential stocks on the neighbourhood and city scales. A case study in Spain,” Journal of Cleaner Production, vol. 139, pp. 646–665, Dec. 2016, doi: 10.1016/j.jclepro.2016.08.059.",0,0,0,0,0
+Occupancy density,0,0,"X. Liu, H. Tang, Y. Ding, and D. Yan, “Investigating the performance of machine learning models combined with
+ different feature selection methods to estimate the energy consumption of buildings,” Energy and Buildings, vol. 273, Oct. 2022, doi: 10.1016/j.enbuild.2022.112408.
+
+P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use 
+in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,0,0,0,0,0,0,0,0
+Population density,0,"A. Froemelt, R. Buffat, and S. Hellweg, “Machine learning based modeling of households: A regionalized bottom-up approach to investigate consumption-induced environmental impacts,” Journal of Industrial Ecology, vol. 24, no. 3, pp. 639–652, Jun. 2020, doi: 10.1111/jiec.12969. 
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.
+
+B. Güneralp et al., “Global scenarios of urban density and its impacts on building energy use through 2050,” Proceedings of the National Academy of Sciences of the United States of America, vol. 114, no. 34, pp. 8945–8950, Aug. 2017, doi: 10.1073/pnas.1606035114. 
+
+F. Creutzig, G. Baiocchi, R. Bierkandt, P. P. Pichler, and K. C. Seto, “Global typology of urban energy use and potentials for an urbanization mitigation wedge,” Proceedings of the National Academy of Sciences of the United States of America, vol. 112, no. 20, pp. 6283–6288, May 2015, doi: 10.1073/pnas.1315545112.
+
+Mashhoodi, Bardia, Dominic Stead, and Arjan Van Timmeren. 2020. “Local and National Determinants of Household Energy Consumption in the Netherlands.” GeoJournal 85 (2): 393–406. https://doi.org/10.1007/s10708-018-09967-9.","L. Jiang, X. Shi, S. Wu, B. Ding, and Y. Chen, “What factors affect household energy consumption in mega-cities? A case study of Guangzhou, China,” Journal of Cleaner Production, vol. 363, Aug. 2022, doi: 10.1016/j.jclepro.2022.132388.
+
+E. Porse, J. Derenski, H. Gustafson, Z. Elizabeth, and S. Pincetl, “Structural, geographic, and social factors in urban building energy use: Analysis of aggregated account-level consumption data in a megacity,” Energy Policy, vol. 96, pp. 179–192, Sep. 2016, doi: 10.1016/j.enpol.2016.06.002.",0,"Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity
+consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.
+
+J. L. Reyna and M. V. Chester, “Energy efficiency to reduce residential electricity and natural gas use under climate change,” Nature Communications, vol. 8, May 2017, doi: 10.1038/ncomms14916.","Ki, Jaehong, and D.K. Yoon. 2024. “The Impact of Urban Form on Residential Electricity Consumption: 
+Panel Data Analyses of South Korean Urban Municipalities.” Energy Policy 186 (March):113986. https://doi.org/10.1016/j.enpol.2024.113986.",0,0,0,"Ko, Yekang, and John D Radke. 2014. “The Effect of Urban Form and Residential Cooling Energy Use in Sacramento, California.” Environment and Planning B: Planning and Design 41 (4): 573–93. https://doi.org/10.1068/b12038p.",0,0,0,"B. Güneralp et al., “Global scenarios of urban density and its impacts on building energy use through 2050,” Proceedings of the National Academy of Sciences of the United States of America, vol. 114, no. 34, pp. 8945–8950, Aug. 2017, doi: 10.1073/pnas.1606035114.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003."
+Urban canyons ,"Mangan, Suzi Dilara, Gul Koclar Oral, Idil Erdemir Kocagil, and Irem Sozen. 2021. “The Impact of Urban Form on Building Energy and Cost Efficiency in Temperate-Humid Zones.” Journal of Building Engineering 33 (January):101626. https://doi.org/10.1016/j.jobe.2020.101626.
+
+
+Strømann-Andersen, J., and P.A. Sattrup. 2011. “The Urban Canyon and Building Energy Use: Urban Density versus Daylight and Passive Solar Gains.” Energy and Buildings 43 (8): 2011–20. https://doi.org/10.1016/j.enbuild.2011.04.007.
+
+Mirashk-Daghiyan, Maryam, Atefeh Dehghan-Touran-Poshti, Azadeh Shahcheragi, and Mohammad Hadi Kaboli. 2022. “The Effect of Surrounding Buildings’ Height and the Width of the Street on a Building’s Energy Consumption.” International Journal of Energy and Environmental Engineering 13 (1): 207–17. https://doi.org/10.1007/s40095-021-00420-1.",0,0,"Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.
+
+H. Leng, X. Chen, Y. Ma, N. H. Wong, and T. Ming, “Urban morphology and building heating energy consumption: Evidence from Harbin, a severe cold region city,” Energy and Buildings, vol. 224, Oct. 2020, doi: 10.1016/j.enbuild.2020.110143.",0,"Y. J. Chen, R. H. Matsuoka, and T. M. Liang, “Urban form, building characteristics, and residential electricity consumption: A case study in Tainan City,” Environment and Planning B: Urban Analytics and City Science, vol. 45, no. 5, pp. 933–952, Sep. 2018, doi: 10.1177/2399808317690150.",0,"H. Leng, X. Chen, Y. Ma, N. H. Wong, and T. Ming, “Urban morphology and building heating energy consumption: Evidence from Harbin, a severe cold region city,” Energy and Buildings, vol. 224, Oct. 2020, doi: 10.1016/j.enbuild.2020.110143.
+
+Mangan, Suzi Dilara, Gul Koclar Oral, Idil Erdemir Kocagil, and Irem Sozen. 2021. “The Impact of Urban Form on Building Energy and Cost Efficiency in Temperate-Humid Zones.” Journal of Building Engineering 33 (January):101626. https://doi.org/10.1016/j.jobe.2020.101626.",0,"K. N. Streicher, P. Padey, D. Parra, M. C. Bürer, S. Schneider, and M. K. Patel, “Analysis of space heating demand in the Swiss residential building stock: Element-based bottom-up model of archetype buildings,” Energy and Buildings, vol. 184, pp. 300–322, Feb. 2019, doi: 10.1016/j.enbuild.2018.12.011.
+
+M. Braulio-Gonzalo, M. D. Bovea, M. J. Ruá, and P. Juan, “A methodology for predicting the energy performance and indoor thermal comfort of residential stocks on the neighbourhood and city scales. A case study in Spain,” Journal of Cleaner Production, vol. 139, pp. 646–665, Dec. 2016, doi: 10.1016/j.jclepro.2016.08.059.
+
+Mangan, Suzi Dilara, Gul Koclar Oral, Idil Erdemir Kocagil, and Irem Sozen. 2021. “The Impact of Urban Form on Building Energy and Cost Efficiency in Temperate-Humid Zones.” Journal of Building Engineering 33 (January):101626. https://doi.org/10.1016/j.jobe.2020.101626.
+
+Huang, Kuo-Tsang, and Yi-Jhen Li. 2017. “Impact of Street Canyon Typology on Building’s Peak Cooling Energy Demand: A Parametric Analysis Using Orthogonal Experiment.” Energy and Buildings 154 (November):448–64. https://doi.org/10.1016/j.enbuild.2017.08.054.",0,0,0,0
+Urban block typologies (courtyards),0,0,0,"Zhang, Ji, Le Xu, Veronika Shabunko, Stephen En Rong Tay, Huixuan Sun, Stephen Siu Yu Lau, and Thomas Reindl. 2019. “Impact of Urban Block Typology on Building Solar Potential and Energy Use Efficiency in Tropical High-Density City.” Applied Energy 240 (April):513–33. https://doi.org/10.1016/j.apenergy.2019.02.033.",,,,,,"Zhang, Ji, Le Xu, Veronika Shabunko, Stephen En Rong Tay, Huixuan Sun, Stephen Siu Yu Lau, and Thomas Reindl. 2019. “Impact of Urban Block Typology on Building Solar Potential and Energy Use Efficiency in Tropical High-Density City.” Applied Energy 240 (April):513–33. https://doi.org/10.1016/j.apenergy.2019.02.033.
+
+Deng, Qingtan, Guangbin Wang, Yuetao Wang, Hao Zhou, and Lei Ma. 2021. “A Quantitative Analysis of the Impact of Residential Cluster Layout on Building Heating Energy Consumption in Cold IIB Regions of China.” Energy and Buildings 253 (December):111515. https://doi.org/10.1016/j.enbuild.2021.111515.",0,0,0,0
+Shading of surrounding buildings,0,0,0,0,0,,"Zhao, Yiman, Xiaotian Ding, Ziyu Wu, Shi Yin, Yifan Fan, and Jian Ge. 2024. “Impact of 
+Urban Form on Building Energy Consumption in Different Climate Zones of China.” Energy and Buildings 320 (October):114579. https://doi.org/10.1016/j.enbuild.2024.114579.",0,0,"Zhao, Yiman, Xiaotian Ding, Ziyu Wu, Shi Yin, Yifan Fan, and Jian Ge. 2024. “Impact of Urban Form on Building Energy Consumption in Different Climate Zones of China.” Energy and Buildings 320 (October):114579. https://doi.org/10.1016/j.enbuild.2024.114579.",0,0,0,0
+Vertical-to-horizontal ratio,"Y. Zhang, B. K. Teoh, M. Wu, J. Chen, and L. Zhang, “Data-driven estimation of building energy consumption and GHG emissions using explainable 
+artificial intelligence,” Energy, vol. 262, Jan. 2023, doi: 10.1016/j.energy.2022.125468.",0,0,0,0,0,0,0,0,0,0,0,0,0
+Surface-to-volume ratio,"Y. Zhang, B. K. Teoh, M. Wu, J. Chen, and L. Zhang, “Data-driven estimation of building energy consumption and GHG emissions using explainable artificial intelligence,” Energy, vol. 262, Jan. 2023, doi: 10.1016/j.energy.2022.125468.
+
+Q. Jiang et al., “Predicting building energy consumption in urban neighborhoods using machine learning algorithms,” Frontiers of Urban and Rural Planning, vol. 2, no. 1, Feb. 2024, doi: 10.1007/s44243-024-00032-3.",0,"K. Liu, X. Xu, R. Zhang, L. Kong, W. Wang, and W. Deng, “Impact of urban form on building energy consumption and solar energy potential: A case study of residential blocks in Jianhu, China,” Energy and Buildings, vol. 280, Feb. 2023, doi: 10.1016/j.enbuild.2022.112727.
+
+M. Xie et al., “The impact of urban morphology on the building energy consumption and solar energy generation potential of university dormitory blocks,” Sustainable Cities and Society, vol. 96, Sep. 2023, doi: 10.1016/j.scs.2023.104644.
+
+Li, Gaomei, Cheng Sun, Mengcheng Sang, Shuqin Chen, Jinjin Li, Yunsun Han, and Shen Xu. 2024. “The Synergistic Effect of Multiple Design Factors on Building Energy Consumption of Office Blocks: A Case Study of Wuhan, China.” Journal of Building Engineering 95 (October):110200. https://doi.org/10.1016/j.jobe.2024.110200.
+
+Xu, Shen, Mengcheng Sang, Mengju Xie, Feng Xiong, Thushini Mendis, and Xingwei Xiang. 2023. “Influence of Urban Morphological Factors on Building Energy Consumption Combined with Photovoltaic Potential: A Case Study of Residential Blocks in Central China.” Building Simulation 16 (9): 1777–92. https://doi.org/10.1007/s12273-023-1014-4.",0,0,0,"Q. Jiang et al., “Predicting building energy consumption in urban neighborhoods using 
+machine learning algorithms,” Frontiers of Urban and Rural Planning, vol. 2, no. 1, Feb. 2024, doi: 10.1007/s44243-024-00032-3.",0,0,0,0,0,0,0
+Average building height,"X. Zhou, Z. Huang, B. Scheuer, H. Wang, G. Zhou, and Y. Liu, “High-resolution estimation of building energy consumption at the city level,” Energy, vol. 275, Jul. 2023, doi: 10.1016/j.energy.2023.127476.
+
+Zhou, Xiao, Zhou Huang, Bronte Scheuer, Han Wang, Guoqing Zhou, and Yu Liu. 2023. “High-Resolution Estimation of Building Energy Consumption at the City Level.” Energy 275 (July). https://doi.org/10.1016/j.energy.2023.127476.","Resch, Eirik, Rolf André Bohne, Trond Kvamsdal, and Jardar Lohne. 2016. “Impact of Urban Density and Building Height on Energy Use in Cities.” Energy Procedia 96 (September):800–814. 
+https://doi.org/10.1016/j.egypro.2016.09.142.","M. Xie et al., “The impact of urban morphology on the building energy consumption and solar energy generation potential of university dormitory blocks,” Sustainable Cities and Society, vol. 96, Sep. 2023, doi: 10.1016/j.scs.2023.104644.
+
+Cui, Peng, Jiaqi Lu, Yutong Wu, Jingnan Tang, and Jinjian Jiang. 2024. “Effect of Urban Morphology on Microclimate and Building Cluster Energy Consumption in Cold Regions of China.” Sustainable Cities and Society 115 (November):105838. https://doi.org/10.1016/j.scs.2024.105838.","P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,0,0,0,0,0,0,0,"Wang, Yang, Guiquan Sun, Yingmei Wu, and Mark W. Rosenberg. 2024. “Urban 3D 
+Building Morphology and Energy Consumption: Empirical Evidence from 53 Cities in China.” Scientific Reports 14 (1): 12887. https://doi.org/10.1038/s41598-024-63698-1.",0
+Building height variations,"Mirashk-Daghiyan, Maryam, Atefeh Dehghan-Touran-Poshti, Azadeh Shahcheragi, and Mohammad Hadi Kaboli. 2022. “The Effect of Surrounding Buildings’ Height and the Width of the Street on a Building’s Energy Consumption.” International Journal of 
+Energy and Environmental Engineering 13 (1): 207–17. https://doi.org/10.1007/s40095-021-00420-1.0",0,"Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: 
+A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.","P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,0,0,0,0,"Shareef, Sundus. 2021. “The Impact of Urban Morphology and Building’s Height Diversity on Energy Consumption at Urban Scale. The Case Study of Dubai.” Building and Environment 194 (May). https://doi.org/10.1016/j.buildenv.2021.107675.",0,0,0,0
+Total wall surface area ,"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.
+
+Lee, Gunwon, and Yunnam Jeong. 2017. “Impact of Urban and Building Form and Microclimate on the Energy Consumption of Buildings - Based on Statistical Analysis-.” Journal of Asian Architecture and Building Engineering 16 (3): 565–72. https://doi.org/10.3130/jaabe.16.565.",0,0,"H. Leng, X. Chen, Y. Ma, N. H. Wong, and T. Ming, “Urban morphology and building heating energy consumption: Evidence from Harbin, a severe cold region city,” Energy and Buildings, vol. 224, Oct. 2020, doi: 10.1016/j.enbuild.2020.110143.","P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” 
+Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.",0,0,0,0,0,"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.",0,0,0
+Size or length of block ,0,0,"M. Xie et al., “The impact of urban morphology on the building energy consumption and solar energy generation potential of university dormitory blocks,” Sustainable Cities and Society, vol. 96, Sep. 2023, doi: 10.1016/j.scs.2023.104644.",0,0,0,0,0,0,0,0,0,0,0
+Plan depth (Depth of the building),"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.
+
+Lee, Gunwon, and Yunnam Jeong. 2017. “Impact of Urban and Building Form and Microclimate on the Energy Consumption of Buildings - Based on Statistical Analysis-.” Journal of Asian Architecture and Building Engineering 16 (3): 565–72. https://doi.org/10.3130/jaabe.16.565.",0,0,0,"P. Steadman, I. Hamilton, and S. Evans, “Energy and urban built form: An empirical and statistical approach,” 
+Building Research and Information, vol. 42, no. 1, pp. 17–31, 2014, doi: 10.1080/09613218.2013.808140.",0,0,0,0,0,0,0,0,0
+Effective public transport,0,"A. Froemelt, R. Buffat, and S. Hellweg, “Machine learning based modeling of households: A regionalized bottom-up approach to investigate consumption-induced environmental impacts,” Journal of Industrial Ecology, vol. 24, no. 3, pp. 639–652, Jun. 2020, doi: 10.1111/jiec.12969.
+
+A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.
+",0,0,0,0,0,"A. F. Marique and S. Reiter, “A method to evaluate the energy consumption of suburban neighborhoods,” in HVAC and R Research, Feb. 2012, pp. 88–99. doi: 10.1080/10789669.2011.592103.",0,0,0,0,0,0
+Walkability and bikeability ,0,0,0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,0,0,0,0,0,0,0,0,0
+Green space or vegetation,"Ye, Hong, XiaoYan He, Yu Song, Xinhu Li, Guoqin Zhang, Tao Lin, and Lishan Xiao. 2015. “A Sustainable Urban Form: The Challenges of Compactness from the Viewpoint of Energy Consumption and Carbon Emission.” Energy and Buildings 93 (April):90–98. https://doi.org/10.1016/j.enbuild.2015.02.011.","S. Zhu et al., “The impact of urban vegetation morphology on urban building energy consumption during summer and winter seasons in Nanjing, China,” Landscape and Urban Planning, vol. 228, Dec. 2022, doi: 10.1016/j.landurbplan.2022.104576.
+
+Erell, Evyatar, and Bin Zhou. 2022. “The Effect of Increasing Surface Cover Vegetation on Urban Microclimate and Energy Demand for Building Heating and Cooling.” Building and Environment 213 (April):108867. https://doi.org/10.1016/j.buildenv.2022.108867.
+
+Qiao, Renlu, and Tongtong Liu. 2020. “Impact of Building Greening on Building Energy Consumption: A Quantitative Computational Approach.” Journal of Cleaner Production 246 (February):119020. https://doi.org/10.1016/j.jclepro.2019.119020.
+
+Zhang, Biao, Gao-di Xie, Ji-xi Gao, and Yang Yang. 2014. “The Cooling Effect of Urban Green Spaces as a Contribution to Energy-Saving and Emission-Reduction: A Case Study in Beijing, China.” Building and Environment 76 (June):37–43. https://doi.org/10.1016/j.buildenv.2014.03.003.","Y. J. Ahn and D. W. Sohn, “The effect of neighbourhood-level urban form on residential building energy use: A GIS-based model using building energy benchmarking data in Seattle,” Energy and Buildings, vol. 196, pp. 124–133, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.018.",0,0,"Douthat, Thomas, John D. Morgan, Haris Alibašić, and Aneurin Grant. 2020. “Passive Building 
+Characteristics, and Summertime Residential Energy Use: A Spatial Analysis of Energy Efficiency in Gainesville, FL.” Building and Environment 169 (February):106542. https://doi.org/10.1016/j.buildenv.2019.106542.
+
+Lim, Jaebin, and Myounggu Kang. 2022. “The Relationship between Site Planning and Electricity Consumption: An Empirical Analysis of Multi-Unit Residential Complexes in Seoul, Korea.” Environment and Planning B: Urban Analytics and City Science 49 (3): 971–86. https://doi.org/10.1177/23998083211039855.
+
+",0,0,0,"Ko, Yekang, and John D Radke. 2014. “The Effect of Urban Form and Residential Cooling Energy Use in Sacramento, California.” Environment and Planning B: Planning and Design 41 (4): 573–93. https://doi.org/10.1068/b12038p.
+
+Zhang, Biao, Gao-di Xie, Ji-xi Gao, and Yang Yang. 2014. “The Cooling Effect of Urban Green Spaces as a Contribution to Energy-Saving and Emission-Reduction: A Case Study in Beijing, China.” Building and Environment 76 (June):37–43. https://doi.org/10.1016/j.buildenv.2014.03.003.
+
+Kikegawa, Yukihiro, Yutaka Genchi, Hiroaki Kondo, and Keisuke Hanaki. 2006. “Impacts of City-Block-Scale Countermeasures against Urban Heat-Island Phenomena upon a Building’s Energy-Consumption for Air-Conditioning.” Applied Energy 83 (6): 649–68. https://doi.org/10.1016/j.apenergy.2005.06.001.
+
+Xu, Xiyan, Shuming Liu, Shibo Sun, Wenwei Zhang, Ying Liu, Zhaoming Lao, Guancheng Guo, et al. 2019. “Evaluation of Energy Saving Potential of an Urban Green Space and Its Water Bodies.” Energy and Buildings 188–189 (April):58–70. https://doi.org/10.1016/j.enbuild.2019.02.003.
+
+Feng, Wei, Wei Ding, Meng Zhen, Weihan Zou, and Haifeng Wang. 2022. “Cooling Effect of Urban Small Green Spaces in Qujiang Campus, Xi’an Jiaotong University, China.” Environment, Development and Sustainability 24 (3): 4278–98. https://doi.org/10.1007/s10668-021-01615-6.
+
+Haddad, Shamila, Wanni Zhang, Riccardo Paolini, Kai Gao, Muzahim Altheeb, Abdulrahman Al Mogirah, Abdullatif Bin Moammar, et al. 2024. “Quantifying the Energy Impact of Heat Mitigation Technologies at the Urban Scale.” Nature Cities 1 (1): 62–72. https://doi.org/10.1038/s44284-023-00005-5.
+",0,0,0,0
+Water bodies,"Ye, Hong, XiaoYan He, Yu Song, Xinhu Li, Guoqin Zhang, Tao Lin, and Lishan Xiao. 2015. “A Sustainable Urban Form: The Challenges of Compactness from the Viewpoint of Energy Consumption and Carbon Emission.” Energy and Buildings 93 (April):90–98. https://doi.org/10.1016/j.enbuild.2015.02.011.",0,0,0,0,0,0,0,0,"Xu, Xiyan, Shuming Liu, Shibo Sun, Wenwei Zhang, Ying Liu, Zhaoming Lao, Guancheng Guo, et al. 2019. “Evaluation of Energy Saving Potential of an Urban Green Space and Its Water Bodies.” Energy and Buildings 188–189 (April):58–70. https://doi.org/10.1016/j.enbuild.2019.02.003.",0,0,0,0
+Sky view factor,0,0,"M. Xie et al., “The impact of urban morphology on the building energy consumption and solar energy generation potential of university dormitory blocks,” Sustainable Cities and Society, vol. 96, Sep. 2023, doi: 10.1016/j.scs.2023.104644.","Xu, Shen, Mengcheng Sang, Mengju Xie, Feng Xiong, Thushini Mendis, and Xingwei Xiang. 2023. “Influence of Urban Morphological Factors on 
+Building Energy Consumption Combined with Photovoltaic Potential: A Case Study of Residential Blocks in Central China.” Building Simulation 16 (9): 1777–92. https://doi.org/10.1007/s12273-023-1014-4.",0,0,0,0,0,"Kikegawa, Yukihiro, Yutaka Genchi, Hiroaki Kondo, and Keisuke Hanaki. 2006. “Impacts of City-Block-Scale Countermeasures against Urban Heat-Island 
+Phenomena upon a Building’s Energy-Consumption for Air-Conditioning.” Applied Energy 83 (6): 649–68. https://doi.org/10.1016/j.apenergy.2005.06.001.",0,0,0,0
+Urban Heat Island,"Palme, M., L. Inostroza, G. Villacreses, Andrea Lobato-Cordero, and C. Carrasco. 2017. “From Urban Climate to Energy Consumption. Enhancing Building Performance Simulation by Including the Urban Heat Island Effect.” Energy and Buildings 145 (June):107–20. https://doi.org/10.1016/j.enbuild.2017.03.069.
+
+Yang, Xiaoshan, Lilliana L.H. Peng, Zhidian Jiang, Yuan Chen, Lingye Yao, Yunfei He, and Tianjing Xu. 2020. “Impact of Urban Heat Island on Energy Demand in Buildings: Local Climate Zones in Nanjing.” Applied Energy 260 (February):114279. https://doi.org/10.1016/j.apenergy.2019.114279.","Hirano, Y., and T. Fujita. 2012. “Evaluation of the Impact of the Urban Heat Island on Residential and Commercial Energy Consumption in Tokyo.” Energy 37 (1): 371–83. https://doi.org/10.1016/j.energy.2011.11.018.",0,0,"Yadav, Neha, Chhemendra Sharma, S.K. Peshin, and Renu Masiwal. 2017. “Study of Intra-City Urban Heat Island Intensity and Its Influence on Atmospheric Chemistry and Energy Consumption in Delhi.” Sustainable Cities and Society 32 (July):202–11.
+ https://doi.org/10.1016/j.scs.2017.04.003.",0,0,"Cui, Ying, Da Yan, Tianzhen Hong, and Jingjin Ma. 2017. “Temporal and Spatial Characteristics of the Urban Heat Island in Beijing and the Impact on Building Design and Energy Performance.” Energy 130 (July):286–97. https://doi.org/10.1016/j.energy.2017.04.053.
+
+Guattari, Claudia, Luca Evangelisti, and Constantinos A. Balaras. 2018. “On the Assessment of Urban Heat Island Phenomenon and Its Effects on Building Energy Performance: A Case Study of Rome (Italy).” Energy and Buildings 158 (January):605–15. https://doi.org/10.1016/j.enbuild.2017.10.050.
+
+Zinzi, Michele, Emiliano Carnielo, and Benedetta Mattoni. 2018. “On the Relation between Urban Climate and Energy Performance of Buildings. A Three-Years Experience in Rome, Italy.” Applied Energy 221 (July):148–60. https://doi.org/10.1016/j.apenergy.2018.03.192.
+
+Yang, Xiaoshan, Lilliana L.H. Peng, Zhidian Jiang, Yuan Chen, Lingye Yao, Yunfei He, and Tianjing Xu. 2020. “Impact of Urban Heat Island on Energy Demand in Buildings: Local Climate Zones in Nanjing.” Applied Energy 260 (February):114279. https://doi.org/10.1016/j.apenergy.2019.114279.
+
+Santamouris, M, N Papanikolaou, I Livada, I Koronakis, C Georgakis, A Argiriou, and D.N Assimakopoulos. 2001. “On the Impact of Urban Climate on the Energy Consumption of Buildings.” Solar Energy 70 (3): 201–16. https://doi.org/10.1016/S0038-092X(00)00095-5.
+","A. Salvati, M. Palme, G. Chiesa, and M. Kolokotroni, “Built form, urban climate and building energy modelling: case-studies in Rome and Antofagasta,” Journal of Building Performance Simulation, vol. 13, no. 2, pp. 209–225, Mar. 2020, doi: 10.1080/19401493.2019.1707876.
+
+Cui, Ying, Da Yan, Tianzhen Hong, and Jingjin Ma. 2017. “Temporal and Spatial Characteristics of the Urban Heat Island in Beijing and the Impact on Building Design and Energy Performance.” Energy 130 (July):286–97. https://doi.org/10.1016/j.energy.2017.04.053.
+
+Guattari, Claudia, Luca Evangelisti, and Constantinos A. Balaras. 2018. “On the Assessment of Urban Heat Island Phenomenon and Its Effects on Building Energy Performance: A Case Study of Rome (Italy).” Energy and Buildings 158 (January):605–15. https://doi.org/10.1016/j.enbuild.2017.10.050.
+
+Zinzi, Michele, Emiliano Carnielo, and Benedetta Mattoni. 2018. “On the Relation between Urban Climate and Energy Performance of Buildings. A Three-Years Experience in Rome, Italy.” Applied Energy 221 (July):148–60. https://doi.org/10.1016/j.apenergy.2018.03.192.
+
+Yang, Xiaoshan, Lilliana L.H. Peng, Zhidian Jiang, Yuan Chen, Lingye Yao, Yunfei He, and Tianjing Xu. 2020. “Impact of Urban Heat Island on Energy Demand in Buildings: Local Climate Zones in Nanjing.” Applied Energy 260 (February):114279. https://doi.org/10.1016/j.apenergy.2019.114279.
+
+Santamouris, M, N Papanikolaou, I Livada, I Koronakis, C Georgakis, A Argiriou, and D.N Assimakopoulos. 2001. “On the Impact of Urban Climate on the Energy Consumption of Buildings.” Solar Energy 70 (3): 201–16. https://doi.org/10.1016/S0038-092X(00)00095-5.",0,0,0,0,0
+Edge contrast index,"B. Wilson, “Urban form and residential electricity consumption: Evidence from Illinois, USA,” Landscape and Urban Planning, vol. 115, pp. 62–71, 
+2013, doi: 10.1016/j.landurbplan.2013.03.011.",0,0,0,0,0,0,0,0,0,0,0,0,0
+Irregularity of urban land use,"Chen, Yimin, Xia Li, Yong Zheng, Yanyan Guan, and Xiaoping Liu. 2011. “Estimating the Relationship between Urban Forms and Energy Consumption: A Case Study in the Pearl River Delta, 2005–2008.” Landscape and Urban Planning 102 (1): 33–42. https://doi.org/10.1016/j.landurbplan.2011.03.007.
+",0,0,0,0,0,0,0,0,0,0,0,0,0
+Mixed land use,0,"Kang, Tingting, Han Wang, Zhangyuan He, Zhengying Liu, Yang Ren, and Pengjun Zhao. 2023. “The Effects of Urban Land Use on Energy-Related CO2 Emissions in China.” Science of The Total Environment 870 (April):
+161873. https://doi.org/10.1016/j.scitotenv.2023.161873.",0,0,0,0,0,0,0,0,0,0,0,0
+Smart city construction ,0,"J. Wu, K. Lin, and J. Sun, “The impact of smart city construction on urban energy efficiency: evidence from China,” Environment, Development and Sustainability, Apr. 2024, doi: 10.1007/s10668-024-04916-8.
+
+Guo, Qingbin, Yong Wang, and Xiaobin Dong. 2022. “Effects of Smart City Construction on Energy Saving and CO2 Emission Reduction: Evidence from China.” Applied Energy 313 (May):118879. https://doi.org/10.1016/j.apenergy.2022.118879.
+",0,0,0,0,0,0,0,0,0,0,0,0
+Energy price,0,"F. Belaïd, D. Roubaud, and E. Galariotis, “Features of residential energy consumption: Evidence from France using an innovative multilevel modelling approach,” Energy Policy, vol. 125, pp. 277–285, Feb. 2019, doi: 10.1016/j.enpol.2018.11.007.
+
+J. W. Burnett and L. L. Kiesling, “How do machines predict energy use? Comparing machine learning approaches for modeling household energy demand in the United States,” Energy Research and Social Science, vol. 91, Sep. 2022, doi: 10.1016/j.erss.2022.102715. 
+
+F. Belaïd, “Understanding the spectrum of domestic energy consumption: Empirical evidence from France,” Energy Policy, vol. 92, pp. 220–233, May 2016, doi: 10.1016/j.enpol.2016.02.015.
+
+F. Creutzig, G. Baiocchi, R. Bierkandt, P. P. Pichler, and K. C. Seto, “Global typology of urban energy use and potentials for an urbanization mitigation wedge,” Proceedings of the National Academy of Sciences of the United States of America, vol. 112, no. 20, pp. 6283–6288, May 2015, doi: 10.1073/pnas.1315545112.
+
+Kaza, Nikhil. 2010. “Understanding the Spectrum of Residential Energy Consumption: A Quantile Regression Approach.” Energy Policy 38 (11): 6574–85. https://doi.org/10.1016/j.enpol.2010.06.028.
+
+Nie, Hong-guang, René Kemp, Jin-hua Xu, Véronique Vasseur, and Ying Fan. 2018. “Drivers of Urban and Rural Residential Energy Consumption in China from the Perspectives of Climate and Economic Effects.” Journal of Cleaner Production 172 (January):2954–63. https://doi.org/10.1016/j.jclepro.2017.11.117.
+
+Proque, Andressa Lemes, Gervásio Ferreira Dos Santos, Admir Antonio Betarelli Junior, and William D. Larson. 2020. “Effects of Land Use and Transportation Policies on the Spatial Distribution of Urban Energy Consumption in Brazil.” Energy Economics 90 (August):104864. https://doi.org/10.1016/j.eneco.2020.104864.
+
+",0,0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+P. He, J. Liang, Y. (Lucy) Qiu, Q. Li, and B. Xing, “Increase in domestic electricity consumption from particulate air pollution,” Nature Energy, vol. 5, no. 12, pp. 985–995, Dec. 2020, doi: 10.1038/s41560-020-00699-0.
+
+Ye, Yuxiang, Steven F. Koch, and Jiangfeng Zhang. 2018. “Determinants of Household Electricity Consumption in South Africa.” Energy Economics 75 (September):120–33. https://doi.org/10.1016/j.eneco.2018.08.005.",0,0,0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational
+effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.",0,0,0
+Housing or land price (rent)  ,0,"Antonopoulos, Chrissi, Alec Trusty, and Vivek Shandas. 2019. “The Role of Building Characteristics, Demographics, and Urban Heat Islands in Shaping Residential Energy Use.” City and Environment Interactions 3 (November):100021. https://doi.org/10.1016/j.cacint.2020.100021.
+
+Proque, Andressa Lemes, Gervásio Ferreira Dos Santos, Admir Antonio Betarelli Junior, and William D. Larson. 2020. “Effects of Land Use and Transportation Policies on the Spatial Distribution of Urban Energy Consumption in Brazil.” Energy Economics 90 (August):104864. https://doi.org/10.1016/j.eneco.2020.104864.","P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy
+use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.
+
+P. Bansal and S. J. Quan, “Relationships between building characteristics, urban form and building energy use in different local climate zone contexts: An empirical study in Seoul,” Energy and Buildings, vol. 272, Oct. 2022, doi: 10.1016/j.enbuild.2022.112335.",0,"S. Mohammadi, B. de Vries, A. Rafiee, M. Esfandiari, and E. Dias, “An exploratory study on the impact of physical and geospatial characteristics of the urban built environment on the buildings annual electricity usage,” Journal of Building Engineering, vol. 40, Aug. 2021, doi: 10.1016/j.jobe.2021.102359.",0,0,0,0,0,"P. Bansal and S. J. Quan, “Examining behavioral aspect of urban context effect on residential building energy use in Seoul – linking urban walkability to energy,” Building and Environment, vol. 252, Mar. 2024, doi: 10.1016/j.buildenv.2024.111179.",0,0,0
+Gross domestic product,"Q. Wang, J. Lin, K. Zhou, J. Fan, and M. P. Kwan, “Does urbanization lead to less residential energy consumption? A comparative study of 136 countries,” Energy, vol. 202, Jul. 2020, doi: 10.1016/j.energy.2020.117765.
+
+Duan, Haiyan, Siyan Chen, and Junnian Song. 2022. “Characterizing Regional Building Energy Consumption under Joint Climatic and Socioeconomic Impacts.” Energy 245 (April):123290. https://doi.org/10.1016/j.energy.2022.123290.
+
+Zhong, Liang, Xiaosheng Liu, and Jianfeng Ao. 2022. “Spatiotemporal Dynamics Evaluation of Pixel-Level Gross Domestic Product, Electric Power Consumption, and Carbon Emissions in Countries along the Belt and Road.” Energy 239 (January):121841. https://doi.org/10.1016/j.energy.2021.121841.
+
+Sineviciene, Lina, Iryna Sotnyk, and Oleksandr Kubatko. 2017. “Determinants of Energy Efficiency and Energy Consumption of Eastern Europe Post-Communist Economies.” Energy & Environment 28 (8): 870–84. https://doi.org/10.1177/0958305X17734386.","F. Creutzig, G. Baiocchi, R. Bierkandt, P. P. Pichler, and K. C. Seto, “Global typology of urban energy use and potentials for an urbanization mitigation wedge,” Proceedings of the National Academy of Sciences of the United States of America, vol. 112, no. 20, pp. 6283–6288, May 2015, doi: 10.1073/pnas.1315545112.","X. Wang, Y. Tan, G. Zhou, G. Jing, and E. John Francis, “A framework for analyzing energy consumption in 
+urban built-up areas based on single photonic radar and spatial big data,” Energy, vol. 290, Mar. 2024, doi: 10.1016/j.energy.2023.130202.",0,0,0,0,0,0,0,0,0,0,0
+Poverty rate,0,0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, 
+racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,0,0,"D. J. Bednar, T. G. Reames, and G. A. Keoleian, “The intersection of energy and justice: Modeling the spatial, racial/ethnic and socioeconomic patterns of urban residential heating consumption and efficiency in Detroit, Michigan,” Energy and Buildings, vol. 143, pp. 25–34, May 2017, doi: 10.1016/j.enbuild.2017.03.028.",0,0,0,0,0,0
+Regional income,"Nie, Hong-guang, René Kemp, Jin-hua Xu, Véronique Vasseur, and Ying Fan. 2018. “Drivers of Urban and Rural Residential Energy Consumption in China from the Perspectives of Climate and Economic Effects.” Journal of Cleaner Production 172 (January):2954–63. https://doi.org/10.1016/j.jclepro.2017.11.117.",0,0,0,0,0,0,0,0,0,0,0,0,0
+Population,"P. Shen and B. Yang, “Projecting Texas energy use for residential sector under future climate and urbanization scenarios: A bottom-up method 
+based on twenty-year regional energy use data,” Energy, vol. 193, Feb. 2020, doi: 10.1016/j.energy.2019.116694.
+
+Q. Wang, J. Lin, K. Zhou, J. Fan, and M. P. Kwan, “Does urbanization lead to less residential energy consumption? A comparative study of 136 countries,” Energy, vol. 202, Jul. 2020, doi: 10.1016/j.energy.2020.117765.
+
+Elnakat, Afamia, Juan D. Gomez, and Nathlie Booth. 2016. “A Zip Code Study of Socioeconomic, Demographic, and Household Gendered Influence on the Residential Energy Sector.” Energy Reports 2 (November):21–27. https://doi.org/10.1016/j.egyr.2016.01.003.
+
+Miao, Lu. 2017. “Examining the Impact Factors of Urban Residential Energy Consumption and CO 2 Emissions in China – Evidence from City-Level Data.” Ecological Indicators 73 (February):29–37. https://doi.org/10.1016/j.ecolind.2016.09.031.
+
+Duan, Haiyan, Siyan Chen, and Junnian Song. 2022. “Characterizing Regional Building Energy Consumption under Joint Climatic and Socioeconomic Impacts.” Energy 245 (April):123290. https://doi.org/10.1016/j.energy.2022.123290.
+
+Zhang, Ming, and Peng Li. 2015. “Analyzing the Impact of Urbanization on Energy Consumption in Jiangsu Province.” Natural Hazards 76 (1): 177–90. https://doi.org/10.1007/s11069-014-1479-7.
+
+Zhang, Ming, Yan Song, Peng Li, and Huanan Li. 2016. “Study on Affecting Factors of Residential Energy Consumption in Urban and Rural Jiangsu.” Renewable and Sustainable Energy Reviews 53 (January):330–37. https://doi.org/10.1016/j.rser.2015.08.043.",0,0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.
+
+Ki, Jaehong, and D.K. Yoon. 2024. “The Impact of Urban Form on Residential Electricity Consumption: Panel Data Analyses of South Korean Urban Municipalities.” Energy Policy 186 (March):113986. https://doi.org/10.1016/j.enpol.2024.113986.",0,0,0,0,0,0,0,0,0
+Population age,"Han, Xiao, Chu Wei, and Gui-Ying Cao. 2022. “Aging, Generational Shifts, and Energy Consumption in Urban China.” Proceedings of the National Academy of Sciences 119 (37): e2210853119. https://doi.org/10.1073/pnas.2210853119.",0,0,0,"R. Bardazzi and M. G. Pazienza, “When I was your age: Generational effects on long-run residential energy consumption in Italy,” Energy Research and Social Science, vol. 70, Dec. 2020, doi: 10.1016/j.erss.2020.101611.",0,0,0,0,0,0,0,0,0
