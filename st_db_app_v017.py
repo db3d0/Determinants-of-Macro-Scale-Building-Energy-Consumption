@@ -173,9 +173,10 @@ else:
 
 # Login Tab
 with tab0:
-    st.title("Determinants of Macro Scale Building Energy Consumption")
-    st.write("""This tool, developed through a systematic literature review, provides insights into how various determinants influence macro-scale building energy consumption, with references covering studies at neighborhood, urban, state, regional, national, and international levels."""
-             )
+    st.title("Welcome to MacroBuild Energy")
+    welcome_html = ("""<p>Aim: This tool is developed from an extensive literature review of 200 studies on macro-scale building energy consumption across neighborhood, urban, state, regional, national, and global levels. The tool identifies more than 100 determinants that influence macro-scale building energy and clearly shows the direction of their relationship (whether increasing or decreasing) with various macro-scale energy outputs. By revealing how various factors influence energy outputs, the tool offers essential insights for urban planners and policymakers to develop effective energy reduction strategies.</p><p>Use: Select the determinant you wish to explore, then choose the related energy output(s) from the 200 reviewed studies (such as total energy consumption, energy use intensity, or heating consumption).</p><p>Next, indicate the direction of the relationship you're interested in, and the tool will display the relevant study or studies, if available.</p><p>Future development: To further expand this database, users can log in and contribute by adding references they are familiar with or their own studies, clearly specifying the determinants, energy outputs, and the direction of the relationship. After review and approval, these contributions will be added to enhance the database's comprehensiveness.</p><p>In future updates, two additional features—climate and scale (urban vs. national)—will be incorporated to capture the nuanced effects of these determinants on various energy outputs. With these options, the tool will provide even more precise recommendations for developers, planners, and policymakers. We encourage you to start contributing to this database and support efforts toward reducing macro-scale building energy consumption."""
+    )
+    st.markdown(welcome_html, unsafe_allow_html=True)
 
 with tab2:
     if st.session_state.logged_in:
@@ -190,7 +191,7 @@ with tab2:
 
 # Search Tab with Criteria Dropdown and Simplified Direction Selection
 with tab1:
-    st.title("Determinants of Macro Scale Building Energy Consumption")
+    st.title("MacroBuild Energy")
     #st.write("""This tool, developed through a systematic literature review, provides insights into how various determinants influence macro-scale building energy consumption, with references covering studies at neighborhood, urban, state, regional, national, and international levels."""
     #         )
 
@@ -266,7 +267,7 @@ with tab1:
 
                 # Display radio buttons with counts, without default selection
                 selected_direction = st.radio(
-                    "Please select a relationship direction",
+                    "Please select the direction of the relationship",
                     [f"Increase [{increase_count}]", f"Decrease [{decrease_count}]"],
                     index= None,  # No preselection
                     key="selected_direction"
@@ -282,9 +283,18 @@ with tab1:
                     paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, direction_choice)
                     
                     
-                    # Display results or warning
+                    # Display results or warning #The following study (or studies) shows that an increase ...
                     if paragraphs:
-                        st.markdown(f"<p><b>An increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                        # Retrieve the count for the selected direction directly from the dictionary
+                        selected_direction_count = st.session_state.selected_direction.split(" ")[1]
+
+                        if selected_direction_count == "[1]":
+                            st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+
+                        else:
+                            st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+
+
                         for para_id, para_text in paragraphs:
                             # Admin options for logged in users
                             if st.session_state.logged_in:
@@ -314,8 +324,8 @@ with tab1:
                             else:
                                 st.write(para_text)
                     else:
-                        st.warning(f"No references have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
-                
+                        st.warning(f"No studies have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+            
                     # Add New Record Section
                     if st.session_state.logged_in and direction_choice != None:
                         # Only show "Add New Record" button if the form is not currently active
@@ -373,5 +383,5 @@ footer_html = """
         <p style='font-size:12px;'>If your study, or a study you are aware of, suggests any of these relationships are currently missing from the database, please email the study to ssk5573@psu.edu.<br> Your contribution will help further develop and improve this tool.</p>
     </div>
 """
-st.markdown(footer_html, unsafe_allow_html=True)
+#st.markdown(footer_html, unsafe_allow_html=True)
 
