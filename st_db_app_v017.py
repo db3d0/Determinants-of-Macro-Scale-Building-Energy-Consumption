@@ -87,7 +87,7 @@ def split_into_paragraphs(text: str) -> list:
     return paragraphs
 
 # Run this function once to reset and create the database
-csv_to_sqlite('Full_References_010.csv', 'my_database.db')
+#csv_to_sqlite('Full_References_010.csv', 'my_database.db')
 
 # Initialize session state variables
 if "current_tab" not in st.session_state:
