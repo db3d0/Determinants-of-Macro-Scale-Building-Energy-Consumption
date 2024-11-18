@@ -2,12 +2,48 @@ import re
 import sqlite3
 import pandas as pd
 import streamlit as st
+import streamlit_authenticator as stauth
+from datetime import datetime
 
 
 # Admin credentials
-admin_username = "admin957316&7k/."
-admin_password = "5tgdcjyu.w4&GF%$"
+#admin_username = "admin957316&7k/."
+#admin_password = "5tgdcjyu.w4&GF%$"
 
+# User credentials dictionary
+credentials = {
+    "usernames": {
+        "admin": {
+            "name": "admin957316&7k/.",
+            "password": stauth.Hasher(['5tgdcjyu.w4&GF%$']).generate()[0],
+            "role": "admin"
+        },
+        "user1": {
+            "name": "User One",
+            "password": stauth.Hasher(['user1_password']).generate()[0],
+            "role": "user"
+        }
+    }
+}
+
+# Authenticator instance
+authenticator = stauth.Authenticate(
+    credentials,
+    "app_dashboard",
+    "auth_token_key",
+    cookie_expiry_days=30
+)
+
+name, authentication_status, username = authenticator.login("Login", "main")
+
+if authentication_status:
+    st.sidebar.success(f"Welcome, {name}!")
+elif authentication_status is False:
+    st.error("Username/password is incorrect")
+elif authentication_status is None:
+    st.warning("Please enter your username and password")
+
+    
 # Function to reset and re-create the table
 def csv_to_sqlite(csv_file, db_file):
     try:
@@ -87,7 +123,7 @@ def split_into_paragraphs(text: str) -> list:
     return paragraphs
 
 # Run this function once to reset and create the database
-#csv_to_sqlite('Full_References_011.csv', 'my_database.db')
+#csv_to_sqlite('Full_References_010.csv', 'my_database.db')
 
 # Initialize session state variables
 if "current_tab" not in st.session_state:
