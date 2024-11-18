@@ -86,9 +86,11 @@ def split_into_paragraphs(text: str) -> list:
     return paragraphs
 
 # Run this function once to reset and create the database
-#csv_to_sqlite('Full_References_009.csv', 'my_database.db')
+csv_to_sqlite('Full_References_010.csv', 'my_database.db')
 
 # Initialize session state variables
+if "current_tab" not in st.session_state:
+    st.session_state.current_tab = "tab0"  # Default tab
 if 'login_status' not in st.session_state:
     st.session_state.login_status = None
 if 'logged_in' not in st.session_state:
@@ -163,20 +165,24 @@ def logout():
         del st.session_state[key]  # Clear all session states on logout
     st.rerun()
 
-# Placeholder for dynamic tabs
-placeholder = st.empty()
-
-if "current_tab" not in st.session_state:
-    st.session_state.current_tab = "tab0"  # Default tab
-
+# Button to switch tabs
 if st.session_state.logged_in:
-    tab0, tab1, tab2, tab3= placeholder.tabs(["About", "How It Works", f"What's Next", f"Logged in as {st.session_state.current_user}"])
+    tab_labels = ["About", "How It Works", "What's Next", f"Logged in as {st.session_state.current_user}"]
 else:
-    tab0, tab1, tab2, tab3= placeholder.tabs(["About", "How It Works", "What's Next", "Login"])
+    tab_labels = ["About", "How It Works", "What's Next", "Login"]
+
+# Create tabs dynamically
+tabs = st.tabs(tab_labels)
+
+# Assign each tab to a variable
+tab0, tab1, tab2, tab3 = tabs
+
+print(st.session_state.current_tab)
 
 # About Tab
 if st.session_state.current_tab == "tab0":
     with tab0:
+        print(st.session_state.current_tab)
         st.title("Welcome to MacroBuild Energy")
         welcome_html = ("""<h7>This tool distills insights from over 200 studies on macro-scale building energy consumption at neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
         )
@@ -184,206 +190,210 @@ if st.session_state.current_tab == "tab0":
         st.image("bubblechart_placeholder.png")
 
 # Tab 2: What's Next
-elif st.session_state.current_tab == "tab2":
     with tab2:
+            print(st.session_state.current_tab)
             st.title("We're making it better.")
             whats_next_html = ("""
     Future updates will include new features like filters for climate and scale (urban vs. national) to fine-tune recommendations.<br> <strong>Contribute to the mission.</strong>
-    Log in or sign up to add your studies or references, sharing determinants, energy outputs, and their relationships. After review, your contributions will enhance the database, helping us grow this resource for urban planners, developers, and policymakers.
-    Let's work together to optimize macro-scale energy use and create sustainable cities. Dive in, explore, and start contributing today."""
+    Log in or sign up to add your studies or references, sharing determinants, energy outputs, and their relationships. After review, your contributions will enhance the database, helping us grow this resource for urban planners, developers, and policymakers.<br>
+    Let's work together to optimize macro-scale energy use and create sustainable cities. Dive in, explore, and <strong>start contributing today.</strong>"""
         )
             st.markdown(whats_next_html, unsafe_allow_html=True)
             # Button to switch to "Contribute Now" (tab3)
-            if st.button("Contribute Now"):
-                st.session_state.current_tab = "Login"
-                print(st.session_state.current_tab) # Set tab3 as the current tab
-                st.rerun()  # Refresh the app to apply the tab switch
+            #if st.button("Contribute Now"):
+            #    if st.session_state.current_tab != "tab3":
+            #        st.query_params.current_tab(tab="tab3")
+            #        st.session_state.current_tab = "tab3"
+            print(st.session_state.current_tab) # Set tab3 as the current tab
+                    #st.rerun()  # Refresh the app to apply the tab switch
 
-elif st.session_state.current_tab == "tab3":
-    with tab3:
-        if st.session_state.logged_in:
-            if st.button("Log out"):
-                logout()
-        else:
-            st.header("Login")
-            username = st.text_input("Username", placeholder="Enter your username")
-            password = st.text_input("Password", type="password", placeholder="Enter your password")
-            if st.button("Submit"):
-                login(username, password)
+    #elif st.session_state.current_tab == "tab3":
+with tab3:
+    print(st.session_state.current_tab)
+    if st.session_state.logged_in:
+        if st.button("Log out"):
+            logout()
+    else:
+        st.header("Login")
+        username = st.text_input("Username", placeholder="Enter your username")
+        password = st.text_input("Password", type="password", placeholder="Enter your password")
+        if st.button("Submit"):
+            login(username, password)
 
 # How it works Tab with Criteria Dropdown and Simplified Direction Selection
-elif st.session_state.current_tab == "tab1":
-    with tab1:
-        st.title("Determinants of Macro Scale Building Energy Consumption")
-        how_it_works_html = ("""
-        1. Pick Your Focus: Choose the determinant you want to explore.<br>
-        2. Select Energy Outputs: For example energy use intensity or heating demand from our database.<br>
-        3. Filter the Results by the direction of the relationship (e.g., increases or decreases), and access the relevant studies with the links provided."""
+#elif st.session_state.current_tab == "tab1":
+with tab1:
+    print(st.session_state.current_tab)
+    st.title("Determinants of Macro Scale Building Energy Consumption")
+    how_it_works_html = ("""
+    1. Pick Your Focus: Choose the determinant you want to explore.<br>
+    2. Select Energy Outputs: For example energy use intensity or heating demand from our database.<br>
+    3. Filter the Results by the direction of the relationship (e.g., increases or decreases), and access the relevant studies with the links provided."""
+    )
+    st.markdown(how_it_works_html, unsafe_allow_html=True)
+
+    # Criteria Dropdown with Counts and Placeholder
+    criteria_counts = query_criteria_counts(conn)
+    criteria_list = ["Select a determinant"] + [f"{row[0]} [{row[1]}]" for row in criteria_counts]
+
+    selected_criteria_with_count = st.selectbox(
+        "Determinant",
+        criteria_list,
+        index=0 if st.session_state.selected_criteria is None else criteria_list.index(f"{st.session_state.selected_criteria} [{[count for crit, count in criteria_counts if crit == st.session_state.selected_criteria][0]}]"),
+        format_func=lambda x: x if x == "Select a determinant" else x
+    )
+
+    if selected_criteria_with_count != "Select a determinant":
+        new_criteria = selected_criteria_with_count.split(" [")[0]
+        if new_criteria != st.session_state.selected_criteria:
+            st.session_state.selected_criteria = new_criteria
+            st.session_state.selected_method = None  # Reset method on new criteria selection
+            st.rerun()  # Trigger rerun to apply selection changes
+
+        # Energy Method Dropdown with Counts and Placeholder
+        energy_method_counts = query_energy_method_counts(conn, st.session_state.selected_criteria)
+        method_list = ["Select an output"] + [f"{row[0]} [{row[1]}]" for row in energy_method_counts]
+
+        selected_method_with_count = st.selectbox(
+            "Energy Output(s)",
+            method_list,
+            index=0 if st.session_state.selected_method is None else method_list.index(f"{st.session_state.selected_method} [{[count for meth, count in energy_method_counts if meth == st.session_state.selected_method][0]}]"),
+            format_func=lambda x: x if x == "Select an output" else x
         )
-        st.markdown(how_it_works_html, unsafe_allow_html=True)
 
-        # Criteria Dropdown with Counts and Placeholder
-        criteria_counts = query_criteria_counts(conn)
-        criteria_list = ["Select a determinant"] + [f"{row[0]} [{row[1]}]" for row in criteria_counts]
+        if selected_method_with_count != "Select an output":
+            st.session_state.selected_method = selected_method_with_count.split(" [")[0]
 
-        selected_criteria_with_count = st.selectbox(
-            "Determinant",
-            criteria_list,
-            index=0 if st.session_state.selected_criteria is None else criteria_list.index(f"{st.session_state.selected_criteria} [{[count for crit, count in criteria_counts if crit == st.session_state.selected_criteria][0]}]"),
-            format_func=lambda x: x if x == "Select a determinant" else x
-        )
+            # Initialize selected_direction in session state if not already set
+            if 'selected_direction' not in st.session_state:
+                st.session_state.selected_direction = None
+            
+            # Query function to get the count for each direction
+            def query_direction_counts(conn, selected_criteria, selected_method):
+                cursor = conn.cursor()
+                cursor.execute('''
+                    SELECT direction, COUNT(paragraph) as count
+                    FROM energy_data
+                    WHERE criteria = ? AND energy_method = ? AND paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0'
+                    GROUP BY direction
+                ''', (selected_criteria, selected_method))
+                return dict(cursor.fetchall())
 
-        if selected_criteria_with_count != "Select a determinant":
-            new_criteria = selected_criteria_with_count.split(" [")[0]
-            if new_criteria != st.session_state.selected_criteria:
+
+            # Reset selected_direction when criteria or method changes
+            new_criteria = selected_criteria_with_count.split(" [")[0] if selected_criteria_with_count != "Select a determinant" else None
+            new_method = selected_method_with_count.split(" [")[0] if selected_method_with_count != "Select an output" else None
+
+            # Reset selected_direction and rerun if criteria or method has changed
+            if new_criteria != st.session_state.get("selected_criteria"):
                 st.session_state.selected_criteria = new_criteria
-                st.session_state.selected_method = None  # Reset method on new criteria selection
-                st.rerun()  # Trigger rerun to apply selection changes
+                st.session_state.selected_method = None  # Reset method
+                #st.session_state.selected_direction = None  # Reset direction
+                st.rerun()
+            elif new_method != st.session_state.get("selected_method"):
+                st.session_state.selected_method = new_method
+                #st.session_state.selected_direction = None  # Reset direction
+                st.rerun()
 
-            # Energy Method Dropdown with Counts and Placeholder
-            energy_method_counts = query_energy_method_counts(conn, st.session_state.selected_criteria)
-            method_list = ["Select an output"] + [f"{row[0]} [{row[1]}]" for row in energy_method_counts]
+            # Ensure criteria and method are selected before showing the direction choice
+            if st.session_state.selected_method:
+                # Fetch counts for each direction
+                direction_counts = query_direction_counts(conn, st.session_state.selected_criteria, st.session_state.selected_method)
+                increase_count = direction_counts.get("Increase", 0)
+                decrease_count = direction_counts.get("Decrease", 0)
 
-            selected_method_with_count = st.selectbox(
-                "Energy Output(s)",
-                method_list,
-                index=0 if st.session_state.selected_method is None else method_list.index(f"{st.session_state.selected_method} [{[count for meth, count in energy_method_counts if meth == st.session_state.selected_method][0]}]"),
-                format_func=lambda x: x if x == "Select an output" else x
-            )
+                # Display radio buttons with counts, without default selection
+                selected_direction = st.radio(
+                    "Please select the direction of the relationship",
+                    [f"Increase [{increase_count}]", f"Decrease [{decrease_count}]"],
+                    index= None,  # No preselection
+                    key="selected_direction"
+                )
 
-            if selected_method_with_count != "Select an output":
-                st.session_state.selected_method = selected_method_with_count.split(" [")[0]
+                # Proceed only if a direction is selected
+                if selected_direction:
+                    # Remove count from selected direction (e.g., 'Increase' instead of 'Increase [5]')
+                    direction_choice = selected_direction.split(" ")[0]
 
-                # Initialize selected_direction in session state if not already set
-                if 'selected_direction' not in st.session_state:
-                    st.session_state.selected_direction = None
-                
-                # Query function to get the count for each direction
-                def query_direction_counts(conn, selected_criteria, selected_method):
-                    cursor = conn.cursor()
-                    cursor.execute('''
-                        SELECT direction, COUNT(paragraph) as count
-                        FROM energy_data
-                        WHERE criteria = ? AND energy_method = ? AND paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0'
-                        GROUP BY direction
-                    ''', (selected_criteria, selected_method))
-                    return dict(cursor.fetchall())
+                # Continue with other functionality only if a direction is chosen
+                #if st.session_state.get("selected_direction"):
+                    paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, direction_choice)
+                    
+                    
+                    # Display results or warning #The following study (or studies) shows that an increase ...
+                    if paragraphs:
+                        # Retrieve the count for the selected direction directly from the dictionary
+                        selected_direction_count = st.session_state.selected_direction.split(" ")[1]
 
+                        if selected_direction_count == "[1]":
+                            st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
 
-                # Reset selected_direction when criteria or method changes
-                new_criteria = selected_criteria_with_count.split(" [")[0] if selected_criteria_with_count != "Select a determinant" else None
-                new_method = selected_method_with_count.split(" [")[0] if selected_method_with_count != "Select an output" else None
-
-                # Reset selected_direction and rerun if criteria or method has changed
-                if new_criteria != st.session_state.get("selected_criteria"):
-                    st.session_state.selected_criteria = new_criteria
-                    st.session_state.selected_method = None  # Reset method
-                    #st.session_state.selected_direction = None  # Reset direction
-                    st.rerun()
-                elif new_method != st.session_state.get("selected_method"):
-                    st.session_state.selected_method = new_method
-                    #st.session_state.selected_direction = None  # Reset direction
-                    st.rerun()
-
-                # Ensure criteria and method are selected before showing the direction choice
-                if st.session_state.selected_method:
-                    # Fetch counts for each direction
-                    direction_counts = query_direction_counts(conn, st.session_state.selected_criteria, st.session_state.selected_method)
-                    increase_count = direction_counts.get("Increase", 0)
-                    decrease_count = direction_counts.get("Decrease", 0)
-
-                    # Display radio buttons with counts, without default selection
-                    selected_direction = st.radio(
-                        "Please select the direction of the relationship",
-                        [f"Increase [{increase_count}]", f"Decrease [{decrease_count}]"],
-                        index= None,  # No preselection
-                        key="selected_direction"
-                    )
-
-                    # Proceed only if a direction is selected
-                    if selected_direction:
-                        # Remove count from selected direction (e.g., 'Increase' instead of 'Increase [5]')
-                        direction_choice = selected_direction.split(" ")[0]
-
-                    # Continue with other functionality only if a direction is chosen
-                    #if st.session_state.get("selected_direction"):
-                        paragraphs = query_paragraphs(conn, st.session_state.selected_criteria, st.session_state.selected_method, direction_choice)
-                        
-                        
-                        # Display results or warning #The following study (or studies) shows that an increase ...
-                        if paragraphs:
-                            # Retrieve the count for the selected direction directly from the dictionary
-                            selected_direction_count = st.session_state.selected_direction.split(" ")[1]
-
-                            if selected_direction_count == "[1]":
-                                st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
-
-                            else:
-                                st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
-
-
-                            for para_id, para_text in paragraphs:
-                                # Admin options for logged in users
-                                if st.session_state.logged_in:
-                                    new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
-                                    col1, col2 = st.columns([1, 4])
-                                    with col1:
-                                        if st.button("Save changes", key=f"save_btn_{para_id}"):
-                                            admin_actions(conn, para_id, new_text=new_text)
-                                            st.rerun()
-                                    with col2:
-                                        if st.session_state.get(f"confirm_delete_{para_id}", False):
-                                            st.warning(f"Are you sure you want to delete record {para_id}?")
-                                            col_yes, col_no = st.columns(2)
-                                            with col_yes:
-                                                if st.button("Yes", key=f"confirm_yes_{para_id}"):
-                                                    admin_actions(conn, para_id, delete=True)
-                                                    st.session_state[f"confirm_delete_{para_id}"] = False
-                                                    st.rerun()
-                                            with col_no:
-                                                if st.button("Cancel", key=f"confirm_no_{para_id}"):
-                                                    st.session_state[f"confirm_delete_{para_id}"] = False
-                                                    st.rerun()
-                                        else:
-                                            if st.button("Delete", key=f"delete_btn_{para_id}"):
-                                                st.session_state[f"confirm_delete_{para_id}"] = True
-                                                st.rerun()
-                                else:
-                                    st.write(para_text)
                         else:
-                            st.warning(f"No studies have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
-                
-                        # Add New Record Section
-                        if st.session_state.logged_in and direction_choice != None:
-                            # Only show "Add New Record" button if the form is not currently active
-                            if not st.session_state.get("show_new_record_form", False):
-                                if st.button("Add New Record", key="add_new_record"):
-                                    st.session_state.show_new_record_form = True  # Show form once button is clicked
+                            st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
 
-                            # Display the form only when 'show_new_record_form' is True
-                            if st.session_state.get("show_new_record_form", False):
-                                new_paragraph = st.text_area(
-                                    f"Add new record for {st.session_state.selected_criteria} and {st.session_state.selected_method} ({direction_choice})",
-                                    key="new_paragraph"
-                                )
-                                
-                                # Show "Save" button within the form
-                                if st.button("Save", key="save_new_record"):
-                                    # Save record only if text and direction are provided
-                                    if new_paragraph.strip() and direction_choice:
-                                        cursor = conn.cursor()
-                                        cursor.execute('''
-                                            INSERT INTO energy_data (criteria, energy_method, direction, paragraph)
-                                            VALUES (?, ?, ?, ?)
-                                        ''', (st.session_state.selected_criteria, st.session_state.selected_method, direction_choice, new_paragraph))
-                                        conn.commit()
-                                        st.success("New record added successfully.")
-                                        
-                                        # Hide the form and refresh to show the new record
-                                        st.session_state.show_new_record_form = False  # Reset form state
-                                        st.rerun()  # Refresh to display the new record immediately
+
+                        for para_id, para_text in paragraphs:
+                            # Admin options for logged in users
+                            if st.session_state.logged_in:
+                                new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
+                                col1, col2 = st.columns([1, 4])
+                                with col1:
+                                    if st.button("Save changes", key=f"save_btn_{para_id}"):
+                                        admin_actions(conn, para_id, new_text=new_text)
+                                        st.rerun()
+                                with col2:
+                                    if st.session_state.get(f"confirm_delete_{para_id}", False):
+                                        st.warning(f"Are you sure you want to delete record {para_id}?")
+                                        col_yes, col_no = st.columns(2)
+                                        with col_yes:
+                                            if st.button("Yes", key=f"confirm_yes_{para_id}"):
+                                                admin_actions(conn, para_id, delete=True)
+                                                st.session_state[f"confirm_delete_{para_id}"] = False
+                                                st.rerun()
+                                        with col_no:
+                                            if st.button("Cancel", key=f"confirm_no_{para_id}"):
+                                                st.session_state[f"confirm_delete_{para_id}"] = False
+                                                st.rerun()
                                     else:
-                                        st.warning("Please select a direction and ensure the record is not empty before saving.")
+                                        if st.button("Delete", key=f"delete_btn_{para_id}"):
+                                            st.session_state[f"confirm_delete_{para_id}"] = True
+                                            st.rerun()
+                            else:
+                                st.write(para_text)
+                    else:
+                        st.warning(f"No studies have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
+            
+                    # Add New Record Section
+                    if st.session_state.logged_in and direction_choice != None:
+                        # Only show "Add New Record" button if the form is not currently active
+                        if not st.session_state.get("show_new_record_form", False):
+                            if st.button("Add New Record", key="add_new_record"):
+                                st.session_state.show_new_record_form = True  # Show form once button is clicked
+
+                        # Display the form only when 'show_new_record_form' is True
+                        if st.session_state.get("show_new_record_form", False):
+                            new_paragraph = st.text_area(
+                                f"Add new record for {st.session_state.selected_criteria} and {st.session_state.selected_method} ({direction_choice})",
+                                key="new_paragraph"
+                            )
+                            
+                            # Show "Save" button within the form
+                            if st.button("Save", key="save_new_record"):
+                                # Save record only if text and direction are provided
+                                if new_paragraph.strip() and direction_choice:
+                                    cursor = conn.cursor()
+                                    cursor.execute('''
+                                        INSERT INTO energy_data (criteria, energy_method, direction, paragraph)
+                                        VALUES (?, ?, ?, ?)
+                                    ''', (st.session_state.selected_criteria, st.session_state.selected_method, direction_choice, new_paragraph))
+                                    conn.commit()
+                                    st.success("New record added successfully.")
+                                    
+                                    # Hide the form and refresh to show the new record
+                                    st.session_state.show_new_record_form = False  # Reset form state
+                                    st.rerun()  # Refresh to display the new record immediately
+                                else:
+                                    st.warning("Please select a direction and ensure the record is not empty before saving.")
 
 
 
