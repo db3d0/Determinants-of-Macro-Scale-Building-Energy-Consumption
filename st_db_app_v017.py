@@ -182,7 +182,7 @@ tab0, tab1, tab2, tab3 = tabs
 #if st.session_state.current_tab == "tab0":
 with tab0:
     st.title("Welcome to MacroBuild Energy")
-    welcome_html = ("""<h7>This tool distills insights from over 200 studies on macro-scale building energy consumption at neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
+    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
     )
     st.markdown(welcome_html, unsafe_allow_html=True)
     st.image("bubblechart_placeholder.png")
