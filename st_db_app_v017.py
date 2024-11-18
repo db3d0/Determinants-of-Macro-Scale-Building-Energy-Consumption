@@ -178,39 +178,34 @@ tabs = st.tabs(tab_labels)
 # Assign each tab to a variable
 tab0, tab1, tab2, tab3 = tabs
 
-print(st.session_state.current_tab)
-
 # About Tab
-if st.session_state.current_tab == "tab0":
-    with tab0:
-        print(st.session_state.current_tab)
-        st.title("Welcome to MacroBuild Energy")
-        welcome_html = ("""<h7>This tool distills insights from over 200 studies on macro-scale building energy consumption at neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
-        )
-        st.markdown(welcome_html, unsafe_allow_html=True)
-        st.image("bubblechart_placeholder.png")
+#if st.session_state.current_tab == "tab0":
+with tab0:
+    st.title("Welcome to MacroBuild Energy")
+    welcome_html = ("""<h7>This tool distills insights from over 200 studies on macro-scale building energy consumption at neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
+    )
+    st.markdown(welcome_html, unsafe_allow_html=True)
+    st.image("bubblechart_placeholder.png")
 
 # Tab 2: What's Next
-    with tab2:
-            print(st.session_state.current_tab)
-            st.title("We're making it better.")
-            whats_next_html = ("""
-    Future updates will include new features like filters for climate and scale (urban vs. national) to fine-tune recommendations.<br> <strong>Contribute to the mission.</strong>
-    Log in or sign up to add your studies or references, sharing determinants, energy outputs, and their relationships. After review, your contributions will enhance the database, helping us grow this resource for urban planners, developers, and policymakers.<br>
-    Let's work together to optimize macro-scale energy use and create sustainable cities. Dive in, explore, and <strong>start contributing today.</strong>"""
-        )
-            st.markdown(whats_next_html, unsafe_allow_html=True)
-            # Button to switch to "Contribute Now" (tab3)
-            #if st.button("Contribute Now"):
-            #    if st.session_state.current_tab != "tab3":
-            #        st.query_params.current_tab(tab="tab3")
-            #        st.session_state.current_tab = "tab3"
-            print(st.session_state.current_tab) # Set tab3 as the current tab
-                    #st.rerun()  # Refresh the app to apply the tab switch
+with tab2:
+        st.title("We're making it better.")
+        whats_next_html = ("""
+Future updates will include new features like filters for climate and scale (urban vs. national) to fine-tune recommendations.</p> <strong>Contribute to the mission.</strong>
+Log in or sign up to add your studies or references, sharing determinants, energy outputs, and their relationships. After review, your contributions will enhance the database, helping us grow this resource for urban planners, developers, and policymakers.</p>
+Let's work together to optimize macro-scale energy use and create sustainable cities. <br><strong>Dive in, explore, and start contributing today.</strong>"""
+    )
+        st.markdown(whats_next_html, unsafe_allow_html=True)
+        # Button to switch to "Contribute Now" (tab3)
+        #if st.button("Contribute Now"):
+        #    if st.session_state.current_tab != "tab3":
+        #        st.query_params.current_tab(tab="tab3")
+        #        st.session_state.current_tab = "tab3"
+        # Set tab3 as the current tab
+        #st.rerun()  # Refresh the app to apply the tab switch
 
-    #elif st.session_state.current_tab == "tab3":
+#elif st.session_state.current_tab == "tab3":
 with tab3:
-    print(st.session_state.current_tab)
     if st.session_state.logged_in:
         if st.button("Log out"):
             logout()
@@ -224,7 +219,6 @@ with tab3:
 # How it works Tab with Criteria Dropdown and Simplified Direction Selection
 #elif st.session_state.current_tab == "tab1":
 with tab1:
-    print(st.session_state.current_tab)
     st.title("Determinants of Macro Scale Building Energy Consumption")
     how_it_works_html = ("""
     1. Pick Your Focus: Choose the determinant you want to explore.<br>
