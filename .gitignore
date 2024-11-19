@@ -3,3 +3,4 @@ old
 .vscode
 myvenv
 sqlite3
+.env
