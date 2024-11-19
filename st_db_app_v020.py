@@ -173,7 +173,7 @@ def query_criteria_counts(conn):
     cursor.execute('''
         SELECT criteria, COUNT(paragraph) as count
         FROM energy_data
-        WHERE paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0'
+        WHERE paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND (paragraph != '0.0' AND status NOT IN ("pending", "rejected"))
         GROUP BY criteria
     ''')
     return cursor.fetchall()
