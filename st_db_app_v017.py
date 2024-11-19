@@ -3,7 +3,6 @@ import sqlite3
 import pandas as pd
 import streamlit as st
 
-
 # Admin credentials
 admin_username = "admin957316&7k/."
 admin_password = "5tgdcjyu.w4&GF%$"
