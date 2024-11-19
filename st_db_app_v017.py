@@ -2,11 +2,66 @@ import re
 import sqlite3
 import pandas as pd
 import streamlit as st
+import streamlit_authenticator as stauth
+import streamlit_authenticator as Hasher
+from datetime import datetime
+import os
+from dotenv import load_dotenv
+import bcrypt
+import time
 
+load_dotenv()
 
-# Admin credentials
-admin_username = "admin957316&7k/."
-admin_password = "5tgdcjyu.w4&GF%$"
+def admin_dashboard():
+    st.subheader("Review user submissions")
+
+    # Connect to the database
+    conn = sqlite3.connect("my_database.db")
+    cursor = conn.cursor()
+
+    # Fetch all records with their status
+    records = cursor.execute("SELECT id, criteria, paragraph, user, status FROM energy_data").fetchall()
+
+    if not records:
+        st.write("No records found.")
+    else:
+        for record in records:
+            record_id, criteria, paragraph, user, status = record
+            if status == "pending":
+                st.write(f"**Record ID:** {record_id}")
+                st.write(f"**Criteria:** {criteria}")
+                st.write(f"**created by:** {user}")
+                st.write(f"**Status:** {status}")
+                st.write(f"**Paragraph:** {paragraph}")
+                
+                # Admin options to approve/reject or take action
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button(f"Approve {record_id}"):
+                        cursor.execute("UPDATE energy_data SET status = 'approved' WHERE id = ?", (record_id,))
+                        conn.commit()
+                        st.success(f"Record {record_id} approved.")
+                with col2:
+                    if st.button(f"Reject {record_id}"):
+                        cursor.execute("UPDATE energy_data SET status = 'rejected' WHERE id = ?", (record_id,))
+                        conn.commit()
+                        st.error(f"Record {record_id} rejected.")
+                st.markdown("---")  # Separator between records
+
+    conn.close()
+
+def edit_columns():
+    db_file = 'my_database.db'
+    conn = sqlite3.connect(db_file)
+    cursor = conn.cursor()
+
+    # Add `status` column default to 'None'
+    cursor.execute("UPDATE energy_data SET status = 'None'")
+    conn.commit()
+    conn.close()
+
+# Run this function once to update the database schema
+#edit_columns()
 
 # Function to reset and re-create the table
 def csv_to_sqlite(csv_file, db_file):
@@ -55,8 +110,8 @@ def csv_to_sqlite(csv_file, db_file):
                 
                 for paragraph in paragraphs:
                     cursor.execute('''
-                        INSERT INTO energy_data (group_id, criteria, energy_method, direction, paragraph)
-                        VALUES (?, ?, ?, ?, ?)
+                        INSERT INTO energy_data (group_id, criteria, energy_method, direction, paragraph, status)
+                        VALUES (?, ?, ?, ?, ?, ?)
                     ''', (group_id, criteria, base_method, 'Increase', paragraph))
 
             # Insert for each reduction column
@@ -67,8 +122,8 @@ def csv_to_sqlite(csv_file, db_file):
                 
                 for paragraph in paragraphs:
                     cursor.execute('''
-                        INSERT INTO energy_data (group_id, criteria, energy_method, direction, paragraph)
-                        VALUES (?, ?, ?, ?, ?)
+                        INSERT INTO energy_data (group_id, criteria, energy_method, direction, paragraph, status)
+                        VALUES (?, ?, ?, ?, ?, ?)
                     ''', (group_id, criteria, base_method, 'Decrease', paragraph))
 
             group_id += 1
@@ -103,7 +158,9 @@ if 'selected_criteria' not in st.session_state:
 if 'selected_method' not in st.session_state:
     st.session_state.selected_method = None
 if 'show_new_record_form' not in st.session_state:
-    st.session_state.show_new_record_form = False
+    st.session_state.show_new_record_form = False# Initialize session state variables
+if "user_role" not in st.session_state:
+    st.session_state.user_role = None
 
 # Database connection
 db_file = 'my_database.db'
@@ -125,7 +182,7 @@ def query_energy_method_counts(conn, selected_criteria):
     cursor.execute('''
         SELECT energy_method, COUNT(paragraph) as count
         FROM energy_data
-        WHERE criteria = ? AND (paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0')
+        WHERE criteria = ? AND (paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0' AND status NOT IN ("pending", "rejected")) 
         GROUP BY energy_method
     ''', (selected_criteria,))
     return cursor.fetchall()
@@ -134,7 +191,7 @@ def query_paragraphs(conn, criteria, energy_method, direction):
     cursor = conn.cursor()
     cursor.execute('''
         SELECT id, paragraph FROM energy_data
-        WHERE criteria = ? AND energy_method = ? AND direction = ?
+        WHERE criteria = ? AND energy_method = ? AND direction = ? AND status NOT IN ("pending", "rejected")
     ''', (criteria, energy_method, direction))
     paragraphs = cursor.fetchall()
     return [(id, para) for id, para in paragraphs if para not in ['0', '0.0', '', None]]
@@ -170,7 +227,7 @@ def logout():
 if st.session_state.logged_in:
     tab_labels = ["About", "How It Works", "What's Next", f"Logged in as {st.session_state.current_user}"]
 else:
-    tab_labels = ["About", "How It Works", "What's Next", "Login"]
+    tab_labels = ["About", "How It Works", "What's Next", "Account"]
 
 # Create tabs dynamically
 tabs = st.tabs(tab_labels)
@@ -182,12 +239,12 @@ tab0, tab1, tab2, tab3 = tabs
 #if st.session_state.current_tab == "tab0":
 with tab0:
     st.title("Welcome to MacroBuild Energy")
-    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.
-</p><p><h7>"""
+    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
     )
     st.markdown(welcome_html, unsafe_allow_html=True)
     st.image("bubblechart_placeholder.png")
     st.caption("Bubble chart visualizing studied determinants, energy outputs, and the direction of their relationships based on the literature.")
+
 
 # Tab 2: What's Next
 with tab2:
@@ -208,15 +265,113 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
 
 #elif st.session_state.current_tab == "tab3":
 with tab3:
-    if st.session_state.logged_in:
-        if st.button("Log out"):
-            logout()
-    else:
+    # Run this only once to set up the user table
+    def initialize_user_table():
+        conn = sqlite3.connect("my_database.db")
+        cursor = conn.cursor()
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL,
+                role TEXT CHECK(role IN ('admin', 'user')) NOT NULL DEFAULT 'user',
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        ''')
+        conn.commit()
+        conn.close()
+
+    #initialize_user_table()
+
+    def initialize_admin():
+        admin_username = "admin"
+        admin_password = os.getenv("ADMIN_PASSWORD", "default_admin_password")
+        hashed_password = bcrypt.hashpw(admin_password.encode('utf-8'), bcrypt.gensalt())
+
+        conn = sqlite3.connect("my_database.db")
+        cursor = conn.cursor()
+        cursor.execute('''
+            INSERT OR IGNORE INTO users (username, password, role)
+            VALUES (?, ?, 'admin')
+        ''', (admin_username, hashed_password))
+        conn.commit()
+        conn.close()
+
+    #initialize_admin()
+
+    def signup():
+        st.header("Sign Up")
+        username = st.text_input("Username", placeholder="Enter your username", key="signup_username")
+        password = st.text_input("Password", type="password", placeholder="Enter your password", key="signup_password")
+        if st.button("Sign Up"):
+            if username and password:
+                hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+                try:
+                    conn = sqlite3.connect("my_database.db")
+                    cursor = conn.cursor()
+                    cursor.execute('''
+                        INSERT INTO users (username, password, role)
+                        VALUES (?, ?, 'user')
+                    ''', (username, hashed_password))
+                    conn.commit()
+                    conn.close()
+                    st.success("Account created successfully!")
+                except sqlite3.IntegrityError:
+                    st.error("Username already exists.")
+            else:
+                st.error("Please fill out all fields.")
+
+
+    def login():
         st.header("Login")
-        username = st.text_input("Username", placeholder="Enter your username")
-        password = st.text_input("Password", type="password", placeholder="Enter your password")
-        if st.button("Submit"):
-            login(username, password)
+        username = st.text_input("Username", placeholder="Enter your username", key="login_username")
+        password = st.text_input("Password", type="password", placeholder="Enter your password", key="login_password")
+        if st.button("Login"):
+            conn = sqlite3.connect("my_database.db")
+            cursor = conn.cursor()
+            cursor.execute("SELECT password, role FROM users WHERE username = ?", (username,))
+            user = cursor.fetchone()
+            conn.close()
+
+            if user and bcrypt.checkpw(password.encode('utf-8'), user[0]):
+                st.session_state.logged_in = True
+                st.session_state.current_user = username
+                st.session_state.user_role = user[1]
+                st.success(f"Welcome, {username}!")
+                st.rerun()
+            else:
+                st.error("Invalid username or password.")
+
+
+    if "logged_in" in st.session_state and st.session_state.logged_in:
+        if st.session_state.user_role == "admin":
+            st.sidebar.header("Admin Dashboard") # Admin-specific functionality
+            welcome_admin_dashboard = f"Admin can add/edit and delete records to the dataset like this:<br>1. Select the relevant criteria from dropdown menus and a direction button.<br>2. Add, Edit, or Delete records<br>3. After editing or creating a new record click Save.<br>Your entry will be saved to the dataset. <br>Thank you for your contribution."
+            st.sidebar.write(welcome_admin_dashboard, unsafe_allow_html=True)
+            
+            admin_dashboard() #show admin dashboard
+
+            if st.sidebar.button("logout"):
+                logout()
+                st.rerun()
+
+
+
+        elif st.session_state.user_role == "user":             # User-specific functionality
+            st.sidebar.header(f"Weclome back {st.session_state.current_user}")
+            welcome_user_dashboard = f"Add your findings to the dataset by:<br>1. Selecting the relevant criteria from dropdown menus and a direction button.<br>2. Click the add record button at the bottom of the list.<br>3. Paste your entry in the box and click Save.<br>Your entry will be submitted pending verification. <br>Thank you for your contribution."
+            st.sidebar.write(welcome_user_dashboard, unsafe_allow_html=True)
+            if st.sidebar.button("logout"):
+                logout()
+                st.rerun()
+
+    else:
+        #st.sidebar.header("Login or Sign Up")
+        login_tab, signup_tab = st.tabs(["Login", "Sign Up"])
+        with login_tab:
+            login()
+        with signup_tab:
+            signup()
 
 # How it works Tab with Criteria Dropdown and Simplified Direction Selection
 #elif st.session_state.current_tab == "tab1":
@@ -271,7 +426,7 @@ with tab1:
                 cursor.execute('''
                     SELECT direction, COUNT(paragraph) as count
                     FROM energy_data
-                    WHERE criteria = ? AND energy_method = ? AND paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0'
+                    WHERE criteria = ? AND energy_method = ? AND paragraph IS NOT NULL AND paragraph != '' AND paragraph != '0' AND paragraph != '0.0' AND status NOT IN ("pending", "rejected")
                     GROUP BY direction
                 ''', (selected_criteria, selected_method))
                 return dict(cursor.fetchall())
@@ -331,7 +486,7 @@ with tab1:
 
                         for para_id, para_text in paragraphs:
                             # Admin options for logged in users
-                            if st.session_state.logged_in:
+                            if st.session_state.user_role == "admin":
                                 new_text = st.text_area(f"Edit text for record {para_id}", value=para_text, key=f"edit_{para_id}")
                                 col1, col2 = st.columns([1, 4])
                                 with col1:
@@ -380,14 +535,15 @@ with tab1:
                                 if new_paragraph.strip() and direction_choice:
                                     cursor = conn.cursor()
                                     cursor.execute('''
-                                        INSERT INTO energy_data (criteria, energy_method, direction, paragraph)
-                                        VALUES (?, ?, ?, ?)
-                                    ''', (st.session_state.selected_criteria, st.session_state.selected_method, direction_choice, new_paragraph))
+                                        INSERT INTO energy_data (criteria, energy_method, direction, paragraph, status, user)
+                                        VALUES (?, ?, ?, ?, ?, ?)
+                                    ''', (st.session_state.selected_criteria, st.session_state.selected_method, direction_choice, new_paragraph, "pending", st.session_state.current_user))
                                     conn.commit()
-                                    st.success("New record added successfully.")
+                                    st.success("New record submitted successfully. Status: pending verification")
                                     
                                     # Hide the form and refresh to show the new record
-                                    st.session_state.show_new_record_form = False  # Reset form state
+                                    st.session_state.show_new_record_form = False  # Reset form state  
+                                    time.sleep(3)                                  
                                     st.rerun()  # Refresh to display the new record immediately
                                 else:
                                     st.warning("Please select a direction and ensure the record is not empty before saving.")
