@@ -2,8 +2,8 @@ import re
 import sqlite3
 import pandas as pd
 import streamlit as st
-#import streamlit_authenticator as stauth
-#import streamlit_authenticator as Hasher
+import streamlit_authenticator as stauth
+import streamlit_authenticator as Hasher
 from datetime import datetime
 import os
 from dotenv import load_dotenv
