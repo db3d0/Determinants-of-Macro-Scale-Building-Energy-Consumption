@@ -2,11 +2,48 @@ import re
 import sqlite3
 import pandas as pd
 import streamlit as st
+import streamlit_authenticator as stauth
+from datetime import datetime
+
 
 # Admin credentials
-admin_username = "admin957316&7k/."
-admin_password = "5tgdcjyu.w4&GF%$"
+#admin_username = "admin957316&7k/."
+#admin_password = "5tgdcjyu.w4&GF%$"
 
+# User credentials dictionary
+credentials = {
+    "usernames": {
+        "admin": {
+            "name": "admin957316&7k/.",
+            "password": stauth.Hasher(['5tgdcjyu.w4&GF%$']).generate()[0],
+            "role": "admin"
+        },
+        "user1": {
+            "name": "User One",
+            "password": stauth.Hasher(['user1_password']).generate()[0],
+            "role": "user"
+        }
+    }
+}
+
+# Authenticator instance
+authenticator = stauth.Authenticate(
+    credentials,
+    "app_dashboard",
+    "auth_token_key",
+    cookie_expiry_days=30
+)
+
+name, authentication_status, username = authenticator.login("Login", "main")
+
+if authentication_status:
+    st.sidebar.success(f"Welcome, {name}!")
+elif authentication_status is False:
+    st.error("Username/password is incorrect")
+elif authentication_status is None:
+    st.warning("Please enter your username and password")
+
+    
 # Function to reset and re-create the table
 def csv_to_sqlite(csv_file, db_file):
     try:
@@ -86,7 +123,7 @@ def split_into_paragraphs(text: str) -> list:
     return paragraphs
 
 # Run this function once to reset and create the database
-#csv_to_sqlite('Full_References_011.csv', 'my_database.db')
+#csv_to_sqlite('Full_References_010.csv', 'my_database.db')
 
 # Initialize session state variables
 if "current_tab" not in st.session_state:
@@ -181,12 +218,10 @@ tab0, tab1, tab2, tab3 = tabs
 #if st.session_state.current_tab == "tab0":
 with tab0:
     st.title("Welcome to MacroBuild Energy")
-    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.
-</p><p><h7>"""
+    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
     )
     st.markdown(welcome_html, unsafe_allow_html=True)
     st.image("bubblechart_placeholder.png")
-    st.caption("Bubble chart visualizing studied determinants, energy outputs, and the direction of their relationships based on the literature.")
 
 # Tab 2: What's Next
 with tab2:
