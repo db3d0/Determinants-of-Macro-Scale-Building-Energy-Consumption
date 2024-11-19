@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 import bcrypt
 import time
 
+
 load_dotenv()
 
 def admin_dashboard():
@@ -227,7 +228,7 @@ def logout():
 if st.session_state.logged_in:
     tab_labels = ["About", "How It Works", "What's Next", f"Logged in as {st.session_state.current_user}"]
 else:
-    tab_labels = ["About", "How It Works", "What's Next", "Account"]
+    tab_labels = ["About%", "How It Works", "What's Next", "Account"]
 
 # Create tabs dynamically
 tabs = st.tabs(tab_labels)
