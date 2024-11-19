@@ -6,7 +6,7 @@ import streamlit as st
 #import streamlit_authenticator as Hasher
 from datetime import datetime
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import bcrypt
 import time
 
