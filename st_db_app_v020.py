@@ -225,30 +225,20 @@ def logout():
 
 # Button to switch tabs
 if st.session_state.current_user == "admin":
-    tab_labels = ["About", "How It Works", "Review Pending Data"]
+    tab_labels = ["MacroBuild Energy", "Review Pending Data"]
 if st.session_state.logged_in:
-    tab_labels = ["About", "How It Works", f"Logged in as {st.session_state.current_user}"]
+    tab_labels = ["MacroBuild Energy", f"Logged in as {st.session_state.current_user}"]
 else:
-    tab_labels = ["About", "How It Works", "Contribute"]
+    tab_labels = ["Macrobuild Energy", "Contribute"]
 
 # Create tabs dynamically
 tabs = st.tabs(tab_labels)
 
 # Assign each tab to a variable
-tab0, tab1, tab2= tabs
+tab0, tab1= tabs
 
 
-# About Tab
-#if st.session_state.current_tab == "tab0":
-with tab0:
-    st.title("Welcome to MacroBuild Energy")
-    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
-    )
-    st.markdown(welcome_html, unsafe_allow_html=True)
-    st.image("bubblechart_placeholder.png")
-    st.caption("Bubble chart visualizing studied determinants, energy outputs, and the direction of their relationships based on the literature.")
-
-with tab2:
+with tab1:
     st.title("We're making it better.")
     whats_next_html = ("""
 Future updates will include new features like filters for climate and scale (urban vs. national) to fine-tune recommendations.</p> <strong>Contribute to the mission.</strong>
@@ -366,8 +356,12 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
 
 # How it works Tab with Criteria Dropdown and Simplified Direction Selection
 #elif st.session_state.current_tab == "tab1":
-with tab1:
-    st.title("Determinants of Macro Scale Building Energy Consumption")
+with tab0:
+    st.title("Welcome to MacroBuild Energy")
+    welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
+    )
+    st.markdown(welcome_html, unsafe_allow_html=True)
+
     how_it_works_html = ("""
     1. Pick Your Focus: Choose the determinant you want to explore.<br>
     2. Select Energy Outputs: For example energy use intensity or heating demand from our database.<br>
@@ -539,12 +533,10 @@ with tab1:
                                 else:
                                     st.warning("Please select a direction and ensure the record is not empty before saving.")
 
-
+    st.image("bubblechart_placeholder.png")
+    st.caption("Bubble chart visualizing studied determinants, energy outputs, and the direction of their relationships based on the literature.")
 
 conn.close()
-
-
-
 
 # Footer with fixed positioning
 footer_html = """
