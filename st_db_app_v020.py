@@ -14,27 +14,26 @@ load_dotenv()
 
 
 def admin_dashboard():
-    st.subheader("Review user submissions")
+    st.subheader("Review Pending Data Submissions")
 
     # Connect to the database
     conn = sqlite3.connect("my_database.db")
     cursor = conn.cursor()
 
     # Fetch all records with their status
-    records = cursor.execute("SELECT id, criteria, paragraph, user, status FROM energy_data").fetchall()
+    records = cursor.execute("SELECT id, criteria, energy_method, direction, paragraph, user, status FROM energy_data").fetchall()
 
     if not records:
         st.write("No records found.")
     else:
         for record in records:
-            record_id, criteria, paragraph, user, status = record
+            record_id, criteria, energy_method, direction, paragraph, user, status = record
             if status == "pending":
-                st.write(f"**Record ID:** {record_id}")
-                st.write(f"**Criteria:** {criteria}")
-                st.write(f"**created by:** {user}")
-                st.write(f"**Status:** {status}")
-                st.write(f"**Paragraph:** {paragraph}")
-                
+                st.write(f"**Record ID:** {record_id}, **created by:** {user}")
+                st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
+                st.write(f"**Submitted text:** {paragraph}")
+
+
                 # Admin options to approve/reject or take action
                 col1, col2 = st.columns(2)
                 with col1:
@@ -225,16 +224,19 @@ def logout():
     st.rerun()
 
 # Button to switch tabs
+if st.session_state.current_user == "admin":
+    tab_labels = ["About", "How It Works", "Review Pending Data"]
 if st.session_state.logged_in:
-    tab_labels = ["About", "How It Works", "What's Next", f"Logged in as {st.session_state.current_user}"]
+    tab_labels = ["About", "How It Works", f"Logged in as {st.session_state.current_user}"]
 else:
-    tab_labels = ["About", "How It Works", "What's Next", "Account"]
+    tab_labels = ["About", "How It Works", "Contribute"]
 
 # Create tabs dynamically
 tabs = st.tabs(tab_labels)
 
 # Assign each tab to a variable
-tab0, tab1, tab2, tab3 = tabs
+tab0, tab1, tab2= tabs
+
 
 # About Tab
 #if st.session_state.current_tab == "tab0":
@@ -246,26 +248,14 @@ with tab0:
     st.image("bubblechart_placeholder.png")
     st.caption("Bubble chart visualizing studied determinants, energy outputs, and the direction of their relationships based on the literature.")
 
-
-# Tab 2: What's Next
 with tab2:
-        st.title("We're making it better.")
-        whats_next_html = ("""
+    st.title("We're making it better.")
+    whats_next_html = ("""
 Future updates will include new features like filters for climate and scale (urban vs. national) to fine-tune recommendations.</p> <strong>Contribute to the mission.</strong>
 Log in or sign up to add your studies or references, sharing determinants, energy outputs, and their relationships. After review, your contributions will enhance the database, helping us grow this resource for urban planners, developers, and policymakers.</p>
 Let's work together to optimize macro-scale energy use and create sustainable cities. <br><strong>Dive in, explore, and start contributing today.</strong>"""
     )
-        st.markdown(whats_next_html, unsafe_allow_html=True)
-        # Button to switch to "Contribute Now" (tab3)
-        #if st.button("Contribute Now"):
-        #    if st.session_state.current_tab != "tab3":
-        #        st.query_params.current_tab(tab="tab3")
-        #        st.session_state.current_tab = "tab3"
-        # Set tab3 as the current tab
-        #st.rerun()  # Refresh the app to apply the tab switch
-
-#elif st.session_state.current_tab == "tab3":
-with tab3:
+    st.markdown(whats_next_html, unsafe_allow_html=True)
     # Run this only once to set up the user table
     def initialize_user_table():
         conn = sqlite3.connect("my_database.db")
@@ -301,7 +291,7 @@ with tab3:
     #initialize_admin()
 
     def signup():
-        st.header("Sign Up")
+        #st.header("Sign Up")
         username = st.text_input("Username", placeholder="Enter your username", key="signup_username")
         password = st.text_input("Password", type="password", placeholder="Enter your password", key="signup_password")
         if st.button("Sign Up"):
@@ -324,7 +314,7 @@ with tab3:
 
 
     def login():
-        st.header("Login")
+        #st.header("Login")
         username = st.text_input("Username", placeholder="Enter your username", key="login_username")
         password = st.text_input("Password", type="password", placeholder="Enter your password", key="login_password")
         if st.button("Login"):
