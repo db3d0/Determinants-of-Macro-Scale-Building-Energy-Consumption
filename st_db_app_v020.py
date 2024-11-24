@@ -149,33 +149,33 @@ def admin_dashboard():
     # Fetch all records with their status
     records = cursor.execute("SELECT id, criteria, energy_method, direction, paragraph, user, status FROM energy_data").fetchall()
 
-    for record in records:
-        record_id, criteria, energy_method, direction, paragraph, user, status = record
-        if status == "pending":
-            st.write(f"**Record ID:** {record_id}, **created by:** {user}")
-            st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
-            st.write(f"**Submitted text:** {paragraph}")
-
-            # Admin options to approve/reject or take action
-            col1, col2 = st.columns(2)
-            with col1:
-                if st.button(f"Approve {record_id}"):
-                    cursor.execute("UPDATE energy_data SET status = 'approved' WHERE id = ?", (record_id,))
-                    conn.commit()
-                    st.success(f"Record {record_id} approved.")
-                    time.sleep(1)
-                    st.rerun()
-            with col2:
-                if st.button(f"Reject {record_id}"):
-                    cursor.execute("UPDATE energy_data SET status = 'rejected' WHERE id = ?", (record_id,))
-                    conn.commit()
-                    st.error(f"Record {record_id} rejected.")
-                    time.sleep(1)
-                    st.rerun()
-            st.markdown("---")  # Separator between records
-
+    if not records:
+        st.write("No records found.")
     else:
-        st.write("No records found.")    
+        for record in records:
+            record_id, criteria, energy_method, direction, paragraph, user, status = record
+            if status == "pending":
+                st.write(f"**Record ID:** {record_id}, **created by:** {user}")
+                st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
+                st.write(f"**Submitted text:** {paragraph}")
+
+                # Admin options to approve/reject or take action
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button(f"Approve {record_id}"):
+                        cursor.execute("UPDATE energy_data SET status = 'approved' WHERE id = ?", (record_id,))
+                        conn.commit()
+                        st.success(f"Record {record_id} approved.")
+                        time.sleep(1)
+                        st.rerun()
+                with col2:
+                    if st.button(f"Reject {record_id}"):
+                        cursor.execute("UPDATE energy_data SET status = 'rejected' WHERE id = ?", (record_id,))
+                        conn.commit()
+                        st.error(f"Record {record_id} rejected.")
+                        time.sleep(1)
+                        st.rerun()
+                st.markdown("---")  # Separator between records
 
     conn.close()
 
@@ -187,31 +187,38 @@ def user_dashboard():
     cursor = conn.cursor()
 
     # Fetch all records with their status
-    records = cursor.execute("SELECT id, criteria, energy_method, direction, paragraph, user, status FROM energy_data").fetchall()
-    
-    for record in records:
-        record_id, criteria, energy_method, direction, paragraph, user, status = record
-        if st.session_state.current_user == user:
-            st.write(f"**Record ID:** {record_id}, **created by:** {user}, **Status:** {status}")
-            st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
-            st.write(f"**Submitted text:** {paragraph}")
+    # Fetch all records created by the current user
+    records = cursor.execute("""
+        SELECT id, criteria, energy_method, direction, paragraph, user, status
+        FROM energy_data
+        WHERE user = ?
+    """, (st.session_state.current_user,)).fetchall()
 
-        # Admin options to approve/reject or take action
-        col1, col2 = st.columns(2)
-        with col2:
-            if st.button(f"Remove this submission"):
-                try:
-                    cursor.execute("DELETE FROM energy_data WHERE id = ?", (record_id,))
-                    conn.commit()
-                    st.success(f"Submission {record_id} has been removed.")
-                    time.sleep(1)
-                    st.rerun()  # Refresh the page to reflect the changes
-                except Exception as e:
-                    st.error(f"Failed to remove record {record_id}: {e}")
-
-        st.markdown("---")  # Separator between records
-    else:
+    if not records:
         st.write("No records found.")
+    else:
+        for record in records:
+            record_id, criteria, energy_method, direction, paragraph, user, status = record
+            if st.session_state.current_user == user:
+                st.write(f"**Record ID:** {record_id}, **created by:** {user}, **Status:** {status}")
+                st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
+                st.write(f"**Submitted text:** {paragraph}")
+
+            # Admin options to approve/reject or take action
+            col1, col2 = st.columns(2)
+            with col2:
+                if st.button(f"Remove this submission {record_id}"):
+                    try:
+                        cursor.execute("DELETE FROM energy_data WHERE id = ?", (record_id,))
+                        conn.commit()
+                        st.success(f"Submission {record_id} has been removed.")
+                        time.sleep(1)
+                        st.rerun()  # Refresh the page to reflect the changes
+                    except Exception as e:
+                        st.error(f"Failed to remove record {record_id}: {e}")
+
+            st.markdown("---")  # Separator between records
+
     conn.close()
 
 def edit_columns():
