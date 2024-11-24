@@ -695,7 +695,7 @@ with tab0:
                                             st.session_state[f"confirm_delete_{para_id}"] = True
                                             st.rerun()
                             else:
-                                new_text = st.text_area(f"Result {count}", value=para_text, key=f"edit_{para_id}")
+                                new_text = st.markdown(f"Result {count}:<br> {para_text}", unsafe_allow_html=True)
                     else:
                         st.warning(f"No studies have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
             
