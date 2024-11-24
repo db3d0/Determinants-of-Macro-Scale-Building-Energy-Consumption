@@ -695,7 +695,7 @@ with tab0:
                                             st.session_state[f"confirm_delete_{para_id}"] = True
                                             st.rerun()
                             else:
-                                st.write(para_text)
+                                new_text = st.text_area(f"Record {para_id}", value=para_text, key=f"edit_{para_id}")
                     else:
                         st.warning(f"No studies have been reported for an increase (or presence) in {st.session_state.selected_criteria} leading to {'higher' if st.session_state.selected_direction == 'Increase' else 'lower'} {st.session_state.selected_method}.")
             
