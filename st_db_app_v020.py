@@ -12,6 +12,132 @@ import time
 
 load_dotenv()
 
+def query_approved_criteria(conn):
+    cursor = conn.cursor()
+    cursor.execute("SELECT DISTINCT criteria FROM energy_data WHERE status NOT IN ('rejected', 'pending')  ORDER BY criteria ASC")
+    return cursor.fetchall()
+    
+def query_approved_energy_outputs(conn):
+    cursor = conn.cursor()
+    cursor.execute("SELECT DISTINCT energy_method FROM energy_data WHERE status NOT IN ('rejected', 'pending') ORDER BY energy_method ASC")
+    return cursor.fetchall()
+
+def contribute():
+    # Fetch existing determinants and energy outputs from approved records
+    approved_determinants = query_approved_criteria(conn)
+    criteria_list = ["Select a Determinant", "Add new Determinant"] + [f"{row[0]}" for row in approved_determinants]
+    approved_energy_outputs = query_approved_energy_outputs(conn)
+    energy_method_list = ["Select an Energy Output", "Add new Energy Output"] + [f"{row[0]}" for row in approved_energy_outputs]
+
+    # Initialize session state
+    if "selected_determinant_choice" not in st.session_state:
+        st.session_state.selected_determinant_choice = "Select a Determinant"
+    if "selected_energy_output_choice" not in st.session_state:
+        st.session_state.selected_energy_output_choice = "Select an Energy Output"
+    if "selected_direction_choice" not in st.session_state:
+        st.session_state.selected_direction_choice = None
+    if "new_determinant" not in st.session_state:
+        st.session_state.new_determinant = ""
+    if "new_energy_output" not in st.session_state:
+        st.session_state.new_energy_output = ""
+    if "reset_form" not in st.session_state:
+        st.session_state.reset_form = False
+
+    # Reset session state if reset_form flag is True
+    if st.session_state.reset_form:
+        st.session_state.selected_determinant_choice = "Select a Determinant"
+        st.session_state.selected_energy_output_choice = "Select an Energy Output"
+        st.session_state.selected_direction_choice = None
+        st.session_state.new_determinant = ""
+        st.session_state.new_energy_output = ""
+        st.session_state.reset_form = False
+
+    # Dropdown for Determinants
+    selected_determinant_choice = st.selectbox(
+        "Determinant",
+        criteria_list,
+        key="selected_determinant_choice"
+    )
+
+    # Handle adding a new determinant
+    new_determinant = ""
+    if selected_determinant_choice == "Add new Determinant":
+        new_determinant = st.text_input("Enter New Determinant", key="new_determinant")
+
+    # Dropdown for Energy Output
+    new_energy_output = ""
+    if selected_determinant_choice != "Select a Determinant":
+        selected_energy_output_choice = st.selectbox(
+            "Energy Output",
+            energy_method_list,
+            key="selected_energy_output_choice"
+        )
+
+        # Handle adding a new energy output
+        if selected_energy_output_choice == "Add new Energy Output":
+            new_energy_output = st.text_input("Enter New Energy Output", key="new_energy_output")
+    else:
+        selected_energy_output_choice = "Select an Energy Output"
+
+    # Radio buttons for direction
+    if (
+        st.session_state.selected_energy_output_choice != "Select an Energy Output"
+        and st.session_state.selected_determinant_choice != "Select a Determinant"
+    ):
+        st.radio(
+            "Please select the direction of the relationship",
+            ["Increase", "Decrease"],
+            key="selected_direction_choice"
+        )
+
+    # Display text area and save button if all fields are selected
+    if st.session_state.selected_direction_choice:
+        st.markdown(
+            f"<p>Please add your findings which show that a {st.session_state.selected_direction_choice} "
+            f"(or presence) in {new_determinant or st.session_state.selected_determinant_choice} leads to <i>{'higher' if st.session_state.selected_direction_choice == 'Increase' else 'lower'}</i> "
+            f"{new_energy_output or st.session_state.selected_energy_output_choice}.</p>",
+            unsafe_allow_html=True
+        )
+
+        # Add New Record Section
+        new_paragraph = st.text_area(
+            f"Add new record for {new_determinant or st.session_state.selected_determinant_choice} and {new_energy_output or st.session_state.selected_energy_output_choice} "
+            f"({st.session_state.selected_direction_choice})",
+            key="new_paragraph"
+        )
+
+        # Show "Save" button within the form
+        if st.button("Save", key="save_new_record"):
+            # Save record only if text is provided
+            if new_paragraph.strip():
+                cursor = conn.cursor()
+
+                # Save the record
+                cursor.execute('''
+                    INSERT INTO energy_data (criteria, energy_method, direction, paragraph, status, user)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                ''', (
+                    new_determinant or st.session_state.selected_determinant_choice,
+                    new_energy_output or st.session_state.selected_energy_output_choice,
+                    st.session_state.selected_direction_choice,
+                    new_paragraph,
+                    "pending",
+                    st.session_state.current_user
+                ))
+                conn.commit()
+
+                # Set reset_form flag
+                st.session_state.reset_form = True
+
+                st.success("New record submitted successfully. Thank you for your contribution. Status: pending verification")
+
+                #allow time to read success message
+                time.sleep(2)
+
+                # Refresh the app to reflect the reset
+                st.rerun()
+            else:
+                st.warning("Please ensure the record is not empty before saving.")
 
 def admin_dashboard():
     st.subheader("Review Pending Data Submissions")
@@ -23,31 +149,69 @@ def admin_dashboard():
     # Fetch all records with their status
     records = cursor.execute("SELECT id, criteria, energy_method, direction, paragraph, user, status FROM energy_data").fetchall()
 
-    if not records:
-        st.write("No records found.")
+    for record in records:
+        record_id, criteria, energy_method, direction, paragraph, user, status = record
+        if status == "pending":
+            st.write(f"**Record ID:** {record_id}, **created by:** {user}")
+            st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
+            st.write(f"**Submitted text:** {paragraph}")
+
+            # Admin options to approve/reject or take action
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button(f"Approve {record_id}"):
+                    cursor.execute("UPDATE energy_data SET status = 'approved' WHERE id = ?", (record_id,))
+                    conn.commit()
+                    st.success(f"Record {record_id} approved.")
+                    time.sleep(1)
+                    st.rerun()
+            with col2:
+                if st.button(f"Reject {record_id}"):
+                    cursor.execute("UPDATE energy_data SET status = 'rejected' WHERE id = ?", (record_id,))
+                    conn.commit()
+                    st.error(f"Record {record_id} rejected.")
+                    time.sleep(1)
+                    st.rerun()
+            st.markdown("---")  # Separator between records
+
     else:
-        for record in records:
-            record_id, criteria, energy_method, direction, paragraph, user, status = record
-            if status == "pending":
-                st.write(f"**Record ID:** {record_id}, **created by:** {user}")
-                st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
-                st.write(f"**Submitted text:** {paragraph}")
+        st.write("No records found.")    
 
+    conn.close()
 
-                # Admin options to approve/reject or take action
-                col1, col2 = st.columns(2)
-                with col1:
-                    if st.button(f"Approve {record_id}"):
-                        cursor.execute("UPDATE energy_data SET status = 'approved' WHERE id = ?", (record_id,))
-                        conn.commit()
-                        st.success(f"Record {record_id} approved.")
-                with col2:
-                    if st.button(f"Reject {record_id}"):
-                        cursor.execute("UPDATE energy_data SET status = 'rejected' WHERE id = ?", (record_id,))
-                        conn.commit()
-                        st.error(f"Record {record_id} rejected.")
-                st.markdown("---")  # Separator between records
+def user_dashboard():
+    st.subheader("Review Your Submissions")
 
+    # Connect to the database
+    conn = sqlite3.connect("my_database.db")
+    cursor = conn.cursor()
+
+    # Fetch all records with their status
+    records = cursor.execute("SELECT id, criteria, energy_method, direction, paragraph, user, status FROM energy_data").fetchall()
+    
+    for record in records:
+        record_id, criteria, energy_method, direction, paragraph, user, status = record
+        if st.session_state.current_user == user:
+            st.write(f"**Record ID:** {record_id}, **created by:** {user}, **Status:** {status}")
+            st.markdown(f"<p>The following pending study shows that a {direction} (or presence) in {criteria} leads to <i>{'higher' if direction == 'Increase' else 'lower'}</i> {energy_method}.</p>", unsafe_allow_html=True)
+            st.write(f"**Submitted text:** {paragraph}")
+
+        # Admin options to approve/reject or take action
+        col1, col2 = st.columns(2)
+        with col2:
+            if st.button(f"Remove this submission"):
+                try:
+                    cursor.execute("DELETE FROM energy_data WHERE id = ?", (record_id,))
+                    conn.commit()
+                    st.success(f"Submission {record_id} has been removed.")
+                    time.sleep(1)
+                    st.rerun()  # Refresh the page to reflect the changes
+                except Exception as e:
+                    st.error(f"Failed to remove record {record_id}: {e}")
+
+        st.markdown("---")  # Separator between records
+    else:
+        st.write("No records found.")
     conn.close()
 
 def edit_columns():
@@ -167,6 +331,24 @@ db_file = 'my_database.db'
 conn = sqlite3.connect(db_file)
 
 # Query functions
+def query_criteria_list(conn):
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT criteria, COUNT(paragraph)
+        FROM energy_data
+        GROUP BY criteria
+    ''')
+    return cursor.fetchall()
+
+def query_energy_method_list(conn):
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT energy_method, COUNT(paragraph)
+        FROM energy_data
+        GROUP BY energy_method
+    ''', )
+    return cursor.fetchall()
+
 def query_criteria_counts(conn):
     cursor = conn.cursor()
     cursor.execute('''
@@ -224,19 +406,21 @@ def logout():
     st.rerun()
 
 # Button to switch tabs
-if st.session_state.current_user == "admin":
-    tab_labels = ["MacroBuild Energy", "Review Pending Data"]
+
 if st.session_state.logged_in:
-    tab_labels = ["MacroBuild Energy", f"Logged in as {st.session_state.current_user}"]
+    if st.session_state.current_user == "admin":
+        tab_labels = ["MacroBuild Energy", "Contribute", "Review Pending Data"]
+        tabs = st.tabs(tab_labels) # Create tabs dynamically
+        tab0, tab1, tab2= tabs #Assign each tab to a variable
+    else:
+        tab_labels = ["Macrobuild Energy", "Contribute", "Your Contributions"]
+        tabs = st.tabs(tab_labels)# Create tabs dynamically
+        tab0, tab1, tab2 = tabs# Assign each tab to a variable
+    
 else:
     tab_labels = ["Macrobuild Energy", "Contribute"]
-
-# Create tabs dynamically
-tabs = st.tabs(tab_labels)
-
-# Assign each tab to a variable
-tab0, tab1= tabs
-
+    tabs = st.tabs(tab_labels)# Create tabs dynamically
+    tab0, tab1 = tabs# Assign each tab to a variable
 
 with tab1:
     st.title("We're making it better.")
@@ -247,6 +431,7 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
     )
     st.markdown(whats_next_html, unsafe_allow_html=True)
     # Run this only once to set up the user table
+
     def initialize_user_table():
         conn = sqlite3.connect("my_database.db")
         cursor = conn.cursor()
@@ -261,7 +446,6 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
         ''')
         conn.commit()
         conn.close()
-
     #initialize_user_table()
 
     def initialize_admin():
@@ -302,7 +486,6 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
             else:
                 st.error("Please fill out all fields.")
 
-
     def login():
         #st.header("Login")
         username = st.text_input("Username", placeholder="Enter your username", key="login_username")
@@ -327,21 +510,25 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
     if "logged_in" in st.session_state and st.session_state.logged_in:
         if st.session_state.user_role == "admin":
             st.sidebar.header("Admin Dashboard") # Admin-specific functionality
-            welcome_admin_dashboard = f"Admin can add/edit and delete records to the dataset like this:<br>1. Select the relevant criteria from dropdown menus and a direction button.<br>2. Add, Edit, or Delete records<br>3. After editing or creating a new record click Save.<br>Your entry will be saved to the dataset. <br>Thank you for your contribution."
+            welcome_admin_dashboard = f"As Admin you can Add and Edit/Delete existing records under the Macrobuild Energy tab.<br>You can accept or reject new user submissions under the Review Pending Contributions tab. New records and unlisted determinant/energy output types can be added to the dataset under the contribute tab.<br>"
             st.sidebar.write(welcome_admin_dashboard, unsafe_allow_html=True)
-            
-            admin_dashboard() #show admin dashboard
+            contribute()
+            with tab2:
+                admin_dashboard() #show admin dashboard
 
             if st.sidebar.button("logout"):
                 logout()
                 st.rerun()
 
-
-
         elif st.session_state.user_role == "user":             # User-specific functionality
             st.sidebar.header(f"Weclome back {st.session_state.current_user}")
-            welcome_user_dashboard = f"Add your findings to the dataset by:<br>1. Selecting the relevant criteria from dropdown menus and a direction button.<br>2. Click the add record button at the bottom of the list.<br>3. Paste your entry in the box and click Save.<br>Your entry will be submitted pending verification. <br>Thank you for your contribution."
+            welcome_user_dashboard = f"As a logged in user you can add your findings to the dataset under the contribute tab.<br>1. Select the relevant determinant.<br>2. Select energy output.<br>3. Select the relationship direction.<br>4. Add your entry and click Save.<br>Your entry will be submitted pending verification.<br>If your study references new or unlisted determinant/energy output types you can add them by choosing create new determinant/create new energy output."
             st.sidebar.write(welcome_user_dashboard, unsafe_allow_html=True)
+            
+            contribute()
+            with tab2:
+                user_dashboard() #show admin dashboard
+
             if st.sidebar.button("logout"):
                 logout()
                 st.rerun()
@@ -353,6 +540,8 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
             login()
         with signup_tab:
             signup()
+
+
 
 # How it works Tab with Criteria Dropdown and Simplified Direction Selection
 #elif st.session_state.current_tab == "tab1":
@@ -370,13 +559,20 @@ with tab0:
     st.markdown(how_it_works_html, unsafe_allow_html=True)
 
     # Criteria Dropdown with Counts and Placeholder
+    # Initialize selected_direction in session state if not already set
+    if 'selected_criteria_with_count' not in st.session_state:
+        st.session_state.selected_criteria_with_count = None
+    if 'selected_direction_with_count' not in st.session_state:
+        st.session_state.selected_direction_with_count = None
+    if 'selected_energy_method_with_count' not in st.session_state:
+        st.session_state.selected_energy_method_with_count = None    
+
     criteria_counts = query_criteria_counts(conn)
     criteria_list = ["Select a determinant"] + [f"{row[0]} [{row[1]}]" for row in criteria_counts]
-
     selected_criteria_with_count = st.selectbox(
         "Determinant",
         criteria_list,
-        index=0 if st.session_state.selected_criteria is None else criteria_list.index(f"{st.session_state.selected_criteria} [{[count for crit, count in criteria_counts if crit == st.session_state.selected_criteria][0]}]"),
+        index=0 if st.session_state.selected_criteria_with_count is None else criteria_list.index(f"{st.session_state.selected_criteria_with_count} [{[count for crit, count in criteria_counts if crit == st.session_state.selected_criteria][0]}]"),
         format_func=lambda x: x if x == "Select a determinant" else x
     )
 
@@ -400,10 +596,6 @@ with tab0:
 
         if selected_method_with_count != "Select an output":
             st.session_state.selected_method = selected_method_with_count.split(" [")[0]
-
-            # Initialize selected_direction in session state if not already set
-            if 'selected_direction' not in st.session_state:
-                st.session_state.selected_direction = None
             
             # Query function to get the count for each direction
             def query_direction_counts(conn, selected_criteria, selected_method):
@@ -528,7 +720,7 @@ with tab0:
                                     
                                     # Hide the form and refresh to show the new record
                                     st.session_state.show_new_record_form = False  # Reset form state  
-                                    time.sleep(3)                                  
+                                    time.sleep(2)                                  
                                     st.rerun()  # Refresh to display the new record immediately
                                 else:
                                     st.warning("Please select a direction and ensure the record is not empty before saving.")
