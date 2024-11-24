@@ -529,7 +529,7 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
 
         elif st.session_state.user_role == "user":             # User-specific functionality
             st.sidebar.header(f"Weclome back {st.session_state.current_user}")
-            welcome_user_dashboard = f"As a logged in user you can add your findings to the dataset under the contribute tab.<br>1. Select the relevant determinant.<br>2. Select energy output.<br>3. Select the relationship direction.<br>4. Add your entry and click Save.<br>Your entry will be submitted pending verification.<br>If your study references new or unlisted determinant/energy output types you can add them by choosing create new determinant/create new energy output."
+            welcome_user_dashboard = f"As a logged in user you can add your findings to the dataset under the contribute tab.<br>1. Select the relevant determinant.<br>2. Select energy output.<br>3. Select the relationship direction.<br>4. Add your entry and click Save.<br>Your entry will be submitted pending verification.<br>If your study references new or unlisted determinant/energy output types you can add them by choosing Add new determinant/Add new energy output."
             st.sidebar.write(welcome_user_dashboard, unsafe_allow_html=True)
             
             contribute()
