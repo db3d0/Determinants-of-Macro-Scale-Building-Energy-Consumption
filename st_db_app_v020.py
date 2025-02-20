@@ -662,10 +662,10 @@ with tab0:
                         selected_direction_count = st.session_state.selected_direction.split(" ")[1]
 
                         if selected_direction_count == "[1]":
-                            st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                            st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction.startswith('Increase') else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
 
                         else:
-                            st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                            st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction.startswith("Increase") else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
 
 
                         for count, (para_id, para_text) in enumerate(paragraphs, start=1):
