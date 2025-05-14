@@ -8,7 +8,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 import bcrypt
-import time
+import time 
 
 load_dotenv()
 
@@ -416,16 +416,16 @@ def logout():
 
 if st.session_state.logged_in:
     if st.session_state.current_user == "admin":
-        tab_labels = ["MacroBuild Energy", "Contribute", "Review Pending Data"]
+        tab_labels = ["SpatialBuild Energy", "Contribute", "Review Pending Data"]
         tabs = st.tabs(tab_labels) # Create tabs dynamically
         tab0, tab1, tab2= tabs #Assign each tab to a variable
     else:
-        tab_labels = ["Macrobuild Energy", "Contribute", "Your Contributions"]
+        tab_labels = ["SpatialBuild Energy", "Contribute", "Your Contributions"]
         tabs = st.tabs(tab_labels)# Create tabs dynamically
         tab0, tab1, tab2 = tabs# Assign each tab to a variable
     
 else:
-    tab_labels = ["Macrobuild Energy", "Contribute"]
+    tab_labels = ["SpatialBuild Energy", "Contribute"]
     tabs = st.tabs(tab_labels)# Create tabs dynamically
     tab0, tab1 = tabs# Assign each tab to a variable
 
@@ -517,7 +517,7 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
     if "logged_in" in st.session_state and st.session_state.logged_in:
         if st.session_state.user_role == "admin":
             st.sidebar.header("Admin Dashboard") # Admin-specific functionality
-            welcome_admin_dashboard = f"As Admin you can Add and Edit/Delete existing records under the Macrobuild Energy tab.<br>You can accept or reject new user submissions under the Review Pending Contributions tab. New records and unlisted determinant/energy output types can be added to the dataset under the contribute tab.<br>"
+            welcome_admin_dashboard = f"As Admin you can Add and Edit/Delete existing records under the SpatialBuild Energy tab.<br>You can accept or reject new user submissions under the Review Pending Contributions tab. New records and unlisted determinant/energy output types can be added to the dataset under the contribute tab.<br>"
             st.sidebar.write(welcome_admin_dashboard, unsafe_allow_html=True)
             contribute()
             with tab2:
@@ -553,7 +553,7 @@ Let's work together to optimize macro-scale energy use and create sustainable ci
 # How it works Tab with Criteria Dropdown and Simplified Direction Selection
 #elif st.session_state.current_tab == "tab1":
 with tab0:
-    st.title("Welcome to MacroBuild Energy")
+    st.title("Welcome to SpatialBuild Energy")
     welcome_html = ("""<h7>This tool distills insights from over 200 studies on building energy consumption across meso and macro scales, spanning neighborhood, urban, state, regional, national, and global levels. It maps more than 100 factors influencing energy use, showing whether each increases or decreases energy outputs like total consumption, energy use intensity, or heating demand. Designed for urban planners and policymakers, the tool provides insights to craft smarter energy reduction strategies.</p><p><h7>"""
     )
     st.markdown(welcome_html, unsafe_allow_html=True)
@@ -662,10 +662,10 @@ with tab0:
                         selected_direction_count = st.session_state.selected_direction.split(" ")[1]
 
                         if selected_direction_count == "[1]":
-                            st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction.startswith('Increase') else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                            st.markdown(f"<p><b>The following study shows that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
 
                         else:
-                            st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction.startswith("Increase") else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
+                            st.markdown(f"<p><b>The following studies show that an increase (or presence) in {st.session_state.selected_criteria} leads to <i>{'higher' if st.session_state.selected_direction == 'Increase' else 'lower'}</i> {st.session_state.selected_method}.</b></p>", unsafe_allow_html=True)
 
 
                         for count, (para_id, para_text) in enumerate(paragraphs, start=1):
