@@ -11,7 +11,7 @@ import bcrypt
 import time 
 
 load_dotenv()
-
+#test
 def query_approved_criteria(conn):
     cursor = conn.cursor()
     cursor.execute("SELECT DISTINCT criteria FROM energy_data WHERE status NOT IN ('rejected', 'pending')  ORDER BY criteria ASC")
